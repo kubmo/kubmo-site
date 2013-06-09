@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 ruby '2.0.0'
 
@@ -36,7 +36,7 @@ end
 
 group :test do
   gem 'bourne', require: false
-  gem 'capybara-webkit', '>= 0.14.1'
+  gem 'capybara-webkit' 
   gem 'database_cleaner'
   gem 'launchy'
   gem 'shoulda-matchers'
