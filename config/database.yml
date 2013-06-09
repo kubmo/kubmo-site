@@ -6,6 +6,10 @@ development: &default
   pool: 5
   timeout: 5000
 
+staging:
+  <<: *default
+  datanase: kubmo-site_staging
+
 test:
   <<: *default
   database: kubmo-site_test
