@@ -8,6 +8,10 @@ class MentorsController < ApplicationController
       redirect_to root_path
     else
       flash[:error] = "please try again"
+      flash[:success] = I18n.t("thank you for applying!")
+      redirect_to root_path
+    else
+      flash[:error] = I18n.t("please try again")
       render :new
     end
   end
