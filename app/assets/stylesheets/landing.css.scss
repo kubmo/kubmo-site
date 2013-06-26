@@ -1,0 +1,146 @@
+/*---Global Styles---*/
+$teal: #1B9792;
+$grey: #2B2727;
+$light_grey: #2B2727;
+$blue: #a2bcbb;
+$pink: #a07098;
+$ivory: #F7F5ED;
+$pink: #C63D96;
+$light_ivory: #FFFDF7;
+$lightest_grey: #dddddd;
+
+@import 'bourbon';
+
+@mixin raleway() { font-family: 'Raleway', sans-serif; font-weight: 400; }
+@mixin ralewayLight() { font-family: 'Raleway', sans-serif; font-weight: 200; }
+@mixin ralewayMedium() { font-family: 'Raleway', sans-serif; font-weight: 500; }
+@mixin ralewaySemi() { font-family: 'Raleway', sans-serif; font-weight: 600; }
+@mixin ralewayBold() { font-family: 'Raleway', sans-serif; font-weight: 800; }
+@mixin ralewayExtraLight() { font-family: 'Raleway', sans-serif; font-weight:100; }
+body { @include raleway(); min-width: 1050px; }
+
+.body	{
+	width:1249px;
+	margin: 0 auto;
+	border:solid $lightest_grey 1px;
+	height:3955px;
+	@include  box-shadow(0 0 4px 2px hsla(0, 0%, 0%, 0.30));
+	background:$ivory;
+
+	#hero {
+		background:transparent url('hero.png');
+		width:1249px;
+		height:470px;
+		margin-top:100px;
+		position:absolute;
+		border-top:solid $lightest_grey 1px;
+
+		h1 {
+			@include ralewayLight();
+			width:350px;
+			line-height:1.5;
+			margin-left:60px;
+			padding-bottom:30px;
+			padding-top:90px;
+		}
+
+		a {
+			text-decoration:none;
+			text-transform:uppercase;
+			color:$ivory;
+			background-color:$pink;
+			font-size:16px;
+			padding:15px;
+			padding-left:20px;
+			padding-right:20px;
+			border:solid $grey 1px;
+			-webkit-border-radius:8px;
+			-moz-border-radius:8px;
+			-o-border-radius:8px;
+			border-radius:8px;
+			margin-left:60px;
+		}
+	}
+
+	#get_involved {
+		background-color:$light_ivory;
+		margin-top:570px;
+		position:absolute;
+		height:290px;
+		width:1250px;
+		border-top:solid $lightest_grey 1px;
+		border-bottom:solid $lightest_grey 1px;
+
+		a {
+			text-decoration:none;
+			text-transform:uppercase;
+			color:$ivory;
+			background-color:$pink;
+			font-size:16px;
+			padding:15px;
+			padding-left:20px;
+			padding-right:20px;
+			border:solid $grey 1px;
+			-webkit-border-radius:8px;
+			-moz-border-radius:8px;
+			-o-border-radius:8px;
+			border-radius:8px;
+			margin-left:60px;
+		}
+
+		p {
+			position:absolute;
+			display:inline-block;
+			margin-top:60px;
+		}
+
+		#mentor_button {
+			a {
+				margin-left:60px;
+				position:absolute;
+				margin-top:170px;
+			}
+
+			p {
+				background:transparent url('mentors_icon.png');
+				text-indent:-9999px;
+				width:120px;
+				height:90px;
+				margin-left:80px;
+			}
+		}
+
+		#spread_button {
+			a {
+				margin-left:515px;
+				position:absolute;
+				margin-top:170px;
+			}
+
+			p {
+				background:transparent url('spread_icon.png');
+				text-indent:-9999px;
+				width:100px;
+				height:76px;
+				margin-left:550px;
+				margin-top:74px;
+			}
+		}
+
+		#women_button {
+			a {
+				margin-left:1000px;
+				position:absolute;
+				margin-top:170px;
+			}
+
+			p {
+				background:transparent url('phones_icon.png');
+				text-indent:-9999px;
+				width:68px;
+				height:87px;
+				margin-left:1080px;
+			}
+		}
+	}
+}
