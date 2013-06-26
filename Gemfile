@@ -36,7 +36,7 @@ end
 
 group :test do
   gem 'bourne', require: false
-  # gem 'poltergeist'
+  gem 'poltergeist'
   gem 'database_cleaner'
   gem 'launchy'
   gem 'shoulda-matchers'

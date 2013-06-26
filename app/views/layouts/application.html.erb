@@ -14,21 +14,21 @@
 			<li class="main">
 				<ul>
 					<li><a id="nav_logo" href="/home">Home</a></li>
-					<li><a <% if controller_name == 'how_it_works' %> class= "active" <% end %> href="#how_it_works">how it works</a></li>
+          <li><a <% if controller_name == 'how_it_works' %> class= "active" <% end %><%= link_to 'how it works' %></li>
 					<li class="line">|</li>
-					<li><a <% if controller_name == 'entrepreneurs' %> class= "active" <% end %> href="#entrepreneurs">the entrepreneurs</a></li>
+          <li><a <% if controller_name == 'entrepreneurs' %> class= "active" <% end %> <%= link_to 'the entrepreneurs' %></li>
 					<li class="line">|</li>
-					<li><a <% if controller_name == 'about' %> class= "active" <% end %> href="#kubmo_team">about us</a></li>
+          <li><a <% if controller_name == 'about' %> class= "active" <% end %> <%= link_to 'about us' %></li>
 					<li class="line">|</li>
-					<li><a <% if controller_name == 'apply' %> class= "active" <% end %> href="apply">apply</a></li>
+          <li><a <% if controller_name == 'apply' %> class= "active" <% end %> <%= link_to 'apply' %></li>
 					<li class="line">|</li>
-					<li><a <% if controller_name == 'media' %> class= "active" <% end %> href="#spread_the_word">media</a></li>
+          <li><a <% if controller_name == 'media' %> class= "active" <% end %> <%= link_to 'media' %> </li>
 				</ul>
 			</li>
 			<li class="donate">
 				<ul>
 					<li id="donate">
-						<a href="donate">Donate</a>
+          <%= button_to 'donate' %></a>
 					</li>
 				</ul>
 			</li>
