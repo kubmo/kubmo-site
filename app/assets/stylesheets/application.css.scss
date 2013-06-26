@@ -39,12 +39,18 @@ body { @include raleway(); min-width: 1050px; }
 	border:solid $lightest_grey 1px;
 	height:3955px;
 	@include  box-shadow(0 0 4px 2px hsla(0, 0%, 0%, 0.30));
+	background:$ivory;
 
 	#top_nav {
-		width:1250px;
+		width:1210px;
+		height:130px;
 		background:white;
 		text-transform:uppercase;
 		font-size:16px;
+		position:fixed;
+		z-index:900;
+		margin-top:-30px;
+		border-bottom:solid $lightest_grey 1px;
 	}
 
 		.main {
@@ -57,7 +63,7 @@ body { @include raleway(); min-width: 1050px; }
 			}
 			
 			a {
-				margin:33px 0 0 20px;
+				margin:70px 0 0 20px;
 				display: block;
 				text-decoration:none;
 				color:black;
@@ -74,7 +80,7 @@ body { @include raleway(); min-width: 1050px; }
 		}
 
 		.line {
-			margin-top:33px;
+			margin-top:70px;
 			margin-left:20px;
 		}
 
@@ -89,7 +95,7 @@ body { @include raleway(); min-width: 1050px; }
 			a {
 				text-decoration:none;
 				color:$ivory;
-				margin:15px 0 0 30px;
+				margin:53px 0 0 30px;
 				display: block;
 				background-color:$pink;
 				font-size:16px;
@@ -106,11 +112,11 @@ body { @include raleway(); min-width: 1050px; }
 
 	#nav_logo {
 		background:transparent url('kubmo_logo.png');
-		width:214px;
+		width:216px;
 		height:66px;
 		text-indent:-9999px;
 		margin-right:50px;
-		margin-top:5px;
+		margin-top:38px;
 		margin-left:-10px;
 	}
 
@@ -234,6 +240,7 @@ body { @include raleway(); min-width: 1050px; }
 	#how_it_works {
 		margin-top:890px;
 		position:absolute;
+		background:white;
 
 		h1 {
 			@include ralewayExtraLight();
@@ -316,6 +323,8 @@ body { @include raleway(); min-width: 1050px; }
 		position:absolute;
 		border-top:solid $lightest_grey 1px;
 		width:1250px;
+		background:white;
+		height:1000px;
 
 		h1 {
 			@include ralewayExtraLight ();
@@ -390,6 +399,8 @@ body { @include raleway(); min-width: 1050px; }
 		position:absolute;
 		border-top:solid $lightest_grey 1px;
 		width:1250px;
+		background:white;
+		height:1000px;
 
 		h1 {
 			@include ralewayExtraLight ();
@@ -464,6 +475,8 @@ body { @include raleway(); min-width: 1050px; }
 		position:absolute;
 		border-top:solid $lightest_grey 1px;
 		width:1250px;
+		background:white;
+		height:238px;
 
 		h1 {
 			@include ralewayExtraLight ();
@@ -510,6 +523,8 @@ body { @include raleway(); min-width: 1050px; }
 		width:1250px;
 		height:220px;
 		border-top:solid $lightest_grey 1px;
+		background:$light_ivory;
+		height:230px;
 
 		h1 {
 			@include ralewaySemi ();

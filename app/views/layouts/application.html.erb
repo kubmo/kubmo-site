@@ -6,6 +6,7 @@
   <title>kubmo_nav</title>
   <%= stylesheet_link_tag :application, :media => 'all' %>
   <%= csrf_meta_tags %>
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
 </head>
 <body class="body">
@@ -14,15 +15,15 @@
 			<li class="main">
 				<ul>
 					<li><a id="nav_logo" href="/home">Home</a></li>
-					<li><a <% if controller_name == 'how_it_works' %> class= "active" <% end %> href="how_it_works">how it works</a></li>
+					<li><a <% if controller_name == 'how_it_works' %> class= "active" <% end %> href="#how_it_works">how it works</a></li>
 					<li class="line">|</li>
-					<li><a <% if controller_name == 'the_entrepreneurs' %> class= "active" <% end %> href="the_entrepreneurs">the entrepreneurs</a></li>
+					<li><a <% if controller_name == 'entrepreneurs' %> class= "active" <% end %> href="#entrepreneurs">the entrepreneurs</a></li>
 					<li class="line">|</li>
-					<li><a <% if controller_name == 'about' %> class= "active" <% end %> href="about">about us</a></li>
+					<li><a <% if controller_name == 'about' %> class= "active" <% end %> href="#kubmo_team">about us</a></li>
 					<li class="line">|</li>
 					<li><a <% if controller_name == 'apply' %> class= "active" <% end %> href="apply">apply</a></li>
 					<li class="line">|</li>
-					<li><a <% if controller_name == 'media' %> class= "active" <% end %> href="media">media</a></li>
+					<li><a <% if controller_name == 'media' %> class= "active" <% end %> href="#spread_the_word">media</a></li>
 				</ul>
 			</li>
 			<li class="donate">
@@ -34,6 +35,12 @@
 			</li>
 		</ul>
 	</div>
+	<script>
+	    $(document).ready(function() { $("#top_nav a").bind("click",function(event){ event.preventDefault(); var target = $(this).attr("href"); $("html, body").stop().animate({ scrollBottom: $(target).offset().bottom, scrollTop: $(target).offset().top }, 800); }); });
+	    $(document).ready(function() { $("#how_it_works a").bind("click",function(event){ event.preventDefault(); var target = $(this).attr("href"); $("html, body").stop().animate({ scrollBottom: $(target).offset().bottom, scrollTop: $(target).offset().top }, 800); }); });
+	    $(document).ready(function() { $("#entrepreneurs a").bind("click",function(event){ event.preventDefault(); var target = $(this).attr("href"); $("html, body").stop().animate({ scrollBottom: $(target).offset().bottom, scrollTop: $(target).offset().top }, 800); }); });
+	    $(document).ready(function() { $("#kubmo_team a").bind("click",function(event){ event.preventDefault(); var target = $(this).attr("href"); $("html, body").stop().animate({ scrollBottom: $(target).offset().bottom, scrollTop: $(target).offset().top }, 800); }); });
+	</script>
 	<div id="footer">
 		<ul id="contact_footer">
 			<li><h1>contact</h1><li>
