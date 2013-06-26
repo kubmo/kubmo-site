@@ -3,11 +3,57 @@
 <head>
   <meta charset="utf-8" />
   <meta name="Kubmo Navbar" content="NOODP" />
-  <title><%= page_title %></title>
+  <title>kubmo_nav</title>
   <%= stylesheet_link_tag :application, :media => 'all' %>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
 </head>
-<body class="<%= body_class %>">
+<body class="body">
+	<div class="top_nav">
+		<ul id="top_nav">
+			<li class="main">
+				<ul>
+					<li><a id="nav_logo" href="/home">Home</a></li>
+					<li><a <% if controller_name == 'how_it_works' %> class= "active" <% end %> href="how_it_works">how it works</a></li>
+					<li class="line">|</li>
+					<li><a <% if controller_name == 'the_entrepreneurs' %> class= "active" <% end %> href="the_entrepreneurs">the entrepreneurs</a></li>
+					<li class="line">|</li>
+					<li><a <% if controller_name == 'about' %> class= "active" <% end %> href="about">about us</a></li>
+					<li class="line">|</li>
+					<li><a <% if controller_name == 'apply' %> class= "active" <% end %> href="apply">apply</a></li>
+					<li class="line">|</li>
+					<li><a <% if controller_name == 'media' %> class= "active" <% end %> href="media">media</a></li>
+				</ul>
+			</li>
+			<li class="donate">
+				<ul>
+					<li id="donate">
+						<a href="donate">Donate</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div id="footer">
+		<ul id="contact_footer">
+			<li><h1>contact</h1><li>
+			<li><a href="#">email us</a></li>
+			<li><a href="#">facebook</a></li>
+			<li><a href="#">twitter</a></li>
+		</ul>
+		<ul id="get_involved_footer">
+			<li><h1>get involved</h1><li>
+			<li><a href="#">donate</a></li>
+			<li><a href="#">be a mentor</a></li>
+			<li><a href="#">apply for the program</a></li>
+		</ul>
+		<ul id="partners_footer">
+			<li><h1>partners</h1><li>
+			<li><a href="#">Muthaa Community Development Foundation</a></li>
+			<li><a href="#">EVB</a></li>
+		</ul>
+		<p id="kubmo_logo_grey">kubmo logo</p>
+	</div>
   <%= render 'flashes' -%>
   <%= yield %>
   <%= render 'javascript' %>
