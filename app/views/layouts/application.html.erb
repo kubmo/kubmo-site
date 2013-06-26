@@ -2,12 +2,64 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <meta name="ROBOTS" content="NOODP" />
-  <title><%= page_title %></title>
+  <title>Kubmo</title>
   <%= stylesheet_link_tag :application, :media => 'all' %>
   <%= csrf_meta_tags %>
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
 </head>
-<body class="<%= body_class %>">
+<body class="body">
+	<div class="top_nav">
+		<ul id="top_nav">
+			<li class="main">
+				<ul>
+					<li><a id="nav_logo" href="/home">Home</a></li>
+          <li><a <% if controller_name == 'how_it_works' %> class= "active" <% end %><%= link_to 'how it works' %></li>
+					<li class="line">|</li>
+          <li><a <% if controller_name == 'entrepreneurs' %> class= "active" <% end %> <%= link_to 'the entrepreneurs' %></li>
+					<li class="line">|</li>
+          <li><a <% if controller_name == 'about' %> class= "active" <% end %> <%= link_to 'about us' %></li>
+					<li class="line">|</li>
+          <li><a <% if controller_name == 'apply' %> class= "active" <% end %> <%= link_to 'apply' %></li>
+					<li class="line">|</li>
+          <li><a <% if controller_name == 'media' %> class= "active" <% end %> <%= link_to 'media' %> </li>
+				</ul>
+			</li>
+			<li class="donate">
+				<ul>
+					<li id="donate">
+          <%= button_to 'donate' %></a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<script>
+	    $(document).ready(function() { $("#top_nav a").bind("click",function(event){ event.preventDefault(); var target = $(this).attr("href"); $("html, body").stop().animate({ scrollBottom: $(target).offset().bottom, scrollTop: $(target).offset().top }, 800); }); });
+	    $(document).ready(function() { $("#how_it_works a").bind("click",function(event){ event.preventDefault(); var target = $(this).attr("href"); $("html, body").stop().animate({ scrollBottom: $(target).offset().bottom, scrollTop: $(target).offset().top }, 800); }); });
+	    $(document).ready(function() { $("#entrepreneurs a").bind("click",function(event){ event.preventDefault(); var target = $(this).attr("href"); $("html, body").stop().animate({ scrollBottom: $(target).offset().bottom, scrollTop: $(target).offset().top }, 800); }); });
+	    $(document).ready(function() { $("#kubmo_team a").bind("click",function(event){ event.preventDefault(); var target = $(this).attr("href"); $("html, body").stop().animate({ scrollBottom: $(target).offset().bottom, scrollTop: $(target).offset().top }, 800); }); });
+	</script>
+	<div id="footer">
+		<ul id="contact_footer">
+			<li><h1>contact</h1><li>
+			<li><a href="#">email us</a></li>
+			<li><a href="#">facebook</a></li>
+			<li><a href="#">twitter</a></li>
+		</ul>
+		<ul id="get_involved_footer">
+			<li><h1>get involved</h1><li>
+			<li><a href="#">donate</a></li>
+			<li><a href="#">be a mentor</a></li>
+			<li><a href="#">apply for the program</a></li>
+		</ul>
+		<ul id="partners_footer">
+			<li><h1>partners</h1><li>
+			<li><a href="#">Muthaa Community Development Foundation</a></li>
+			<li><a href="#">EVB</a></li>
+		</ul>
+		<p id="kubmo_logo_grey">kubmo logo</p>
+	</div>
   <%= render 'flashes' -%>
   <%= yield %>
   <%= render 'javascript' %>

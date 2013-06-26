@@ -1,4 +1,5 @@
 development: &default
+  host: localhost
   adapter: postgresql
   database: kubmo-site_development
   encoding: utf8
