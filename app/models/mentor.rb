@@ -1,3 +1,3 @@
 class Mentor < ActiveRecord::Base
-  attr_accessible :email, :linkedin, :name, :occupation, :twitter, :why
+  attr_accessible :name, :email, :linkedin, :occupation, :twitter, :why
 end
