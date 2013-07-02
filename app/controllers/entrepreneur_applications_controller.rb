@@ -4,10 +4,10 @@ class EntrepreneurApplicationsController < ApplicationController
     @entrepreneur_application = EntrepreneurApplication.new
 
     if @entrepreneur_application.save
-      flash[:success] = Il8n.t("thank you for applying to the BizTech workshop!")
+      flash[:success] = "thank you for applying to the BizTech workshop!"
       redirect_to root_path
     else
-      flash[:error] = Il8n.t("Please try again")
+      flash[:error] = "Please try again"
       render :new
     end
   end

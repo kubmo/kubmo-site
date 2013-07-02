@@ -28,6 +28,22 @@ describe 'Entrepreneur application process' do
     visit new_entrepreneur_applications_path
     expect(page).to have_content('Online Application for BizTech Workshop')
 
-    fill_in 'Name', with: name
+    fill_in 'Name', with: entrepreneur.name
+    fill_in 'Age', with: entrepreneur.age
+    fill_in 'City', with: entrepreneur.city
+    fill_in 'Number', with: entrepreneur.number
+    fill_in 'Email', with: entrepreneur.email
+    fill_in 'Employed', with: entrepreneur.employed
+    fill_in 'Internet', with: entrepreneur.internet
+    fill_in 'Picture', with: entrepreneur.picture
+    fill_in 'Availability', with: entrepreneur.availability
+    fill_in 'Passion', with: entrepreneur.passion
+    fill_in 'Sustainable', with: entrepreneur.sustainable
+    fill_in 'Why', with: entrepreneur.why
+    fill_in 'Impact', with: entrepreneur.impact
+
+    click_on 'Apply'
+
+    expect(page).to have_content('thank you for applying to the BizTech workshop!')
   end
 end
