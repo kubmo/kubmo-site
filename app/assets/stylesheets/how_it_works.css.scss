@@ -1,0 +1,113 @@
+/*---Global Styles---*/
+$teal: #1B9792;
+$grey: #2B2727;
+$light_grey: #2B2727;
+$blue: #a2bcbb;
+$pink: #a07098;
+$ivory: #F7F5ED;
+$pink: #C63D96;
+$light_ivory: #FFFDF7;
+$lightest_grey: #dddddd;
+
+@import 'bourbon';
+
+@mixin raleway() { font-family: 'Raleway', sans-serif; font-weight: 400; }
+@mixin ralewayLight() { font-family: 'Raleway', sans-serif; font-weight: 200; }
+@mixin ralewayMedium() { font-family: 'Raleway', sans-serif; font-weight: 500; }
+@mixin ralewaySemi() { font-family: 'Raleway', sans-serif; font-weight: 600; }
+@mixin ralewayBold() { font-family: 'Raleway', sans-serif; font-weight: 800; }
+@mixin ralewayExtraLight() { font-family: 'Raleway', sans-serif; font-weight:100; }
+body { @include raleway(); min-width: 1050px; }
+
+.body	{
+	width:1249px;
+	margin: 0 auto;
+	border:solid $lightest_grey 1px;
+	height:3955px;
+	@include  box-shadow(0 0 4px 2px hsla(0, 0%, 0%, 0.30));
+	background:$ivory;
+
+	#how_it_works {
+		margin-top:863px;
+		position:absolute;
+		background:white;
+		width:1250px;
+		height:800px;
+
+		h1 {
+			@include ralewayExtraLight();
+			font-size:35px;
+			margin-left:55px;
+			margin-top:50px;
+		}
+
+		#video {
+			background-color:$grey;
+			width:600px;
+			height:450px;
+			margin-top:45px;
+			margin-left:55px;
+		}
+
+		#play {
+			p {
+				background:transparent url('play.fw.png');
+				text-indent:-9999px;
+				width:100px;
+				height:100px;
+				position:absolute;
+				margin-top:-300px;
+				margin-left:300px;
+			}
+		}
+
+		#the_steps {
+			margin-top:-435px;
+
+			div {
+				position:relative;
+				width:450px;
+				margin-top:-200px;
+				margin-left:760px;
+				margin-bottom:230px;
+			}
+
+			h2 {
+				margin-left:100px;
+				@include ralewayMedium();
+			}
+
+			h3 {
+				margin-left:100px;
+				@include ralewayLight();
+				margin-top:-10px;
+				color:$light_grey;
+				line-height:1.5;
+			}
+		}
+
+		#workshop {
+			text-indent:-9999px;
+			background:transparent url('phone_small_icon.png');
+			width:30px;
+			height:50px;
+			position:absolute;
+		}
+
+		#year_icon {
+			text-indent:-9999px;
+			background:transparent url('year_long_icon.png');
+			width:50px;
+			height:48px;
+			position:absolute;
+		}
+
+		#marketplace {
+			text-indent:-9999px;
+			background:transparent url('marketplace_icon.png');
+			width:65px;
+			height:48px;
+			position:absolute;
+		}
+	}
+}

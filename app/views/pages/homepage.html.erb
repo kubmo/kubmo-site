@@ -1,1 +1,81 @@
-<h1>Kubmo</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>kubmo</title>
+  <%= stylesheet_link_tag :application, :media => 'all' %>
+  <%= csrf_meta_tags %>
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+</head>
+<body class="body">
+	<div id="hero">
+		<h1>A phone package and workshop can change her life forever.</h1>
+    <a href="donate"><%= button_to 'sponsor the change' %></a>
+	</div>
+  <div id="get_involved">
+    <div id="mentor_button">
+      <%= link_to 'Be a Mentor', new_mentor_path %>
+      <p>be a mentor</p>
+    </div>
+    <div id="spread_button">
+      <%= button_to 'spread the word' %>
+      <p>spread the word</p>
+    </div>
+    <div id="women_button">
+      <%= button_to 'meet the women' %>
+      <p>meet the women</p>
+    </div>
+  </div>
+  <div id="how_it_works">
+    <h1>How the Kubmo Program Works</h1>
+    <p id="video">video of girls</p>
+    <a id="play" href="#"><p>play</p></a>
+    <div id="the_steps">
+      <div>
+        <p id="workshop">phone icon</p>
+        <h2>The BizTech Workshop</h2>
+        <h3>Training in Nairobi, Kenya from mentors on entrepreneurism. Each participant recieves a phone package. August 19-21.</h3>
+      </div>
+      <div>
+        <p id="year_icon">year-long icon</p>
+        <h2>Year-long support</h2>
+        <h3>Follow up of mentorship, awareness via the website, and a phone package.</h3>
+      </div>
+      <div>
+        <p id="marketplace">marketplace icon</p>
+        <h2>Global marketplace</h2>
+        <h3>Once products are ready to be sold, they will be promoted via online marketplaces.</h3>
+      </div>
+    </div>
+  </div>
+  <div id="entrepreneurs" href="entrepreneurs">
+    <h1>Meet the Entrepreneurs</h1>
+    <div id="the_entrepreneur_pics">
+      <p id="girl_1">marriel</p>
+      <p id="girl_2">marriel</p>
+      <p id="girl_3">marriel</p>
+      <p id="girl_4">marriel</p>
+      <p id="girl_5">marriel</p>
+      <p id="girl_6">marriel</p>
+    </div>
+  </div>
+  <div id="kubmo_team" href="kubmo_team">
+    <h1>Meet the Kubmo Team</h1>
+    <div id="the_team_pics">
+      <p id="team_1">brooke</p>
+      <p id="team_2">brooke</p>
+      <p id="team_3">brooke</p>
+      <p id="team_4">brooke</p>
+      <p id="team_5">brooke</p>
+      <p id="team_6">brooke</p>
+    </div>
+  </div>
+  <div id="spread_the_word" href="spread_the_word">
+    <h1>Help Us Spread the Word</h1>
+    <p id="twitter">twitter</p>
+    <p id="facebook">facebook</p>
+    <p id="pinterest">pinterest</p>
+  </div>
+</body>
+</html>

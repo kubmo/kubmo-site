@@ -36,7 +36,11 @@ end
 
 group :test do
   gem 'bourne', require: false
+<<<<<<< HEAD
   gem 'capybara-webkit' 
+=======
+  gem 'poltergeist'
+>>>>>>> 51c451256ceeb9c578efb57875fdcbf6ff6488db
   gem 'database_cleaner'
   gem 'launchy'
   gem 'shoulda-matchers'

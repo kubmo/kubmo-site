@@ -1,0 +1,105 @@
+/*---Global Styles---*/
+$teal: #1B9792;
+$grey: #2B2727;
+$light_grey: #2B2727;
+$blue: #a2bcbb;
+$pink: #a07098;
+$ivory: #F7F5ED;
+$pink: #C63D96;
+$light_ivory: #FFFDF7;
+$lightest_grey: #dddddd;
+
+@import 'bourbon';
+
+@mixin raleway() { font-family: 'Raleway', sans-serif; font-weight: 400; }
+@mixin ralewayLight() { font-family: 'Raleway', sans-serif; font-weight: 200; }
+@mixin ralewayMedium() { font-family: 'Raleway', sans-serif; font-weight: 500; }
+@mixin ralewaySemi() { font-family: 'Raleway', sans-serif; font-weight: 600; }
+@mixin ralewayBold() { font-family: 'Raleway', sans-serif; font-weight: 800; }
+@mixin ralewayExtraLight() { font-family: 'Raleway', sans-serif; font-weight:100; }
+body { @include raleway(); min-width: 1050px; }
+
+.body	{
+	width:1249px;
+	margin: 0 auto;
+	border:solid $lightest_grey 1px;
+	height:3955px;
+	@include  box-shadow(0 0 4px 2px hsla(0, 0%, 0%, 0.30));
+	background:$ivory;
+
+	#entrepreneurs {
+		margin-top:1500px;
+		position:absolute;
+		border-top:solid $lightest_grey 1px;
+		width:1250px;
+		background:white;
+		height:1000px;
+
+		h1 {
+			@include ralewayExtraLight ();
+			width:1250px;
+			padding-top:30px;
+			margin-left:55px;
+		}
+
+		#girl_1 {
+			text-indent:-9999px;
+			background:transparent url('kenya_girl_2.png');
+			width:360px;
+			height:380px;
+			position:absolute;
+			margin-top:28px;
+			margin-left:55px;
+		}
+
+		#girl_2 {
+			text-indent:-9999px;
+			background:transparent url('kenya_girl_2.png');
+			width:360px;
+			height:380px;
+			position:absolute;
+			margin-top:28px;
+			margin-left:445px;
+		}
+
+		#girl_3 {
+			text-indent:-9999px;
+			background:transparent url('kenya_girl_2.png');
+			width:360px;
+			height:380px;
+			position:absolute;
+			margin-top:28px;
+			margin-left:835px;
+		}
+
+		#girl_4 {
+			text-indent:-9999px;
+			background:transparent url('kenya_girl_2.png');
+			width:360px;
+			height:380px;
+			position:absolute;
+			margin-top:440px;
+			margin-left:55px;
+		}
+
+		#girl_5 {
+			text-indent:-9999px;
+			background:transparent url('kenya_girl_2.png');
+			width:360px;
+			height:380px;
+			position:absolute;
+			margin-top:440px;
+			margin-left:445px;
+		}
+
+		#girl_6 {
+			text-indent:-9999px;
+			background:transparent url('kenya_girl_2.png');
+			width:360px;
+			height:380px;
+			position:absolute;
+			margin-top:440px;
+			margin-left:835px;
+		}
+	}
+}

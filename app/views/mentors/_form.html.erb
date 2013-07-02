@@ -1,0 +1,21 @@
+<%= form_for :mentor, :url => mentors_path do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+
+  <%= form.label :email %>
+  <%= form.text_field :email, :type => 'email' %>
+
+  <%= form.label :occupation %>
+  <%= form.text_field :occupation %>
+
+  <%= form.label :twitter %>
+  <%= form.text_field :twitter %>
+
+  <%= form.label :linkedin %>
+  <%= form.text_field :linkedin%>
+
+  <%= form.label :why %>
+  <%= form.text_field :why %>
+
+  <%= form.submit %>
+<% end %>
