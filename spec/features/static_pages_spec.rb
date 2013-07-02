@@ -7,7 +7,7 @@ describe 'Static pages' do
       visit root_path
 
       find_link('how it works').visible?
-      find_link('the entrepreneurs').visible?
+      find_link('entrepreneurs').visible?
       find_link('about us').visible?
       find_link('apply').visible?
       find_link('media').visible?

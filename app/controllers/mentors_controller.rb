@@ -4,10 +4,10 @@ class MentorsController < ApplicationController
     @mentor = Mentor.new
 
     if @mentor.save
-      flash[:success] = I18n.t("thank you for applying!")
+      flash[:success] = "thank you for applying!"
       redirect_to root_path
     else
-      flash[:error] = I18n.t("please try again")
+      flash[:error] = "please try again"
       render :new
     end
   end

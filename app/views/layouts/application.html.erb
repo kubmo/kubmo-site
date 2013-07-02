@@ -9,20 +9,21 @@
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
 </head>
 <body class="body">
-	<div class="top_nav">
-		<ul id="top_nav">
+  <div class="top_nav">
+    <ul id="top_nav">
 			<li class="main">
 				<ul>
 					<li><a id="nav_logo" href="/home">Home</a></li>
-          <li><a <% if controller_name == 'how_it_works' %> class= "active" <% end %><%= link_to 'how it works' %></li>
+          <li><a <% if controller_name == 'how_it_works' %> class= "active" <% end %> href="#how_it_works">how it works</a></li>
 					<li class="line">|</li>
-          <li><a <% if controller_name == 'entrepreneurs' %> class= "active" <% end %> <%= link_to 'the entrepreneurs' %></li>
+          <li><a <% if controller_name == 'entrepreneurs' %> class= "active" <% end %> href="#entrepreneurs">entrepreneurs</a></li>
 					<li class="line">|</li>
-          <li><a <% if controller_name == 'about' %> class= "active" <% end %> <%= link_to 'about us' %></li>
+          <li><a <% if controller_name == 'about' %> class= "active" <% end %> href="#kubmo_team">about</a></li>
 					<li class="line">|</li>
-          <li><a <% if controller_name == 'apply' %> class= "active" <% end %> <%= link_to 'apply' %></li>
+          <li><a <% if controller_name == 'apply' %> class= "active" <% end %>
+            <%= link_to 'apply', new_entrepreneur_applications_path %></li>
 					<li class="line">|</li>
-          <li><a <% if controller_name == 'media' %> class= "active" <% end %> <%= link_to 'media' %> </li>
+          <li><a <% if controller_name == 'media' %> class= "active" <% end %> href="#spread_the_word">media</a></li>
 				</ul>
 			</li>
 			<li class="donate">
