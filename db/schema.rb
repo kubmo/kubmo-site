@@ -10,13 +10,6 @@
 # you'll amass, the slower it'll run and the greater likelihood for issues).
 #
 # It's strongly recommended to check this file into your version control system.
-ActiveRecord::Schema.define(:version => 20130626202107) do
-
-  create_table "mentor_applicants", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-    t.string   "name",       :null => false
-  end
 
 ActiveRecord::Schema.define(:version => 20130701175025) do
 
@@ -56,4 +49,5 @@ ActiveRecord::Schema.define(:version => 20130701175025) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
 end

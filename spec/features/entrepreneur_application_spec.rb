@@ -13,9 +13,8 @@ describe 'Entrepreneur application process' do
                                       name: 'Marriel',
                                       age: '19',
                                       city: 'Nairobi',
-                                      number: '2983898123',
+                                      number: '29123',
                                       email: 'marriel@fake.com',
-                                      student: 'yes',
                                       employed: 'no',
                                       internet: 'yes',
                                       phone_type: 'Nokia',
@@ -27,6 +26,8 @@ describe 'Entrepreneur application process' do
                                       why: 'Because I want to empower myself',
                                       impact: 'I would be able to feed myself')
     visit new_entrepreneur_applications_path
-    expect(page).to have_content('Entrepreneur Application')
+    expect(page).to have_content('Online Application for BizTech Workshop')
+
+    fill_in 'Name', with: name
   end
 end
