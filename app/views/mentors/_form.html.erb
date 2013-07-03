@@ -1,21 +1,28 @@
 <%= form_for :mentor, :url => mentors_path do |form| %>
-  <%= form.label :name %>
-  <%= form.text_field :name %>
+    
+  <div class="kubmo_form">
+    <h1>Be a Mentor</h1>
+    <h2>Each of the young women will be paired up with a mentor for both the workshop, and the following year. We are looking for successfull, inspiring women who live in Kenya to be mentors. If you want to learn more about each of our entrepreneurs, you can see their profiles <a id="link_to_here" href="#">here</a>.</h2>
 
-  <%= form.label :email %>
-  <%= form.text_field :email, :type => 'email' %>
+    <h2 class="label"><%= form.label :name %></h2>
+    <div class="text_field"><%= form.text_field :name %></div>
 
-  <%= form.label :occupation %>
-  <%= form.text_field :occupation %>
+    <h2 class="label"><%= form.label :email %></h2>
+    <div class="text_field"><%= form.text_field :email, :type => 'email' %></div>
 
-  <%= form.label :twitter %>
-  <%= form.text_field :twitter %>
+    <h2 class="label"><%= form.label :occupation %></h2>
+    <div class="text_field"><%= form.text_field :occupation %></div>
 
-  <%= form.label :linkedin %>
-  <%= form.text_field :linkedin%>
+    <h2 class="label"><%= form.label :twitter %></h2>
+    <div class="text_field"><%= form.text_field :twitter %></div>
 
-  <%= form.label :why %>
-  <%= form.text_field :why %>
+    <h2 class="label"><%= form.label :linkedin %></h2>
+    <div class="text_field"><%= form.text_field :linkedin%></div>
 
-  <%= form.submit %>
+    <h2 class="label"><%= form.label :why %></h2>
+    <div class="text_field"><%= form.text_field :why %></div>
+
+    <div class="submit_button"><%= form.submit %></div>
+  </div>
+
 <% end %>

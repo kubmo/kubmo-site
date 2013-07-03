@@ -44,7 +44,7 @@ body { @include raleway(); min-width: 1050px; }
 			padding-top:90px;
 		}
 
-		a {
+		input {
 			text-decoration:none;
 			text-transform:uppercase;
 			color:$ivory;
@@ -88,6 +88,25 @@ body { @include raleway(); min-width: 1050px; }
 			margin-left:60px;
 		}
 
+		input {
+			text-decoration:none;
+			text-transform:uppercase;
+			color:$ivory;
+			background-color:$pink;
+			font-size:16px;
+			padding:15px;
+			padding-left:20px;
+			padding-right:20px;
+			border:solid $grey 1px;
+			-webkit-border-radius:8px;
+			-moz-border-radius:8px;
+			-o-border-radius:8px;
+			border-radius:8px;
+			margin-left:500px;
+		}
+
+
+
 		p {
 			position:absolute;
 			display:inline-block;
@@ -111,35 +130,37 @@ body { @include raleway(); min-width: 1050px; }
 		}
 
 		#spread_button {
-			a {
-				margin-left:515px;
-				position:absolute;
-				margin-top:170px;
-			}
-
 			p {
 				background:transparent url('spread_icon.png');
 				text-indent:-9999px;
 				width:100px;
 				height:76px;
 				margin-left:550px;
-				margin-top:74px;
+				margin-top:68px;
 			}
+
+			input {
+				margin-left:510px;
+				margin-top:170px;
+				position:absolute;
+			}
+
 		}
 
 		#women_button {
-			a {
-				margin-left:1000px;
-				position:absolute;
-				margin-top:170px;
-			}
-
 			p {
 				background:transparent url('phones_icon.png');
 				text-indent:-9999px;
 				width:68px;
 				height:87px;
 				margin-left:1080px;
+				margin-top:60px;
+			}
+
+			input {
+				margin-left:1020px;
+				margin-top:170px;
+				position:absolute;
 			}
 		}
 	}

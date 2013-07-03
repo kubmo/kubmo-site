@@ -78,8 +78,9 @@ body { @include raleway(); min-width: 1050px; }
 				list-style-type:none;
 			}
 
-			a {
+			#donate input {
 				text-decoration:none;
+				text-transform:uppercase;
 				color:$ivory;
 				margin:53px 0 0 30px;
 				display: block;
