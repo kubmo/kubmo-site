@@ -8,7 +8,7 @@ describe 'Static pages' do
 
       find_link('how it works').visible?
       find_link('entrepreneurs').visible?
-      find_link('about us').visible?
+      find_link('about').visible?
       find_link('apply').visible?
       find_link('media').visible?
       find_button('donate').click
