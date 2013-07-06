@@ -7,8 +7,8 @@ describe 'Static pages' do
       visit root_path
 
       find_link('how it works').visible?
-      find_link('the entrepreneurs').visible?
-      find_link('about us').visible?
+      find_link('entrepreneurs').visible?
+      find_link('about').visible?
       find_link('apply').visible?
       find_link('media').visible?
       find_button('donate').click
@@ -51,6 +51,71 @@ describe 'Static pages' do
         visit root_path
 
         expect(page).to have_content('Meet the Kubmo Team')
+      end
+    end
+  end
+
+  describe 'Social media links on homepage' do
+    context 'Twitter' do
+      it 'has a link that visits the Kubmo Twitter' do
+        visit root_path
+
+        within('div#spread_the_word') do
+          find_link('twitter').visible?
+        end
+      end
+    end
+
+    context 'Facebook' do
+      it 'has a link that visits the Kubmo Facebook' do
+        visit root_path
+
+        within('div#spread_the_word') do
+          find_link('facebook').visible?
+        end
+      end
+    end
+
+    context 'Pinterest' do
+      it 'has a link that visits the Kubmo Pinterest' do
+        visit root_path
+
+        find_link('pinterest').visible?
+      end
+    end
+  end
+
+  describe 'Footer' do
+    context 'Contact' do
+      it 'has links to appropriate contact pages' do
+        visit root_path
+
+        within('ul#contact_footer') do
+          find_link('Email Us').visible?
+          find_link('facebook').visible?
+          find_link('twitter').visible?
+        end
+      end
+    end
+
+    context 'Get Involved' do
+      it 'has links to appropriate Get Involved pages' do
+        visit root_path
+
+        click_link('be a mentor')
+        expect(page).to have_content('Mentor Application')
+
+        click_link('apply for the program')
+        expect(page). to have_content('Online Application for BizTech Workshop')
+      end
+    end
+
+    context 'Partners' do
+      it 'has links to Kubmo partners websites' do
+        visit root_path
+
+        find_link('Muthaa Community Development Foundation').visible?
+        find_link('EVB').visible?
       end
     end
   end

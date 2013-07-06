@@ -1,0 +1,48 @@
+<%= form_for :entrepreneur_application, :url => entrepreneur_applications_path do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+
+  <%= form.label :age %>
+  <%= form.text_field :age %>
+
+  <%= form.label :city %>
+  <%= form.text_field :city %>
+
+  <%= form.label :number %>
+  <%= form.text_field :number %>
+
+  <%= form.label :email %>
+  <%= form.text_field :email, :type => 'email' %>
+
+  <%= form.label :employed %>
+  <%= form.text_field :employed %>
+
+  <%= form.label :internet %>
+  <%= form.text_field :internet %>
+
+  <%= form.label :phone_type %>
+  <%= form.text_field :phone_type %>
+
+  <%= form.label :picture %>
+  <%= form.text_field :picture %>
+
+  <%= form.label :availability %>
+  <%= form.text_field :availability %>
+
+  <%= form.label :passion %>
+  <%= form.text_field :passion %>
+
+  <%= form.label :business_idea %>
+  <%= form.text_field :business_idea %>
+
+  <%= form.label :sustainable %>
+  <%= form.text_field :sustainable %>
+
+  <%= form.label :why %>
+  <%= form.text_field :why %>
+
+  <%= form.label :impact %>
+  <%= form.text_field :impact %>
+
+  <%= form.submit "Apply" %>
+<% end %>
