@@ -37,6 +37,7 @@ body { @include raleway(); min-width: 1050px; }
 		z-index:900;
 		margin-top:-30px;
 		border-bottom:solid $lightest_grey 1px;
+		@include  box-shadow(0 0 4px 0px hsla(0, 0%, 0%, 0.30));
 	}
 
 		.main {

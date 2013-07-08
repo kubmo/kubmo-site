@@ -53,6 +53,15 @@ body { @include raleway(); min-width: 1050px; }
 			margin-left:10px;
 		}
 
+		a:hover,
+			a.active {
+				color:$teal;
+			}
+
+			a:active {
+				color:$teal;
+			}
+
 		li {
 			list-style-type:none;
 		}
