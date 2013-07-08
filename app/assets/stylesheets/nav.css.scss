@@ -50,7 +50,7 @@ body { @include raleway(); min-width: 1050px; }
 			
 			a {
 				margin:70px 0 0 20px;
-				display: block;
+				display:block;
 				text-decoration:none;
 				color:black;
 			}
@@ -82,7 +82,7 @@ body { @include raleway(); min-width: 1050px; }
 				text-decoration:none;
 				text-transform:uppercase;
 				color:$ivory;
-				margin:53px 0 0 30px;
+				margin:53px 0 0 70px;
 				display: block;
 				background-color:$pink;
 				font-size:16px;
@@ -102,8 +102,8 @@ body { @include raleway(); min-width: 1050px; }
 		width:216px;
 		height:66px;
 		text-indent:-9999px;
-		margin-right:50px;
+		margin-right:60px;
 		margin-top:38px;
-		margin-left:-10px;
+		margin-left:-20px;
 	}
 }
