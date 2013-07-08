@@ -1,48 +1,58 @@
 <%= form_for :entrepreneur_application, :url => entrepreneur_applications_path do |form| %>
-  <%= form.label :name %>
-  <%= form.text_field :name %>
 
-  <%= form.label :age %>
-  <%= form.text_field :age %>
+  <div class="kubmo_form">
 
-  <%= form.label :city %>
-  <%= form.text_field :city %>
+    <h1>Apply for the Kubmo Program</h1>
+    <h2>Please fill out this form to help us understand who you are, and why you want to be a part of the Kubmo program.</h2>
 
-  <%= form.label :number %>
-  <%= form.text_field :number %>
+    <h2 class="label"><%= form.label :name %></h2>
+    <div class="text_field"><%= form.text_field :name %></div>
 
-  <%= form.label :email %>
-  <%= form.text_field :email, :type => 'email' %>
+    <h2 class="label"><%= form.label :age %></h2>
+    <div class="text_field"><%= form.text_field :age %></div>
 
-  <%= form.label :employed %>
-  <%= form.text_field :employed %>
+    <h2 class="label"><%= form.label :city %></h2>
+    <div class="text_field"><%= form.text_field :city %></div>
 
-  <%= form.label :internet %>
-  <%= form.text_field :internet %>
+    <h2 class="label"><%= form.label :number %></h2>
+    <div class="text_field"><%= form.text_field :number %></div>
 
-  <%= form.label :phone_type %>
-  <%= form.text_field :phone_type %>
+    <h2 class="label"><%= form.label :email %></h2>
+    <div class="text_field"><%= form.text_field :email, :type => 'email' %></div>
 
-  <%= form.label :picture %>
-  <%= form.text_field :picture %>
+    <h2 class="label"><%= form.label :employed %></h2>
+    <div class="text_field"><%= form.text_field :employed %></div>
 
-  <%= form.label :availability %>
-  <%= form.text_field :availability %>
+    <h2 class="label"><%= form.label :internet %></h2>
+    <div class="text_field"><%= form.text_field :internet %></div>
 
-  <%= form.label :passion %>
-  <%= form.text_field :passion %>
+    <h2 class="label"><%= form.label :phone_type %></h2>
+    <div class="text_field"><%= form.text_field :phone_type %></div>
 
-  <%= form.label :business_idea %>
-  <%= form.text_field :business_idea %>
+    <h2 class="label"><%= form.label :picture %></h2>
+    <div class="text_field"><%= form.text_field :picture %></div>
 
-  <%= form.label :sustainable %>
-  <%= form.text_field :sustainable %>
+    <h2 class="label"><%= form.label :availability %></h2>
+    <div class="text_field"><%= form.text_field :availability %></div>
 
-  <%= form.label :why %>
-  <%= form.text_field :why %>
+    <h2 class="label"><%= form.label :passion %></h2>
+    <div class="text_field"><%= form.text_field :passion %></div>
 
-  <%= form.label :impact %>
-  <%= form.text_field :impact %>
+    <h2 class="label"><%= form.label :business_idea %></h2>
+    <div class="text_field"><%= form.text_field :business_idea %></div>
 
-  <%= form.submit "Apply" %>
+    <h2 class="label"><%= form.label :sustainable %></h2>
+    <div class="text_field"><%= form.text_field :sustainable %></div>
+
+    <h2 class="label"><%= form.label :why %></h2>
+    <div class="text_field"><%= form.text_field :why %></div>
+
+    <h2 class="label"><%= form.label :impact %></h2>
+    <div class="text_field"><%= form.text_field :impact %></div>
+
+    <div class="submit_button"><%= form.submit "Apply" %></div>
+
+  </div>
+
 <% end %>
+
