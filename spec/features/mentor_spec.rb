@@ -26,7 +26,7 @@ describe 'Mentor application process' do
     fill_in 'Linkedin', with: mentor.linkedin
     fill_in 'Why', with: mentor.why
 
-    click_on 'Save Mentor'
+    click_on 'Apply'
 
     expect(page).to have_content('thank you for applying!')
   end
