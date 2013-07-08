@@ -1,5 +1,5 @@
 <%= form_for :mentor, :url => mentors_path do |form| %>
-    
+
   <div class="kubmo_form">
     <h1>Be a Mentor</h1>
     <h2>Each of the young women will be paired up with a mentor for both the workshop, and the following year. We are looking for successfull, inspiring women who live in Kenya to be mentors. If you want to learn more about each of our entrepreneurs, you can see their profiles <a id="link_to_here" href="#">here</a>.</h2>
@@ -22,7 +22,7 @@
     <h2 class="label"><%= form.label :why %></h2>
     <div class="text_field"><%= form.text_field :why %></div>
 
-    <div class="submit_button"><%= form.submit %></div>
+    <div class="submit_button"><%= form.submit "Apply" %></div>
   </div>
 
 <% end %>
