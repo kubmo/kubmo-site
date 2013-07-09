@@ -12,3 +12,15 @@
 //
 //= require jquery
 //= require_tree .
+<script>
+  $(document).ready(function() {
+    $("#top_nav a[data-scroll=true]").bind("click",function(event){
+      event.preventDefault();
+      var target = $(this).attr("href");
+      $("html, body").stop().animate({
+        scrollBottom: $(target).offset().bottom,
+        scrollTop: $(target).offset().top
+      }, 800);
+    });
+  });
+</script>
