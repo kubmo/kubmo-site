@@ -23,12 +23,11 @@ body { @include raleway(); min-width: 1050px; }
 	width:1249px;
 	margin: 0 auto;
 	border:solid $lightest_grey 1px;
-	height:3955px;
 	@include  box-shadow(0 0 4px 2px hsla(0, 0%, 0%, 0.30));
 	background:$ivory;
 
 	#kubmo_team {
-		margin-top:2490px;
+		margin-top:2455px;
 		position:absolute;
 		border-top:solid $lightest_grey 1px;
 		width:1250px;
@@ -38,68 +37,165 @@ body { @include raleway(); min-width: 1050px; }
 		h1 {
 			@include ralewayExtraLight ();
 			width:1250px;
-			padding-top:30px;
-			margin-left:55px;
+			padding-top:20px;
+			margin-left:60px;
 		}
 
-		#team_1 {
-			text-indent:-9999px;
-			background:transparent url('kubmo_team.png');
-			width:360px;
-			height:380px;
-			position:absolute;
-			margin-top:28px;
-			margin-left:55px;
-		}
+		#the_team_pics {
+			margin-left:40px;
 
-		#team_2 {
-			text-indent:-9999px;
-			background:transparent url('kubmo_team.png');
-			width:360px;
-			height:380px;
-			position:absolute;
-			margin-top:28px;
-			margin-left:445px;
-		}
+			#team_1 {
+				background:transparent url('kubmo_team.png');
+				width:360px;
+				height:380px;
+				display:inline-block;
+				float:left;
+				position:relative;
+				margin-left:24px;
+				margin-top:20px;
+			}
 
-		#team_3 {
-			text-indent:-9999px;
-			background:transparent url('kubmo_team.png');
-			width:360px;
-			height:380px;
-			position:absolute;
-			margin-top:28px;
-			margin-left:835px;
-		}
+			#team_2 {
+				background:transparent url('kubmo_team.png');
+				width:360px;
+				height:380px;
+				display:inline-block;
+				float:left;
+				position:relative;
+				margin-left:24px;
+				margin-top:20px;
+			}
 
-		#team_4 {
-			text-indent:-9999px;
-			background:transparent url('kubmo_team.png');
-			width:360px;
-			height:380px;
-			position:absolute;
-			margin-top:440px;
-			margin-left:55px;
-		}
+			#team_3 {
+				background:transparent url('kubmo_team.png');
+				width:360px;
+				height:380px;
+				display:inline-block;
+				float:left;
+				position:relative;
+				margin-left:24px;
+				margin-top:20px;
+			}
 
-		#team_5 {
-			text-indent:-9999px;
-			background:transparent url('kubmo_team.png');
-			width:360px;
-			height:380px;
-			position:absolute;
-			margin-top:440px;
-			margin-left:445px;
-		}
-		
-		#team_6 {
-			text-indent:-9999px;
-			background:transparent url('kubmo_team.png');
-			width:360px;
-			height:380px;
-			position:absolute;
-			margin-top:440px;
-			margin-left:835px;
+			#team_4 {
+				background:transparent url('kubmo_team.png');
+				width:360px;
+				height:380px;
+				display:inline-block;
+				float:left;
+				position:relative;
+				margin-left:24px;
+				margin-top:20px;
+			}
+
+			#team_5 {
+				background:transparent url('kubmo_team.png');
+				width:360px;
+				height:380px;
+				display:inline-block;
+				float:left;
+				position:relative;
+				margin-left:24px;
+				margin-top:20px;			}
+			
+			#team_6 {
+				background:transparent url('kubmo_team.png');
+				width:360px;
+				height:380px;
+				display:inline-block;
+				float:left;
+				position:relative;
+				margin-left:24px;
+				margin-top:20px;
+			}
+
+			div:after {
+				opacity:0;
+				font-weight:bold;
+				position:absolute;
+				top:0px;
+				left:0px;
+				display:block;
+				content:'Learn More';
+				color:#fff;
+				background:rgba(0,0,0,0.7);
+				padding:175px 117px;
+				@include ralewayLight();
+				font-size:24px;
+				-webkit-transition: opacity .3s ease-in-out;
+			 	-moz-transition: opacity .3s ease-in-out;
+				transition: opacity .3s ease-in-out;
+			}
+
+			div:hover:after {
+				opacity:1;
+			}
+
+			#team_1 a {
+				text-decoration:none;
+				color:white;
+				@include ralewayExtraLight();
+				font-size:30px;
+				margin-top:345px;
+				position:absolute;
+				background-color:$grey;
+				padding:0 133px 0 127px;
+			}
+
+			#team_2 a {
+				text-decoration:none;
+				color:white;
+				@include ralewayExtraLight();
+				font-size:30px;
+				margin-top:345px;
+				position:absolute;
+				background-color:$grey;
+				padding:0 133px 0 127px;
+			}
+
+			#team_3 a {
+				text-decoration:none;
+				color:white;
+				@include ralewayExtraLight();
+				font-size:30px;
+				margin-top:345px;
+				position:absolute;
+				background-color:$grey;
+				padding:0 133px 0 127px;
+			}
+
+			#team_4 a {
+				text-decoration:none;
+				color:white;
+				@include ralewayExtraLight();
+				font-size:30px;
+				margin-top:345px;
+				position:absolute;
+				background-color:$grey;
+				padding:0 133px 0 127px;
+			}
+
+			#team_5 a {
+				text-decoration:none;
+				color:white;
+				@include ralewayExtraLight();
+				font-size:30px;
+				margin-top:345px;
+				position:absolute;
+				background-color:$grey;
+				padding:0 133px 0 127px;
+			}
+
+			#team_6 a {
+				text-decoration:none;
+				color:white;
+				@include ralewayExtraLight();
+				font-size:30px;
+				margin-top:345px;
+				position:absolute;
+				background-color:$grey;
+				padding:0 133px 0 127px;
+			}
 		}
 	}
 }

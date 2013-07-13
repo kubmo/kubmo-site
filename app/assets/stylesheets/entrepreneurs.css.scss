@@ -23,83 +23,181 @@ body { @include raleway(); min-width: 1050px; }
 	width:1249px;
 	margin: 0 auto;
 	border:solid $lightest_grey 1px;
-	height:3955px;
 	@include  box-shadow(0 0 4px 2px hsla(0, 0%, 0%, 0.30));
 	background:$ivory;
 
 	#entrepreneurs {
 		margin-top:1500px;
-		position:absolute;
 		border-top:solid $lightest_grey 1px;
 		width:1250px;
 		background:white;
 		height:1000px;
+		position:absolute;
 
 		h1 {
 			@include ralewayExtraLight ();
 			width:1250px;
-			padding-top:30px;
-			margin-left:55px;
+			padding-top:20px;
+			position:absolute;
+			margin-left:60px;
 		}
 
-		#girl_1 {
-			text-indent:-9999px;
-			background:transparent url('kenya_girl_2.png');
-			width:360px;
-			height:380px;
-			position:absolute;
-			margin-top:28px;
-			margin-left:55px;
-		}
+		#the_entrepreneur_pics {
+			margin-left:40px;
 
-		#girl_2 {
-			text-indent:-9999px;
-			background:transparent url('kenya_girl_2.png');
-			width:360px;
-			height:380px;
-			position:absolute;
-			margin-top:28px;
-			margin-left:445px;
-		}
+			#girl_1 {
+				background:transparent url('kenya_girl_2.png');
+				width:360px;
+				height:380px;
+				display:inline-block;
+				float:left;
+				position:relative;
+				margin-left:24px;
+				margin-top:120px;
+			}
 
-		#girl_3 {
-			text-indent:-9999px;
-			background:transparent url('kenya_girl_2.png');
-			width:360px;
-			height:380px;
-			position:absolute;
-			margin-top:28px;
-			margin-left:835px;
-		}
+			#girl_2 {
+				background:transparent url('kenya_girl_2.png');
+				width:360px;
+				height:380px;
+				display:inline-block;
+				float:left;
+				position:relative;
+				margin-left:24px;
+				margin-top:120px;
+			}
 
-		#girl_4 {
-			text-indent:-9999px;
-			background:transparent url('kenya_girl_2.png');
-			width:360px;
-			height:380px;
-			position:absolute;
-			margin-top:440px;
-			margin-left:55px;
-		}
+			#girl_3 {
+				background:transparent url('kenya_girl_2.png');
+				width:360px;
+				height:380px;
+				display:inline-block;
+				float:left;
+				position:relative;
+				margin-left:24px;
+				margin-top:120px;
+			}
 
-		#girl_5 {
-			text-indent:-9999px;
-			background:transparent url('kenya_girl_2.png');
-			width:360px;
-			height:380px;
-			position:absolute;
-			margin-top:440px;
-			margin-left:445px;
-		}
+			#girl_4 {
+				background:transparent url('kenya_girl_2.png');
+				width:360px;
+				height:380px;
+				display:inline-block;
+				float:left;
+				position:relative;
+				margin-left:24px;
+				margin-top:20px;
+			}
 
-		#girl_6 {
-			text-indent:-9999px;
-			background:transparent url('kenya_girl_2.png');
-			width:360px;
-			height:380px;
-			position:absolute;
-			margin-top:440px;
-			margin-left:835px;
+			#girl_5 {
+				background:transparent url('kenya_girl_2.png');
+				width:360px;
+				height:380px;
+				display:inline-block;
+				float:left;
+				position:relative;
+				margin-left:24px;
+				margin-top:20px;
+			}
+
+			#girl_6 {
+				background:transparent url('kenya_girl_2.png');
+				width:360px;
+				height:380px;
+				display:inline-block;
+				float:left;
+				position:relative;
+				margin-left:24px;
+				margin-top:20px;
+			}
+
+			div:after {
+				opacity:0;
+				font-weight:bold;
+				position:absolute;
+				top:0px;
+				left:0px;
+				display:block;
+				content:'Learn More';
+				color:#fff;
+				background:rgba(0,0,0,0.7);
+				padding:175px 117px;
+				@include ralewayLight();
+				font-size:24px;
+				-webkit-transition: opacity .3s ease-in-out;
+			 	-moz-transition: opacity .3s ease-in-out;
+				transition: opacity .3s ease-in-out;
+			}
+
+			div:hover:after {
+				opacity:1;
+			}
+
+			#girl_1 a {
+				text-decoration:none;
+				color:white;
+				@include ralewayExtraLight();
+				font-size:30px;
+				margin-top:345px;
+				position:absolute;
+				background-color:$grey;
+				padding:0 133px 0 134px;
+			}
+
+			#girl_2 a {
+				text-decoration:none;
+				color:white;
+				@include ralewayExtraLight();
+				font-size:30px;
+				margin-top:345px;
+				position:absolute;
+				background-color:$grey;
+				padding:0 133px 0 134px;
+			}
+
+			#girl_3 a {
+				text-decoration:none;
+				color:white;
+				@include ralewayExtraLight();
+				font-size:30px;
+				margin-top:345px;
+				position:absolute;
+				background-color:$grey;
+				padding:0 133px 0 134px;
+			}
+
+			#girl_4 a {
+				text-decoration:none;
+				color:white;
+				@include ralewayExtraLight();
+				font-size:30px;
+				margin-top:345px;
+				position:absolute;
+				background-color:$grey;
+				padding:0 133px 0 134px;
+			}
+
+			#girl_5 a {
+				text-decoration:none;
+				color:white;
+				@include ralewayExtraLight();
+				font-size:30px;
+				margin-top:345px;
+				position:absolute;
+				background-color:$grey;
+				padding:0 133px 0 134px;
+			}
+
+			#girl_6 a {
+				text-decoration:none;
+				color:white;
+				@include ralewayExtraLight();
+				font-size:30px;
+				margin-top:345px;
+				position:absolute;
+				background-color:$grey;
+				padding:0 133px 0 134px;
+			}
 		}
 	}
 }

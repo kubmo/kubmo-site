@@ -23,7 +23,6 @@ body { @include raleway(); min-width: 1050px; }
 	width:1249px;
 	margin: 0 auto;
 	border:solid $lightest_grey 1px;
-	height:3955px;
 	@include  box-shadow(0 0 4px 2px hsla(0, 0%, 0%, 0.30));
 	background:$ivory;
 

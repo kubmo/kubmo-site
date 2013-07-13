@@ -23,12 +23,11 @@ body { @include raleway(); min-width: 1050px; }
 	width:1249px;
 	margin: 0 auto;
 	border:solid $lightest_grey 1px;
-	height:3955px;
 	@include  box-shadow(0 0 4px 2px hsla(0, 0%, 0%, 0.30));
 	background:$ivory;
 
 	#spread_the_word {
-		margin-top:3480px;
+		margin-top:3410px;
 		position:absolute;
 		border-top:solid $lightest_grey 1px;
 		width:1250px;
@@ -38,7 +37,7 @@ body { @include raleway(); min-width: 1050px; }
 		h1 {
 			@include ralewayExtraLight ();
 			width:1250px;
-			padding-top:30px;
+			padding-top:20px;
 			margin-left:55px;
 		}
 
