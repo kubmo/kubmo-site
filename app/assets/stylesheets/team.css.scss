@@ -85,7 +85,7 @@ body { @include raleway(); min-width: 1050px; }
 				float:left;
 				position:relative;
 				margin-left:24px;
-				margin-top:20px;
+				margin-top:30px;
 			}
 
 			#team_5 {
@@ -96,7 +96,7 @@ body { @include raleway(); min-width: 1050px; }
 				float:left;
 				position:relative;
 				margin-left:24px;
-				margin-top:20px;			}
+				margin-top:30px;			}
 			
 			#team_6 {
 				background:transparent url('kubmo_team.png');
@@ -106,7 +106,7 @@ body { @include raleway(); min-width: 1050px; }
 				float:left;
 				position:relative;
 				margin-left:24px;
-				margin-top:20px;
+				margin-top:30px;
 			}
 
 			div:after {
@@ -136,10 +136,10 @@ body { @include raleway(); min-width: 1050px; }
 				color:white;
 				@include ralewayExtraLight();
 				font-size:30px;
-				margin-top:345px;
+				margin-top:350px;
 				position:absolute;
 				background-color:$grey;
-				padding:0 133px 0 127px;
+				padding:5px 133px 0 130px;
 			}
 
 			#team_2 a {
@@ -147,10 +147,10 @@ body { @include raleway(); min-width: 1050px; }
 				color:white;
 				@include ralewayExtraLight();
 				font-size:30px;
-				margin-top:345px;
+				margin-top:350px;
 				position:absolute;
 				background-color:$grey;
-				padding:0 133px 0 127px;
+				padding:5px 133px 0 130px;
 			}
 
 			#team_3 a {
@@ -158,10 +158,10 @@ body { @include raleway(); min-width: 1050px; }
 				color:white;
 				@include ralewayExtraLight();
 				font-size:30px;
-				margin-top:345px;
+				margin-top:350px;
 				position:absolute;
 				background-color:$grey;
-				padding:0 133px 0 127px;
+				padding:5px 133px 0 130px;
 			}
 
 			#team_4 a {
@@ -169,10 +169,10 @@ body { @include raleway(); min-width: 1050px; }
 				color:white;
 				@include ralewayExtraLight();
 				font-size:30px;
-				margin-top:345px;
+				margin-top:350px;
 				position:absolute;
 				background-color:$grey;
-				padding:0 133px 0 127px;
+				padding:5px 133px 0 130px;
 			}
 
 			#team_5 a {
@@ -180,10 +180,10 @@ body { @include raleway(); min-width: 1050px; }
 				color:white;
 				@include ralewayExtraLight();
 				font-size:30px;
-				margin-top:345px;
+				margin-top:350px;
 				position:absolute;
 				background-color:$grey;
-				padding:0 133px 0 127px;
+				padding:5px 133px 0 130px;
 			}
 
 			#team_6 a {
@@ -191,10 +191,10 @@ body { @include raleway(); min-width: 1050px; }
 				color:white;
 				@include ralewayExtraLight();
 				font-size:30px;
-				margin-top:345px;
+				margin-top:350px;
 				position:absolute;
 				background-color:$grey;
-				padding:0 133px 0 127px;
+				padding:5px 133px 0 130px;
 			}
 		}
 	}
