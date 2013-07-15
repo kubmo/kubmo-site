@@ -43,6 +43,12 @@ describe 'Static pages' do
         visit root_path
 
         expect(page).to have_content('Meet the Entrepreneurs')
+        find_link('Diana').visible?
+        find_link('Joy').visible?
+        find_link('Jacinta').visible?
+        find_link('Joan').visible?
+        find_link('Noella').visible?
+        find_link('Jullie').visible?
       end
     end
 
