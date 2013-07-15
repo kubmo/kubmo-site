@@ -57,6 +57,11 @@ describe 'Static pages' do
         visit root_path
 
         expect(page).to have_content('Meet the Kubmo Team')
+        find_link('Emma').visible?
+        find_link('Kinsey').visible?
+        find_link('Brooke').visible?
+        find_link('John').visible?
+        find_link('Claudia').visible?
       end
     end
   end

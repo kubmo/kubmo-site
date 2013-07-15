@@ -10,4 +10,10 @@ KubmoSite::Application.routes.draw do
   get '/joan', to: 'pages#joan', as: 'joan'
   get '/noella', to: 'pages#noella', as: 'noella'
   get '/jullie', to: 'pages#jullie', as: 'jullie'
+
+  get '/emma', to: 'pages#emma', as: 'emma'
+  get '/kinsey', to: 'pages#kinsey', as: 'kinsey'
+  get '/brooke', to: 'pages#brooke', as: 'brooke'
+  get '/john', to: 'pages#john', as: 'john'
+  get '/claudia', to: 'pages#claudia', as: 'claudia'
 end
