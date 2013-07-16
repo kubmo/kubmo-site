@@ -54,6 +54,29 @@ body { @include raleway(); min-width: 1050px; }
 				position:relative;
 				margin-left:24px;
 				margin-top:120px;
+
+				a {
+					opacity:0;
+					text-decoration:none;
+					color:white;
+					@include ralewayExtraLight();
+					font-size:30px;
+					position:absolute;
+					background-color:$grey;
+					padding:175px 143px 175px 144px;
+				}
+
+				a:hover {
+					opacity:1;
+					text-decoration:none;
+					color:white;
+					@include ralewayExtraLight();
+					font-size:30px;
+					position:absolute;
+					background-color:$grey;
+					padding:175px 143px 175px 144px;
+					opacity:.8; 
+				}
 			}
 
 			#girl_2 {
@@ -65,6 +88,29 @@ body { @include raleway(); min-width: 1050px; }
 				position:relative;
 				margin-left:24px;
 				margin-top:120px;
+
+				a {
+					opacity:0;
+					text-decoration:none;
+					color:white;
+					@include ralewayExtraLight();
+					font-size:30px;
+					position:absolute;
+					background-color:$grey;
+					padding:175px 156px 175px 156px;
+				}
+
+				a:hover {
+					opacity:1;
+					text-decoration:none;
+					color:white;
+					@include ralewayExtraLight();
+					font-size:30px;
+					position:absolute;
+					background-color:$grey;
+					padding:175px 156px 175px 156px;
+					opacity:.8; 
+				}
 			}
 
 			#girl_3 {
@@ -76,6 +122,29 @@ body { @include raleway(); min-width: 1050px; }
 				position:relative;
 				margin-left:24px;
 				margin-top:120px;
+
+				a {
+					opacity:0;
+					text-decoration:none;
+					color:white;
+					@include ralewayExtraLight();
+					font-size:30px;
+					position:absolute;
+					background-color:$grey;
+					padding:175px 134px 175px 134px;
+				}
+
+				a:hover {
+					opacity:1;
+					text-decoration:none;
+					color:white;
+					@include ralewayExtraLight();
+					font-size:30px;
+					position:absolute;
+					background-color:$grey;
+					padding:175px 134px 175px 134px;
+					opacity:.8; 
+				}
 			}
 
 			#girl_4 {
@@ -87,6 +156,29 @@ body { @include raleway(); min-width: 1050px; }
 				position:relative;
 				margin-left:24px;
 				margin-top:30px;
+
+				a {
+					opacity:0;
+					text-decoration:none;
+					color:white;
+					@include ralewayExtraLight();
+					font-size:30px;
+					position:absolute;
+					background-color:$grey;
+					padding:175px 147px 175px 148px;
+				}
+
+				a:hover {
+					opacity:1;
+					text-decoration:none;
+					color:white;
+					@include ralewayExtraLight();
+					font-size:30px;
+					position:absolute;
+					background-color:$grey;
+					padding:175px 147px 175px 148px;
+					opacity:.8; 
+				}
 			}
 
 			#girl_5 {
@@ -98,6 +190,29 @@ body { @include raleway(); min-width: 1050px; }
 				position:relative;
 				margin-left:24px;
 				margin-top:30px;
+
+				a {
+					opacity:0;
+					text-decoration:none;
+					color:white;
+					@include ralewayExtraLight();
+					font-size:30px;
+					position:absolute;
+					background-color:$grey;
+					padding:175px 136px 175px 136px;
+				}
+
+				a:hover {
+					opacity:1;
+					text-decoration:none;
+					color:white;
+					@include ralewayExtraLight();
+					font-size:30px;
+					position:absolute;
+					background-color:$grey;
+					padding:175px 136px 175px 136px;
+					opacity:.8; 
+				}
 			}
 
 			#girl_6 {
@@ -109,94 +224,29 @@ body { @include raleway(); min-width: 1050px; }
 				position:relative;
 				margin-left:24px;
 				margin-top:30px;
-			}
 
-			div:after {
-				opacity:0;
-				font-weight:bold;
-				position:absolute;
-				top:0px;
-				left:0px;
-				display:block;
-				content:'Learn More';
-				color:#fff;
-				background:rgba(0,0,0,0.7);
-				padding:175px 117px;
-				@include ralewayLight();
-				font-size:24px;
-				-webkit-transition: opacity .3s ease-in-out;
-			 	-moz-transition: opacity .3s ease-in-out;
-				transition: opacity .3s ease-in-out;
-			}
+				a {
+					opacity:0;
+					text-decoration:none;
+					color:white;
+					@include ralewayExtraLight();
+					font-size:30px;
+					position:absolute;
+					background-color:$grey;
+					padding:175px 147px 175px 147px;
+				}
 
-			div:hover:after {
-				opacity:1;
-			}
-
-			#girl_1 a {
-				text-decoration:none;
-				color:white;
-				@include ralewayExtraLight();
-				font-size:30px;
-				margin-top:350px;
-				position:absolute;
-				background-color:$grey;
-				padding:5px 133px 0 138px;
-			}
-
-			#girl_2 a {
-				text-decoration:none;
-				color:white;
-				@include ralewayExtraLight();
-				font-size:30px;
-				margin-top:350px;
-				position:absolute;
-				background-color:$grey;
-				padding:5px 133px 0 138px;
-			}
-
-			#girl_3 a {
-				text-decoration:none;
-				color:white;
-				@include ralewayExtraLight();
-				font-size:30px;
-				margin-top:350px;
-				position:absolute;
-				background-color:$grey;
-				padding:5px 133px 0 138px;
-			}
-
-			#girl_4 a {
-				text-decoration:none;
-				color:white;
-				@include ralewayExtraLight();
-				font-size:30px;
-				margin-top:350px;
-				position:absolute;
-				background-color:$grey;
-				padding:5px 133px 0 138px;
-			}
-
-			#girl_5 a {
-				text-decoration:none;
-				color:white;
-				@include ralewayExtraLight();
-				font-size:30px;
-				margin-top:350px;
-				position:absolute;
-				background-color:$grey;
-				padding:5px 133px 0 138px;
-			}
-
-			#girl_6 a {
-				text-decoration:none;
-				color:white;
-				@include ralewayExtraLight();
-				font-size:30px;
-				margin-top:350px;
-				position:absolute;
-				background-color:$grey;
-				padding:5px 133px 0 138px;
+				a:hover {
+					opacity:1;
+					text-decoration:none;
+					color:white;
+					@include ralewayExtraLight();
+					font-size:30px;
+					position:absolute;
+					background-color:$grey;
+					padding:175px 147px 175px 147px;
+					opacity:.8; 
+				}
 			}
 		}
 	}
