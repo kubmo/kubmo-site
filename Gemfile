@@ -2,25 +2,18 @@ source 'http://rubygems.org'
 
 ruby '2.0.0'
 
-gem 'airbrake'
 gem 'bourbon'
-gem 'delayed_job_active_record', '>= 4.0.0.beta2'
-gem 'flutie'
 gem 'high_voltage'
 gem 'jquery-rails'
 gem 'pg'
-gem 'rack-timeout'
-gem 'rails', '>= 3.2.11'
-gem 'recipient_interceptor'
+gem 'protected_attributes'
+gem 'rails', '>= 4.0.0'
 gem 'simple_form'
-gem 'strong_parameters'
 gem 'unicorn'
 
-group :assets do
-  gem 'coffee-rails'
-  gem 'sass-rails'
-  gem 'uglifier'
-end
+gem 'coffee-rails'
+gem 'sass-rails'
+gem 'uglifier'
 
 group :development do
   gem 'foreman'

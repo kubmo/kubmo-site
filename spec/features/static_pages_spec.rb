@@ -11,7 +11,7 @@ describe 'Static pages' do
       find_link('about').visible?
       find_link('apply').visible?
       find_link('media').visible?
-      find_button('donate').click
+      find_button('donate').visible?
     end
   end
 
