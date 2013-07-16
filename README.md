@@ -1,9 +1,5 @@
-You look great in Suspenders
-============================
+Kubmo Redesign:
 
-Use the following guides for getting things done, programming well, and
-programming in style.
+This is kubmo.org's website 2.0.
 
-* [Protocol](http://github.com/thoughtbot/guides/blob/master/protocol)
-* [Best Practices](http://github.com/thoughtbot/guides/blob/master/best-practices)
-* [Style](http://github.com/thoughtbot/guides/blob/master/style)
+The goal of this app is to raise money to make the Kubmo workshop possible. 
