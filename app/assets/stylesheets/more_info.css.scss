@@ -1,0 +1,114 @@
+/*---Global Styles---*/
+$teal: #1B9792;
+$grey: #2B2727;
+$light_grey: #2B2727;
+$blue: #a2bcbb;
+$pink: #a07098;
+$ivory: #F7F5ED;
+$pink: #C63D96;
+$light_ivory: #FFFDF7;
+$lightest_grey: #dddddd;
+
+@import 'bourbon';
+
+@mixin raleway() { font-family: 'Raleway', sans-serif; font-weight: 400; }
+@mixin ralewayLight() { font-family: 'Raleway', sans-serif; font-weight: 200; }
+@mixin ralewayMedium() { font-family: 'Raleway', sans-serif; font-weight: 500; }
+@mixin ralewaySemi() { font-family: 'Raleway', sans-serif; font-weight: 600; }
+@mixin ralewayBold() { font-family: 'Raleway', sans-serif; font-weight: 800; }
+@mixin ralewayExtraLight() { font-family: 'Raleway', sans-serif; font-weight:100; }
+body { @include raleway(); min-width: 1050px; }
+
+.body	{
+	width:1249px;
+	margin: 0 auto;
+	border:solid $lightest_grey 1px;
+	@include  box-shadow(0 0 4px 2px hsla(0, 0%, 0%, 0.30));
+	background:$ivory;
+	
+	.more_info {
+		background-color:white;
+		padding-left:60px;
+		padding-top:60px;
+		padding-bottom:3110px;
+		
+		h1 {
+			margin-top:60px;
+			@include ralewayLight();
+		}
+
+		input {
+			text-decoration:none;
+			text-transform:uppercase;
+			color:$ivory;
+			background-color:$pink;
+			font-size:16px;
+			padding:15px;
+			padding-left:25px;
+			padding-right:25px;
+			border:solid $grey 1px;
+			-webkit-border-radius:8px;
+			-moz-border-radius:8px;
+			-o-border-radius:8px;
+			border-radius:8px;
+			position:absolute;
+			margin-top:110px;
+		}
+
+		#picture {
+			background:transparent url('kenya_girl_2.png');
+			width:450px;
+			height:350px;
+			text-indent:-9999px;
+		}
+
+		#scale_outline {
+			width:450px;
+			height:30px;
+			border:solid $light_grey 1px;
+			-webkit-border-radius:8px;
+			-moz-border-radius:8px;
+			-o-border-radius:8px;
+			border-radius:8px;
+			opacity:.5;
+			position:absolute;
+			margin-top:15px;
+		}
+
+		#scale_measurement {
+			width:200px;
+			height:28px;
+			background-color:$teal;
+			-webkit-border-radius:8px;
+			-moz-border-radius:8px;
+			-o-border-radius:8px;
+			border-radius:8px;
+			position:absolute;
+			margin-top:17px;
+			margin-left:2px;
+		}
+
+		#base_number {
+			@include ralewayLight();
+			color:$teal;
+			position:absolute;
+			margin-top:60px;
+		}
+
+		#full_amount {
+			@include ralewayLight();
+			color:$teal;
+			position:absolute;
+			margin-top:60px;
+			margin-left:395px;
+		}
+
+		#info_paragraph {
+			width:600px;
+			margin-left:490px;
+			line-height:1.5;
+			position:absolute;
+			margin-top:-387px;
+		}
+	}
+}
