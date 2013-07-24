@@ -14,26 +14,28 @@
         <li class="main">
         <ul>
           <li><a id="nav_logo" href="/home">Home</a></li>
-          <li><%= active_if_current_link('how_it_works', 'how it works', data: { scroll: true }) %></li>
-          <li class="line">|</li>
-          <li><%= active_if_current_link('entrepreneurs', 'entrepreneurs', data: { scroll: true }) %></li>
-          <li class="line">|</li>
-          <li><%= active_if_current_link('kubmo_team', 'about us', data: { scroll: true }) %></li>
-          <li class="line">|</li>
-          <li><%= link_to 'apply', new_entrepreneur_applications_path %></li>
-          <li class="line">|</li>
-          <li><%= active_if_current_link('spread_the_word', 'media', data: { scroll: true }) %></li>
+          <div id="navigation_links">
+            <li><%= active_if_current_link('how_it_works', 'how it works', data: { scroll: true }) %></li>
+            <li class="line">|</li>
+            <li><%= active_if_current_link('entrepreneurs', 'entrepreneurs', data: { scroll: true }) %></li>
+            <li class="line">|</li>
+            <li><%= active_if_current_link('kubmo_team', 'about us', data: { scroll: true }) %></li>
+            <li class="line">|</li>
+            <li><%= link_to 'apply', new_entrepreneur_applications_path %></li>
+            <li class="line">|</li>
+            <li><%= active_if_current_link('spread_the_word', 'media', data: { scroll: true }) %></li>
+          </div>
         </ul>
         </li>
         <li class="donate">
-        <ul>
-          <li id="donate">
-          <a><%= button_to 'donate' %></a>
+          <ul>
+            <li id="donate">
+              <a><%= button_to 'donate' %></a>
+            </li>
+          </ul>
         </li>
       </ul>
-      </li>
-    </ul>
-  </div>
+    </div>
   <script>
     $(document).ready(function() {
       $("#top_nav a[data-scroll=true]").bind("click",function(event){
