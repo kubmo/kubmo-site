@@ -4,6 +4,8 @@ KubmoSite::Application.routes.draw do
   resources :mentors, only: [:create, :new]
   resource :entrepreneur_applications, only: [:create, :new]
 
+  resources :donations
+
   get '/diana', to: 'pages#diana', as: 'diana'
   get '/joy', to: 'pages#joy', as: 'joy'
   get '/jacinta', to: 'pages#jacinta', as: 'jacinta'

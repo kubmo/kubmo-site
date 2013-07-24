@@ -9,6 +9,7 @@ gem 'pg'
 gem 'protected_attributes'
 gem 'rails', '>= 4.0.0'
 gem 'simple_form'
+gem 'stripe'
 gem 'unicorn'
 
 gem 'coffee-rails'
