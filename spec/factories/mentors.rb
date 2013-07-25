@@ -1,4 +1,12 @@
 FactoryGirl.define do
+  sequence :email do |n|
+    "name #{n}"
+  end
+
+  sequence :token do |n|
+    "token_#{n}"
+  end
+
   factory :mentor do
     name "MyString"
     occupation "MyString"
@@ -24,5 +32,12 @@ FactoryGirl.define do
     sustainable 'Already sell to many people'
     why 'To pay for siblings to attend school'
     impact 'I could become a lawyer'
+  end
+
+  factory :donation do
+    token
+    email
+
+    amount 5
   end
 end
