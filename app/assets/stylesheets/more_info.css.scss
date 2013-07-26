@@ -63,6 +63,7 @@ body { @include raleway(); min-width: 1050px; }
 		}
 
 		#scale_outline {
+			display:none;
 			width:400px;
 			height:30px;
 			border:solid $light_grey 1px;
@@ -76,6 +77,7 @@ body { @include raleway(); min-width: 1050px; }
 		}
 
 		#scale_measurement {
+			display:none;
 			width:200px;
 			height:28px;
 			background-color:$teal;
