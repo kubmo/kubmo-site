@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <title>Kubmo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= stylesheet_link_tag :application, :media => 'all' %>
+    <%= javascript_include_tag "https://js.stripe.com/v1/" %>
     <%= csrf_meta_tags %>
+    <%= tag :meta, :name => "stripe-key",:content => STRIPE_PUBLIC_KEY %>
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
   </head>
@@ -30,7 +33,7 @@
         <li class="donate">
           <ul>
             <li id="donate">
-              <a><%= button_to 'donate' %></a>
+              <a><%= link_to 'donate', new_donation_path %></a>
             </li>
           </ul>
         </li>

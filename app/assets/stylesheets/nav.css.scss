@@ -83,13 +83,13 @@ body { @include raleway(); min-width: 1050px; }
 			list-style-type:none;
 			float:left;
 			margin-top:55px;
-			margin-left:90px;
+			margin-left:45px;
 
 			li {
 				list-style-type:none;
 			}
 
-			#donate input {
+			#donate {
 				text-decoration:none;
 				text-transform:uppercase;
 				color:$ivory;
@@ -104,6 +104,12 @@ body { @include raleway(); min-width: 1050px; }
 	    		-moz-border-radius: 8px;
 	    		-o-border-radius: 8px;
 	    		border-radius: 8px;
+			}
+
+			#donate a {
+				text-decoration:none;
+				text-transform:uppercase;
+				color:$ivory;
 			}
 		}
 
@@ -214,24 +220,36 @@ body { @include raleway(); min-width: 1050px; }
 	}
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
 	.body {	
 		#top_nav {
 			width:100%;
 			font-size:14px;
-			height:300px;
+			height:235px;
 		}
 
 		.donate {
-			margin-top:-20px;
+			margin-top:14px;
+			margin-left:65px;
 		}
 
 		.main {
 			#navigation_links {
+				margin-top: 3px;
+
 				li {
-					margin-top:-20px;
+					margin-top:10px;
+				}
+
+				a {
+					display:inline;
 				}
 			}
+		}
+
+		#nav_logo {
+			margin-top:35px;
+			margin-left: 15px;
 		}
 	}
 }

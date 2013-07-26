@@ -29,9 +29,9 @@ body { @include raleway(); min-width: 1050px; }
 	#entrepreneurs {
 		margin-top:1500px;
 		border-top:solid $lightest_grey 1px;
-		width:1250px;
+		width:95%;
 		background:white;
-		height:1000px;
+		height:1390px;
 		position:absolute;
 
 		h1 {
@@ -248,6 +248,108 @@ body { @include raleway(); min-width: 1050px; }
 					opacity:.8; 
 				}
 			}
+
+			#girl_7 {
+				background:transparent url('kenya_girl_2.png');
+				width:360px;
+				height:380px;
+				display:inline-block;
+				float:left;
+				position:relative;
+				margin-left:24px;
+				margin-top:30px;
+
+				a {
+					opacity:0;
+					text-decoration:none;
+					color:white;
+					@include ralewayExtraLight();
+					font-size:30px;
+					position:absolute;
+					background-color:$grey;
+					padding:175px 147px 175px 147px;
+				}
+
+				a:hover {
+					opacity:1;
+					text-decoration:none;
+					color:white;
+					@include ralewayExtraLight();
+					font-size:30px;
+					position:absolute;
+					background-color:$grey;
+					padding:175px 147px 175px 147px;
+					opacity:.8; 
+				}
+			}
+
+			#girl_8 {
+				background:transparent url('kenya_girl_2.png');
+				width:360px;
+				height:380px;
+				display:inline-block;
+				float:left;
+				position:relative;
+				margin-left:24px;
+				margin-top:30px;
+
+				a {
+					opacity:0;
+					text-decoration:none;
+					color:white;
+					@include ralewayExtraLight();
+					font-size:30px;
+					position:absolute;
+					background-color:$grey;
+					padding:175px 147px 175px 147px;
+				}
+
+				a:hover {
+					opacity:1;
+					text-decoration:none;
+					color:white;
+					@include ralewayExtraLight();
+					font-size:30px;
+					position:absolute;
+					background-color:$grey;
+					padding:175px 147px 175px 147px;
+					opacity:.8; 
+				}
+			}
+
+			#girl_9 {
+				background:transparent url('kenya_girl_2.png');
+				width:360px;
+				height:380px;
+				display:inline-block;
+				float:left;
+				position:relative;
+				margin-left:24px;
+				margin-top:30px;
+
+				a {
+					opacity:0;
+					text-decoration:none;
+					color:white;
+					@include ralewayExtraLight();
+					font-size:30px;
+					position:absolute;
+					background-color:$grey;
+					padding:175px 147px 175px 147px;
+				}
+
+				a:hover {
+					opacity:1;
+					text-decoration:none;
+					color:white;
+					@include ralewayExtraLight();
+					font-size:30px;
+					position:absolute;
+					background-color:$grey;
+					padding:175px 147px 175px 147px;
+					opacity:.8; 
+				}
+			}
 		}
 	}
 }
@@ -255,14 +357,54 @@ body { @include raleway(); min-width: 1050px; }
 @media screen and (max-width: 1200px) {
 	.body	{
 		width:100%;
-		height:4290px;
+		#entrepreneurs {
+			width:100%;
+			height:2200px;
+
+			h1 {
+				margin-top:30px;
+			}
+
+			#the_entrepreneur_pics {
+
+				#girl_3 {
+					margin-top:30px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.body {
+		#entrepreneurs {
+
+			h1 {
+				margin-top:30px;
+			}
+
+			#the_entrepreneur_pics {
+
+				#girl_3 {
+					margin-top:30px;
+				}
+			}
+		}
 	}
 }
 
 @media screen and (max-width: 768px) {
 	.body	{
-		width:100%;
-		height:4290px;
+		#entrepreneurs {
+			height:3860px;
+
+			#the_entrepreneur_pics {
+
+				#girl_2 {
+					margin-top:30px;
+				}
+			}
+		}
 	}
 }
 

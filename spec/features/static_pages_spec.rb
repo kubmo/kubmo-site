@@ -6,12 +6,14 @@ describe 'Static pages' do
     it 'links to the available pages' do
       visit root_path
 
-      find_link('how it works').visible?
-      find_link('entrepreneurs').visible?
-      find_link('about').visible?
-      find_link('apply').visible?
-      find_link('media').visible?
-      find_button('donate').visible?
+      within('ul#top_nav') do
+        find_link('how it works').visible?
+        find_link('entrepreneurs').visible?
+        find_link('about').visible?
+        find_link('apply').visible?
+        find_link('media').visible?
+        find_link('donate').visible?
+      end
     end
   end
 

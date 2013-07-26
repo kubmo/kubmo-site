@@ -29,6 +29,7 @@ body { @include raleway(); min-width: 1050px; }
 	#hero {
 		background:transparent url('hero.png');
 		width:95%;
+		height:468.5px;
 		margin-top:100px;
 		position:absolute;
 		border-top:solid $lightest_grey 1px;
@@ -65,7 +66,7 @@ body { @include raleway(); min-width: 1050px; }
 		margin-top:570px;
 		position:absolute;
 		height:290px;
-		width:1250px;
+		width:95%;
 		border-top:solid $lightest_grey 1px;
 		border-bottom:solid $lightest_grey 1px;
 
@@ -102,8 +103,6 @@ body { @include raleway(); min-width: 1050px; }
 			border-radius:8px;
 			margin-left:500px;
 		}
-
-
 
 		p {
 			position:absolute;
@@ -164,14 +163,93 @@ body { @include raleway(); min-width: 1050px; }
 	}
 }
 
+@media screen and (max-width:1300px) {
+	.body	{	
+		#get_involved {
+
+			#mentor_button {
+				a {
+					margin-left:60px;
+				}
+
+				p {
+					margin-left:80px;
+				}
+			}
+
+			#spread_button {
+				p {
+					margin-left:520px;
+				}
+
+				input {
+					margin-left:478px;
+				}
+
+			}
+
+			#women_button {
+				p {
+					margin-left:1000px;
+				}
+
+				input {
+					margin-left:940px;
+				}
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 1200px) {
 	.body	{
 		width:100%;
-		height:4290px;
+
+		#get_involved {
+			width:100%;
+
+			#mentor_button {
+				a {
+					margin-left:60px;
+				}
+
+				p {
+					margin-left:76px;
+				}
+			}
+
+			#spread_button {
+				p {
+					margin-left:470px;
+				}
+
+				input {
+					margin-left:430px;
+				}
+
+			}
+
+			#women_button {
+				p {
+					margin-left:895px;
+				}
+
+				input {
+					margin-left:833px;
+				}
+			}
+		}
+
+		#hero {
+			width:100%;
+		}
+
+			h1 {
+				margin-top:60px;
+			}
 	}
 
 	#hero {
-		background:transparent url('hero.png');
 		width:90%;
 
 		h1 {
@@ -200,16 +278,158 @@ body { @include raleway(); min-width: 1050px; }
 	}
 }
 
+@media screen and (max-width: 1000px) {
+	.body {
+		#get_involved {
+
+			#mentor_button {
+				a {
+					margin-left:60px;
+				}
+
+				p {
+					margin-left:76px;
+				}
+			}
+
+			#spread_button {
+				p {
+					margin-left:345px;
+				}
+
+				input {
+					margin-left:305px;
+				}
+
+			}
+
+			#women_button {
+				p {
+					margin-left:640px;
+				}
+
+				input {
+					margin-left:580px;
+				}
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 768px) {
 	.body	{
 		width:100%;
 		height:4290px;
+
+		#get_involved {
+
+			input {
+				font-size:14px;
+				padding:17px;
+				padding-left:12px;
+				padding-right:12px;
+			}
+
+			#mentor_button {
+				a {
+					margin-left:60px;
+					font-size:14px;
+					padding:17px;
+					padding-left:12px;
+					padding-right:12px;
+				}
+
+				p {
+					margin-left:76px;
+				}
+			}
+
+			#spread_button {
+				p {
+					margin-left:273px;
+				}
+
+				input {
+					margin-left:250px;
+				}
+
+			}
+
+			#women_button {
+				p {
+					margin-left:525px;
+				}
+
+				input {
+					margin-left:475px;
+				}
+			}
+		}
+		
+
+		#hero {
+			background:transparent url('hero_ipad.png');
+		}
 	}
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width:400px) {
 	.body	{
 		width:100%;
 		height:4290px;
+
+		#get_involved {
+
+			input {
+				font-size:14px;
+				padding:16px;
+				padding-left:10px;
+				padding-right:10px;
+			}
+
+			#mentor_button {
+				a {
+					margin-left:60px;
+					font-size:14px;
+					padding:16px;
+					padding-left:10px;
+					padding-right:10px;
+				}
+
+				p {
+					margin-left:61px;
+				}
+			}
+
+			#spread_button {
+				display:none;
+			}
+
+			#women_button {
+				p {
+					margin-left:265px;
+				}
+
+				input {
+					margin-left:220px;
+				}
+			}
+		}
+
+		#hero {
+			background:transparent url('hero_mobile.png');
+			background-position: 0 69px;
+
+			h1 {
+				color:$ivory;
+				@include ralewayLight();
+				text-align: center;
+				margin-left:20px;
+			}
+
+			input {
+				margin-left:78px;
+			}
+		}
 	}
 }
