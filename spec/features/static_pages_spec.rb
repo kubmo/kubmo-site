@@ -67,6 +67,8 @@ describe 'Static pages' do
         find_link('Brooke').visible?
         find_link('John').visible?
         find_link('Claudia').visible?
+        find_link('Emily').visible?
+        find_link('Winnie').visible?
       end
     end
   end

@@ -23,4 +23,6 @@ KubmoSite::Application.routes.draw do
   get '/brooke', to: 'pages#brooke', as: 'brooke'
   get '/john', to: 'pages#john', as: 'john'
   get '/claudia', to: 'pages#claudia', as: 'claudia'
+  get '/emily', to: 'pages#emily', as: 'emily'
+  get '/winnie', to: 'pages#winnie', as: 'winnie'
 end
