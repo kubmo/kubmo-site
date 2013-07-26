@@ -55,11 +55,9 @@ body { @include raleway(); min-width: 1050px; }
 			margin-top:110px;
 		}
 
-		#picture {
-			background:transparent url('kenya_girl_2.png');
+		img {
 			width:400px;
 			height:350px;
-			text-indent:-9999px;
 		}
 
 		#scale_outline {
@@ -91,6 +89,7 @@ body { @include raleway(); min-width: 1050px; }
 		}
 
 		#base_number {
+			display:none;
 			@include ralewayLight();
 			color:$teal;
 			position:absolute;
@@ -98,6 +97,7 @@ body { @include raleway(); min-width: 1050px; }
 		}
 
 		#full_amount {
+			display:none;
 			@include ralewayLight();
 			color:$teal;
 			position:absolute;

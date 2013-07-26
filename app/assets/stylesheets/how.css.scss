@@ -1,0 +1,66 @@
+/*---Global Styles---*/
+$teal: #1B9792;
+$grey: #2B2727;
+$light_grey: #2B2727;
+$blue: #a2bcbb;
+$pink: #a07098;
+$ivory: #F7F5ED;
+$pink: #C63D96;
+$light_ivory: #FFFDF7;
+$lightest_grey: #dddddd;
+
+@import 'bourbon';
+
+@mixin raleway() { font-family: 'Raleway', sans-serif; font-weight: 400; }
+@mixin ralewayLight() { font-family: 'Raleway', sans-serif; font-weight: 200; }
+@mixin ralewayMedium() { font-family: 'Raleway', sans-serif; font-weight: 500; }
+@mixin ralewaySemi() { font-family: 'Raleway', sans-serif; font-weight: 600; }
+@mixin ralewayBold() { font-family: 'Raleway', sans-serif; font-weight: 800; }
+@mixin ralewayExtraLight() { font-family: 'Raleway', sans-serif; font-weight:100; }
+body { @include raleway(); min-width: 1050px; }
+
+.body	{
+	width:95%;
+	margin: 0 auto;
+	border:solid $lightest_grey 1px;
+	height:4705px;
+	@include  box-shadow(0 0 4px 2px hsla(0, 0%, 0%, 0.30));
+	background:$ivory;
+}
+
+#how {
+	width:80%;
+	margin-left:60px;
+	margin-top:140px;
+
+	h1 {
+		@include ralewayLight();
+	}
+}
+
+@media screen and (max-width:400px) {
+	#how {
+		width:300px;
+	}
+}
+
+@media screen and (max-width:1000px) {
+	#how {
+		width:60%;
+		margin-top:200px;
+	}
+}
+
+@media screen and (max-width:768px) {
+	#how {
+		width:40%;
+		margin-top:200px;
+	}
+}
+
+@media screen and (max-width:400px) {
+	#how {
+		width:30%;
+		margin-top:260px;
+	}
+}

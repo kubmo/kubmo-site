@@ -41,8 +41,9 @@ body { @include raleway(); min-width: 1050px; }
 		}
 
 		#video {
-			background-color:$grey;
+			background:transparent url('Pattern.png');
 			width:50%;
+			text-indent:-9999px;
 			max-width:600px;
 			height:450px;
 			margin-top:45px;
@@ -66,18 +67,25 @@ body { @include raleway(); min-width: 1050px; }
 				margin-bottom:230px;
 			}
 
-			h2 {
-				margin-left:100px;
-				@include ralewayMedium();
-			}
+				h2 a {
+					margin-left:100px;
+					@include raleway();
+					text-decoration:none;
+					color:$grey;
+				}
 
-			h3 {
-				margin-left:100px;
-				@include ralewayLight();
-				margin-top:-10px;
-				color:$light_grey;
-				line-height:1.5;
-			}
+					a:hover {
+						@include ralewayMedium();
+						color:$teal;
+					}
+
+				h3 {
+					margin-left:100px;
+					@include ralewayLight();
+					margin-top:-10px;
+					color:$light_grey;
+					line-height:1.5;
+				}
 		}
 
 		#workshop {
