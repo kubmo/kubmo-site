@@ -34,9 +34,9 @@ describe 'Static pages' do
       it 'has information on how the program works' do
         visit root_path
 
-        expect(page).to have_content('The BizTech Workshop')
-        expect(page).to have_content('Year-long support')
-        expect(page).to have_content('Global marketplace')
+        find_link('The BizTech Workshop').visible?
+        find_link('Year-long support').visible?
+        find_link('Global marketplace').visible?
       end
     end
 

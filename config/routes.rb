@@ -6,6 +6,8 @@ KubmoSite::Application.routes.draw do
 
   resources :donations
 
+  get 'how', to: 'pages#how', as: 'how'
+
   get '/diana', to: 'pages#diana', as: 'diana'
   get '/noella', to: 'pages#noella', as: 'noella'
   get '/joy', to: 'pages#joy', as: 'joy'
