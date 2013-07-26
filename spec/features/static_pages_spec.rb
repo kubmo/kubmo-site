@@ -23,8 +23,8 @@ describe 'Static pages' do
         visit root_path
 
         expect(page).to have_content('A phone package and workshop can change her life forever')
-        find_button('sponsor the change').visible?
-        find_link('be a mentor').visible?
+        find_link('Sponsor the Change').visible?
+        find_link('Be a Mentor').visible?
         find_button('spread the word').visible?
         find_button('meet the women').visible?
       end
