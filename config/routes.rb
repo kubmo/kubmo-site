@@ -7,11 +7,14 @@ KubmoSite::Application.routes.draw do
   resources :donations
 
   get '/diana', to: 'pages#diana', as: 'diana'
-  get '/joy', to: 'pages#joy', as: 'joy'
-  get '/jacinta', to: 'pages#jacinta', as: 'jacinta'
-  get '/joan', to: 'pages#joan', as: 'joan'
   get '/noella', to: 'pages#noella', as: 'noella'
+  get '/joy', to: 'pages#joy', as: 'joy'
+  get '/joan', to: 'pages#joan', as: 'joan'
+  get '/melab', to: 'pages#melab', as: 'melab'
   get '/jullie', to: 'pages#jullie', as: 'jullie'
+  get '/judith', to: 'pages#judith', as: 'judith'
+  get '/lorraine', to: 'pages#lorraine', as: 'lorraine'
+  get '/janet', to: 'pages#janet', as: 'janet'
 
   get '/emma', to: 'pages#emma', as: 'emma'
   get '/kinsey', to: 'pages#kinsey', as: 'kinsey'
