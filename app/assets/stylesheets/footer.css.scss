@@ -82,13 +82,26 @@ body { @include raleway(); min-width: 1050px; }
 	}
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
 	.body	{
 		width:100%;
 		height:4290px;
 
 		#footer {
 			width:100%;
+			margin-top:4490px;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.body	{
+		width:100%;
+		height:5500px;
+
+		#footer {
+			width:100%;
+			margin-top:5700px;
 		}
 	}
 }
@@ -100,9 +113,15 @@ body { @include raleway(); min-width: 1050px; }
 	}
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
 	.body	{
 		width:100%;
 		height:4290px;
+
+		#footer {
+			width:100%;
+			margin-top:6910px;
+			height:560px;
+		}
 	}
 }

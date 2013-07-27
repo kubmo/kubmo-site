@@ -1,8 +1,9 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8" />
   <title>kubmo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <%= stylesheet_link_tag :application, :media => 'all' %>
   <%= csrf_meta_tags %>
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -19,11 +20,11 @@
       <p>be a mentor</p>
     </div>
     <div id="spread_button">
-      <%= button_to 'spread the word' %>
+      <%= active_if_current_link('spread_the_word', 'Spread the Word', data: { scroll: true }) %>
       <p>spread the word</p>
     </div>
     <div id="women_button">
-      <%= button_to 'meet the women' %>
+      <%= active_if_current_link('entrepreneurs', 'Meet the women', data: { scroll: true }) %>
       <p>meet the women</p>
     </div>
   </div>

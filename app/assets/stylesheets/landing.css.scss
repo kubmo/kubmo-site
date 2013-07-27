@@ -43,7 +43,7 @@ body { @include raleway(); min-width: 1050px; }
 			padding-top:90px;
 		}
 
-		input {
+		a {
 			text-decoration:none;
 			text-transform:uppercase;
 			color:$ivory;
@@ -136,7 +136,7 @@ body { @include raleway(); min-width: 1050px; }
 				margin-top:68px;
 			}
 
-			input {
+			a {
 				margin-left:520px;
 				margin-top:170px;
 				position:absolute;
@@ -154,7 +154,7 @@ body { @include raleway(); min-width: 1050px; }
 				margin-top:60px;
 			}
 
-			input {
+			a {
 				margin-left:1010px;
 				margin-top:170px;
 				position:absolute;
