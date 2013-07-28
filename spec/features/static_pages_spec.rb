@@ -25,8 +25,6 @@ describe 'Static pages' do
         expect(page).to have_content('A phone package and workshop can change her life forever')
         find_link('Sponsor the Change').visible?
         find_link('Be a Mentor').visible?
-        find_button('spread the word').visible?
-        find_button('meet the women').visible?
       end
     end
 
