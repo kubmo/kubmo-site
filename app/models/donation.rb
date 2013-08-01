@@ -1,14 +1,21 @@
 class Donation < ActiveRecord::Base
-  validates_presence_of :email
+  validates_presence_of :email, :number, :exp_month, :exp_year, :cvc, :name, :amount
 
-  attr_accessor :stripe_card_token, :email
+  attr_accessor :number, :exp_month, :exp_year, :cvc, :name, :email, :amount
 
-  def save_with_payment
+  def charge_card
     if valid?
-      customer = Stripe::Customer.create(
-        description: email,
-        amount: @amount,
-        card: stripe_card_token)
+      charge = Stripe::Charge.create(
+        :amount => (amount*100).to_i,
+        :currency => "usd",
+        :description => "payinguser@example.com",
+        :card => {
+          number: number,
+          exp_month: exp_month,
+          exp_year: exp_year,
+          cvc: cvc,
+          name: name
+        })
     end
   end
 end

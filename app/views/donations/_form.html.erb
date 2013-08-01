@@ -1,39 +1,37 @@
 <%= form_for @donation do |f| %>
-
 <div class="kubmo_form">
-
-  <% if @donation.errors.any? %>
-    <div class="error_messages">
-      <h2><%= pluralize(@donation.errors.count, "error") %> prohibited this subscription from being saved:</h2>
-      <ul>
-      <% @donation.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-    </ul>
+  <div class="field">
+    <h2 class="label"><%= f.label :girl_name, "Select the name of the girl you would like to donate to" %>
+    <div class="text_field"><%= f.select(:girl_name, [['Diana'], ['Noella'], ['Joy'], ['Joan & Jacinta'], ['Melab'], ['Jullie'], ['Judith'], ['Lorraine'], ['Janet']]) %></div>
   </div>
-  <% end %>
+  <div class="field">
+    <h2 class="label"><%= f.label :name %></h2>
+    <div class="text_field"><%= f.text_field :name %></div>
+  </div>
   <div class="field">
     <h2 class="label"><%= f.label :email %></h2>
     <div class="text_field"><%= f.text_field :email, :type => 'email' %></div>
   </div>
   <div class="field">
-    <h2 class="label"><%= label_tag :amount %></h2>
-    <div class="text_field"><%= text_field_tag :amount %></div>
+    <h2 class="label"><%= f.label :amount %></h2>
+    <div class="text_field"><%= f.text_field :amount %></div>
   </div>
   <div class="field">
-    <h2 class="label"><%= label_tag :card_number, "Credit Card Number" %></h2>
-    <div class="text_field"><%= text_field_tag :card_number, nil, name: nil %></div>
+    <h2 class="label"><%= f.label :number, "Credit Card Number" %></h2>
+    <div class="text_field"><%= f.text_field :number %></div>
   </div>
   <div class="field">
-    <h2 class="label"><%= label_tag :card_code, "Security Code on Card" %></h2>
-    <div class="text_field"><%= text_field_tag :card_code, nil, name: nil %></div>
+    <h2 class="label"><%= f.label :cvc, "Security Code on Card" %></h2>
+    <div class="text_field"><%= f.text_field :cvc %></div>
   </div>
   <div class="field">
-    <h2 class="label"><%= label_tag :card_month, "Card Expiration" %></h2>
-    <%= select_month nil, {add_month_numbers_true: true}, {name: nil, id: "card_month"}%>
-    <%= select_year nil, {start_year: Date.today.year, end_year: Date.today.year+15}, {name: nil, id: "card_year"} %>
+    <h2 class="label"><%= f.label :exp_month, "Card Expiration Month" %></h2>
+    <div class="text_field"><%= f.text_field :exp_month %>
+  </div>
+  <div class="field">
+    <h2 class="label"><%= f.label :exp_year, "Card Expiration Year" %></h2>
+    <div class="text_field"><%= f.text_field :exp_year %>
   </div>
   <div class="submit_button"><div class="actions"><%= f.submit "Donate" %></div></div>
-
 </div>
 <% end %>
