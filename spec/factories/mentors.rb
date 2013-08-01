@@ -40,4 +40,7 @@ FactoryGirl.define do
 
     amount 5
   end
+
+  factory :guest_donation do
+  end
 end
