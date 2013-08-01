@@ -1,8 +1,11 @@
 <%= form_for @donation do |f| %>
 <div class="kubmo_form">
+
+  <h1>Donate</h1>
+
   <div class="field">
-    <h2 class="label"><%= f.label :girl_name, "Select the name of the girl you would like to donate to" %>
-    <div class="text_field"><%= f.select(:girl_name, [['Diana'], ['Noella'], ['Joy'], ['Joan & Jacinta'], ['Melab'], ['Jullie'], ['Judith'], ['Lorraine'], ['Janet']]) %></div>
+    <h2 class="label_select"><%= f.label :girl_name, "Select the name of the girl you would like to donate to" %>
+    <div class="drop_down"><%= f.select(:girl_name, [['Diana'], ['Noella'], ['Joy'], ['Joan & Jacinta'], ['Melab'], ['Jullie'], ['Judith'], ['Lorraine'], ['Janet']]) %></div>
   </div>
   <div class="field">
     <h2 class="label"><%= f.label :name %></h2>
