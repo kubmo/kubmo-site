@@ -11,6 +11,7 @@ gem 'rails', '>= 4.0.0'
 gem 'simple_form'
 gem 'stripe'
 gem 'unicorn'
+gem 'rails_12factor'
 
 gem 'coffee-rails'
 gem 'sass-rails'
