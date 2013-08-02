@@ -3,8 +3,14 @@ class Donation < ActiveRecord::Base
 
   attr_accessor :number, :exp_month, :exp_year, :cvc, :name, :email, :amount
 
+  def amount=(amount)
+    @amount = amount.to_f
+  end
+
   def charge_card
     if valid?
+      poop = (amount*100).to_i
+      puts poop
       charge = Stripe::Charge.create(
         :amount => (amount*100).to_i,
         :currency => "usd",
