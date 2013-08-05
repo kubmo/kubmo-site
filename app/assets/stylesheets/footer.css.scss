@@ -70,14 +70,12 @@ body { @include raleway(); min-width: 1050px; }
 			margin-right:60px;
 		}
 
-		p {
-			text-indent:-9999px;
-			background:transparent url('circle_logo_grey.png');
+		#kubmo_logo_grey img {
 			width:99px;
 			height:100px;
+			margin-left:140px;
+			margin-top:50px;
 			position:absolute;
-			margin-top:48px;
-			margin-left:1110px;
 		}
 	}
 }

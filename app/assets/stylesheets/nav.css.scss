@@ -113,11 +113,9 @@ body { @include raleway(); min-width: 1050px; }
 			}
 		}
 
-	#nav_logo {
-		background:transparent url('kubmo_logo.png');
+	#nav_logo img {
 		width:216px;
 		height:66px;
-		text-indent:-9999px;
 		margin-right:60px;
 		margin-top:45px;
 		margin-left:-20px;
@@ -247,7 +245,7 @@ body { @include raleway(); min-width: 1050px; }
 			}
 		}
 
-		#nav_logo {
+		#nav_logo img {
 			margin-top:35px;
 			margin-left: 15px;
 		}

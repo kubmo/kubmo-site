@@ -16,7 +16,7 @@
       <ul id="top_nav">
         <li class="main">
         <ul>
-          <li><a id="nav_logo" href="/">Home</a></li>
+          <li><a id="nav_logo" href="/"><%= image_tag 'kubmo_logo.png',:title => 'logo'  %></a></li>
           <div id="navigation_links">
             <li><%= active_if_current_link('how_it_works', 'how it works', data: { scroll: true }) %></li>
             <li class="line">|</li>
@@ -70,7 +70,7 @@
       <li><a href="http://www.muthaafoundation.org" target="_blank">Muthaa Community Development Foundation</a></li>
       <li><a href="http://www.evb.com" target="_blank">EVB</a></li>
     </ul>
-    <p id="kubmo_logo_grey">kubmo logo</p>
+    <a id="kubmo_logo_grey" href="/"><%= image_tag 'circle_logo_grey.png',:title => 'logo'  %></a>
   </div>
   <%= render 'flashes' -%>
   <%= yield %>

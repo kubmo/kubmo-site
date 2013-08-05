@@ -42,8 +42,6 @@ body { @include raleway(); min-width: 1050px; }
 		}
 
 		#twitter {
-			text-indent:-9999px;
-			background:transparent url('twitter.png');
 			width:55px;
 			height:50px;
 			position:absolute;
@@ -52,8 +50,6 @@ body { @include raleway(); min-width: 1050px; }
 		}
 
 		#facebook {
-			text-indent:-9999px;
-			background:transparent url('facebook.png');
 			width:48px;
 			height:50px;
 			position:absolute;
@@ -62,8 +58,6 @@ body { @include raleway(); min-width: 1050px; }
 		}
 
 		#pinterest {
-			text-indent:-9999px;
-			background:transparent url('pinterest.png');
 			width:48px;
 			height:50px;
 			position:absolute;

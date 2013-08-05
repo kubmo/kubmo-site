@@ -13,24 +13,25 @@
   <div id="hero">
     <h1>A phone package and workshop can change her life forever.</h1>
     <%= link_to 'Sponsor the Change', new_donation_path %>
+    <%= image_tag 'hero.png',:title => 'girl in kenya'  %>
   </div>
   <div id="get_involved">
     <div id="mentor_button">
       <%= link_to 'Be a Mentor', new_mentor_path %>
-      <p>be a mentor</p>
+      <%= image_tag 'mentors_icon.png',:title => 'mentor icon'  %>
     </div>
     <div id="spread_button">
       <%= active_if_current_link('spread_the_word', 'Spread the Word', data: { scroll: true }) %>
-      <p>spread the word</p>
+      <%= image_tag 'spread_icon.png',:title => 'spread icon'  %>
     </div>
     <div id="women_button">
       <%= active_if_current_link('entrepreneurs', 'Meet the women', data: { scroll: true }) %>
-      <p>meet the women</p>
+      <%= image_tag 'phones_icon.png',:title => 'phones icon'  %>
     </div>
   </div>
   <div id="how_it_works">
     <h1>How the Kubmo Program Works</h1>
-    <p id="video">video of girls</p>
+    <%= image_tag 'Pattern.png',:title => 'pattern'  %>
     <a id="play" href="#"><p>play</p></a>
     <div id="the_steps">
       <div>
@@ -55,30 +56,39 @@
     <div id="the_entrepreneur_pics">
         <div id="girl_1">
           <div class="tile_hover"><%= link_to 'Diana', diana_path %></div>
+          <%= image_tag 'diana_tiles.png',:title => 'Diana'  %>
         </div>
         <div id="girl_2">
           <div class="tile_hover"><%= link_to 'Noella', noella_path %></div>
+          <%= image_tag 'noella_tile.png',:title => 'Noella'  %>
         </div>
         <div id="girl_3">
           <div class="tile_hover"><%= link_to 'Joy', joy_path %></div>
+          <%= image_tag 'joy_tile.png',:title => 'Joy'  %>
         </div>
         <div id="girl_4">
           <div class="tile_hover"><%= link_to 'Joan & Jacinta', joan_path %></div>
+          <%= image_tag 'jacinta_joan_tile.png',:title => 'Jacinta and Joan'  %>
         </div>
         <div id="girl_5">
           <div class="tile_hover"><%= link_to 'Melab', melab_path %></div>
+          <%= image_tag 'kenya_girl_2.png',:title => 'Melab'  %>
         </div>
         <div id="girl_6">
           <div class="tile_hover"><%= link_to 'Jullie', jullie_path %></div>
+          <%= image_tag 'julia_tile.png',:title => 'Julia'  %>
         </div>
         <div id="girl_7">
           <div class="tile_hover"><%= link_to 'Judith', judith_path %></div>
+          <%= image_tag 'judith_tile.png',:title => 'Judith'  %>
         </div>
         <div id="girl_8">
           <div class="tile_hover"><%= link_to 'Lorraine', lorraine_path %></div>
+          <%= image_tag 'lorrain_tiles.png',:title => 'Lorrain'  %>
         </div>
         <div id="girl_9">
           <div class="tile_hover"><%= link_to 'Janet', janet_path %></div>
+          <%= image_tag 'janet_tile.png',:title => 'Janet'  %>
         </div>
     </div>
   </div>
@@ -87,32 +97,39 @@
     <div id="the_team_pics">
       <div id="team_1">
         <%= link_to 'Emma', emma_path %>
+        <%= image_tag 'emma_tile.png',:title => 'Emma'  %>
       </div>
       <div id="team_2">
         <%= link_to 'Kinsey', kinsey_path %>
+        <%= image_tag 'kinsey_tile.png',:title => 'Kinsey'  %>
       </div>
       <div id="team_3">
         <%= link_to 'Brooke', brooke_path %>
+        <%= image_tag 'brooke_team.png',:title => 'Brooke'  %>
       </div>
       <div id="team_4">
         <%= link_to 'John', john_path %>
+        <%= image_tag 'weiss_tile.png',:title => 'John'  %>
       </div>
       <div id="team_5">
         <%= link_to 'Claudia', claudia_path %>
+        <%= image_tag 'claudia_tile.png',:title => 'Claudia'  %>
       </div>
       <div id="team_6">
         <%= link_to 'Emily', emily_path %>
+        <%= image_tag 'emily_tile.png',:title => 'Emily'  %>
       </div>
       <div id="team_7">
         <%= link_to 'Winnie', winnie_path %>
+        <%= image_tag 'winnie_tile.png',:title => 'Winnie'  %>
       </div>
     </div>
   </div>
   <div id="spread_the_word" href="spread_the_word">
     <h1>Help Us Spread the Word</h1>
-    <a id="twitter" href="https://twitter.com/Kubmo" target="_blank"</p>
-    <a id="facebook" href="https://www.facebook.com/pages/Kubmo/502648673114461" target= "_blank"</p>
-    <a id="pinterest" href="https://pinterest.com/kubmo/" target="_blank"</p>
+    <a id="twitter" href="https://twitter.com/Kubmo" target="_blank"><%= image_tag 'twitter.png',:title => 'Twitter'  %></a>
+    <a id="facebook" href="https://www.facebook.com/pages/Kubmo/502648673114461" target= "_blank"><%= image_tag 'facebook.png',:title => 'Facebook'  %></a>
+    <a id="pinterest" href="https://pinterest.com/kubmo/" target="_blank"><%= image_tag 'pinterest.png',:title => 'Pinterest'  %></a>
   </div>
 </body>
 </html>

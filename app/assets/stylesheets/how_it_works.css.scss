@@ -40,12 +40,8 @@ body { @include raleway(); min-width: 1050px; }
 			margin-top:50px;
 		}
 
-		#video {
-			background:transparent url('Pattern.png');
-			width:50%;
-			text-indent:-9999px;
-			max-width:600px;
-			height:450px;
+		img {
+			width:40%;
 			margin-top:45px;
 			margin-left:55px;
 		}
@@ -193,7 +189,7 @@ body { @include raleway(); min-width: 1050px; }
 		height:4290px;
 
 		#how_it_works {
-			#video {
+			img {
 				display:none;
 			}
 
