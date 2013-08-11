@@ -9,8 +9,6 @@ class Donation < ActiveRecord::Base
 
   def charge_card
     if valid?
-      poop = (amount*100).to_i
-      puts poop
       charge = Stripe::Charge.create(
         :amount => (amount*100).to_i,
         :currency => "usd",

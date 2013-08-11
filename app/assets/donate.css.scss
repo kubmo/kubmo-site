@@ -1,0 +1,241 @@
+/*---global styles---*/
+$teal: #1b9792;
+$grey: #2b2727;
+$light_grey: #2b2727;
+$teal: #1b9792;
+$grey: #2b2727;
+$light_grey: #2b2727;
+$blue: #a2bcbb;
+$pink: #a07098;
+$ivory: #f7f5ed;
+$pink: #c63d96;
+$light_ivory: #fffdf7;
+$lightest_grey: #dddddd;
+
+@import 'bourbon';
+
+@mixin raleway() { font-family: 'raleway', sans-serif; font-weight: 400; }
+@mixin ralewaylight() { font-family: 'raleway', sans-serif; font-weight: 200; }
+@mixin ralewaymedium() { font-family: 'raleway', sans-serif; font-weight: 500; }
+@mixin ralewaysemi() { font-family: 'raleway', sans-serif; font-weight: 600; }
+@mixin ralewaybold() { font-family: 'raleway', sans-serif; font-weight: 800; }
+@mixin ralewayextralight() { font-family: 'raleway', sans-serif; font-weight:100; }
+body { @include raleway(); min-width: 1050px; }
+
+.body {
+	width:95%;
+	margin: 0 auto;
+	border:solid $lightest_grey 1px;
+	@include  box-shadow(0 0 4px 2px hsla(0, 0%, 0%, 0.30));
+	background:$ivory;
+	
+	.donate_info {
+		background-color:white;
+		padding-left:60px;
+		padding-top:60px;
+		padding-bottom:3110px;
+		
+		h1 {
+			margin-top:60px;
+			@include ralewayLight();
+		}
+
+    p {
+      @include ralewayLight();
+      margin-left:55px;
+      width:100px;
+    }
+
+    a {
+				text-decoration:none;
+				text-transform:uppercase;
+				color:$ivory;	
+			}
+
+		#donate_paragraph {
+			width:50%;
+			margin-left:490px;
+			line-height:1.5;
+			position:absolute;
+		}
+
+    form {
+      margin-top:-100000px;
+      margin-left:100px;
+      position:absolute;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.body	{
+		width:100%;
+		height:4290px;
+
+		.donate_info {
+			#donate_paragraph {
+				width:40%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.body {
+		.donate_info {
+			#donate_paragraph {
+				margin-top:180px;
+				margin-left:0px;
+				width:300px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.body	{
+		width:100%;
+		height:4290px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.body	{
+		width:100%;
+		height:4290px;
+	}
+}
+$blue: #a2bcbb;
+$pink: #a07098;
+$ivory: #f7f5ed;
+$pink: #c63d96;
+$light_ivory: #fffdf7;
+$lightest_grey: #dddddd;
+
+@import 'bourbon';
+
+@mixin raleway() { font-family: 'raleway', sans-serif; font-weight: 400; }
+@mixin ralewaylight() { font-family: 'raleway', sans-serif; font-weight: 200; }
+@mixin ralewaymedium() { font-family: 'raleway', sans-serif; font-weight: 500; }
+@mixin ralewaysemi() { font-family: 'raleway', sans-serif; font-weight: 600; }
+@mixin ralewaybold() { font-family: 'raleway', sans-serif; font-weight: 800; }
+@mixin ralewayextralight() { font-family: 'raleway', sans-serif; font-weight:100; }
+body { @include raleway(); min-width: 1050px; }
+
+.body	{
+	width:95%;
+	margin: 0 auto;
+	border:solid $lightest_grey 1px;
+	@include  box-shadow(0 0 4px 2px hsla(0, 0%, 0%, 0.30));
+	background:$ivory;
+	
+	.more_info {
+		background-color:white;
+		padding-left:60px;
+		padding-top:60px;
+		padding-bottom:3110px;
+		
+		h1 {
+			margin-top:60px;
+			@include ralewayLight();
+		}
+
+			
+    a {
+				text-decoration:none;
+				text-transform:uppercase;
+				color:$ivory;	
+			}
+
+		#donate_paragraph {
+			width:50%;
+			margin-left:490px;
+			line-height:1.5;
+			position:absolute;
+			margin-top:-387px;
+		}
+
+    input {
+      margin-top:500px;
+    }
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.body	{
+		width:100%;
+		height:4290px;
+
+		.more_info {
+			#donate_paragraph {
+				width:40%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.body {
+		.more_info {
+			#donate_paragraph {
+				margin-top:180px;
+				margin-left:0px;
+				width:300px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.body	{
+		width:100%;
+		height:4290px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.body	{
+		width:100%;
+		height:4290px;
+	}
+}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.body	{
+		width:100%;
+		height:4290px;
+
+		.more_info {
+			#donate_paragraph {
+				width:40%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.body {
+		.more_info {
+			#donate_paragraph {
+				margin-top:180px;
+				margin-left:0px;
+				width:300px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.body	{
+		width:100%;
+		height:4290px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.body	{
+		width:100%;
+		height:4290px;
+	}
+}
