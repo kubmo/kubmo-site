@@ -19,9 +19,6 @@
     <p>The Kubmo Workshop will be greatly beneficial to Diana because she wants to be able to support herself and her children. If she starts a successful micro-business in Kenya with computers, she will be able to make enough money to feed her children and send them to receive a quality education. With access to the internet, and a years worth of mentorship from the Kubmo team and other successful women, she will succeed.</p>
   </div>
 </div>
-
-<h1>Donate to Diana!</h1>
-  <%= render 'guest_donation/form',
-    resource: GuestDonation.new,
-    url: girl_guest_donations_path(@girl)
-  %>
+<div id="scale_button">
+  <div id="button_more_info"><%= link_to 'donate', new_donation_path %></div>
+</div>
