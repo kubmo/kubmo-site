@@ -20,139 +20,139 @@ $lightest_grey: #dddddd;
 body { @include raleway(); min-width: 1050px; }
 
 .body	{
-	width:95%;
-	margin: 0 auto;
-	border:solid $lightest_grey 1px;
-	@include  box-shadow(0 0 4px 2px hsla(0, 0%, 0%, 0.30));
-	background:$ivory;
-	
-	.more_info {
-		background-color:white;
-		padding-left:60px;
-		padding-top:60px;
-		padding-bottom:3110px;
-		
-		h1 {
-			margin-top:60px;
-			@include ralewayLight();
-		}
+  width:95%;
+  margin: 0 auto;
+  border:solid $lightest_grey 1px;
+  @include  box-shadow(0 0 4px 2px hsla(0, 0%, 0%, 0.30));
+  background:$ivory;
 
-		#button_more_info {
-      text-transform:uppercase;
-			background-color:$pink;
-			font-size:16px;
-			padding:15px;
-			padding-left:25px;
-			padding-right:25px;
-			border:solid $grey 1px;
-			-webkit-border-radius:8px;
-			-moz-border-radius:8px;
-			-o-border-radius:8px;
-			border-radius:8px;
-			position:absolute;
-			margin-top:30px;
-		}
+  .more_info {
+    background-color:white;
+    padding-left:60px;
+    padding-top:60px;
+    padding-bottom:3110px;
 
-			a {
-				text-decoration:none;
-				color:$teal;
-			}
+    h1 {
+      margin-top:60px;
+      @include ralewayLight();
+  }
 
-		img {
-			width:400px;
-			height:350px;
-		}
+  #button_more_info {
+    text-transform:uppercase;
+    background-color:$pink;
+    font-size:16px;
+    padding:15px;
+    padding-left:25px;
+    padding-right:25px;
+    border:solid $grey 1px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    -o-border-radius:8px;
+    border-radius:8px;
+    position:absolute;
+    margin-top:30px;
+  }
 
-		#scale_outline {
-			display:none;
-			width:400px;
-			height:30px;
-			border:solid $light_grey 1px;
-			-webkit-border-radius:8px;
-			-moz-border-radius:8px;
-			-o-border-radius:8px;
-			border-radius:8px;
-			opacity:.5;
-			position:absolute;
-			margin-top:15px;
-		}
+  a {
+    text-decoration:none;
+    color:$teal;
+    }
 
-		#scale_measurement {
-			display:none;
-			width:200px;
-			height:28px;
-			background-color:$teal;
-			-webkit-border-radius:8px;
-			-moz-border-radius:8px;
-			-o-border-radius:8px;
-			border-radius:8px;
-			position:absolute;
-			margin-top:17px;
-			margin-left:2px;
-		}
+    img {
+      width:400px;
+      height:350px;
+  }
 
-		#base_number {
-			display:none;
-			@include ralewayLight();
-			color:$teal;
-			position:absolute;
-			margin-top:60px;
-		}
+  #scale_outline {
+    display:none;
+    width:400px;
+    height:30px;
+    border:solid $light_grey 1px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    -o-border-radius:8px;
+    border-radius:8px;
+    opacity:.5;
+    position:absolute;
+    margin-top:15px;
+  }
 
-		#full_amount {
-			display:none;
-			@include ralewayLight();
-			color:$teal;
-			position:absolute;
-			margin-top:60px;
-			margin-left:350px;
-		}
+  #scale_measurement {
+    display:none;
+    width:200px;
+    height:28px;
+    background-color:$teal;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    -o-border-radius:8px;
+    border-radius:8px;
+    position:absolute;
+    margin-top:17px;
+    margin-left:2px;
+  }
 
-		#info_paragraph {
-			width:50%;
-			margin-left:490px;
-			line-height:1.5;
-			position:absolute;
-			margin-top:-387px;
-		}
-	}
+  #base_number {
+    display:none;
+    @include ralewayLight();
+    color:$teal;
+    position:absolute;
+    margin-top:60px;
+  }
+
+  #full_amount {
+    display:none;
+    @include ralewayLight();
+    color:$teal;
+    position:absolute;
+    margin-top:60px;
+    margin-left:350px;
+  }
+
+  #info_paragraph {
+    width:50%;
+    margin-left:490px;
+    line-height:1.5;
+    position:absolute;
+    margin-top:-387px;
+  }
+}
 }
 
 @media screen and (max-width: 1200px) {
-	.body	{
-		width:100%;
-		height:4290px;
+  .body	{
+    width:100%;
+    height:4290px;
 
-		.more_info {
-			#info_paragraph {
-				width:40%;
-			}
-		}
-	}
+    .more_info {
+      #info_paragraph {
+        width:40%;
+    }
+  }
+}
 }
 
 @media screen and (max-width: 1000px) {
-	.body {
-		.more_info {
-			#info_paragraph {
-				margin-top:180px;
-				margin-left:0px;
-				width:300px;
-			}
-		}
-	}
+  .body {
+    .more_info {
+      #info_paragraph {
+        margin-top:180px;
+        margin-left:0px;
+        width:300px;
+    }
+  }
+}
 }
 
 @media screen and (max-width: 768px) {
-	.body	{
-		width:100%;
-		height:4290px;
-	}
+  .body	{
+    width:100%;
+    height:4290px;
+}
 }
 
 @media screen and (max-width: 320px) {
-	.body	{
-		width:100%;
-		height:4290px;
-	}
+  .body	{
+    width:100%;
+    height:4290px;
+}
 }
