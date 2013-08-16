@@ -478,11 +478,9 @@ body { @include raleway(); min-width: 1050px; }
 		}
 
 		#hero {
-			background:transparent url('hero_mobile.png');
-			background-position: 0 69px;
-
 			h1 {
 				margin-left:20px;
+				width:300px;
 			}
 
 			a {

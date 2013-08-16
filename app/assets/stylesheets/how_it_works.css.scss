@@ -232,6 +232,12 @@ body { @include raleway(); min-width: 1050px; }
 		height:4290px;
 
 		#how_it_works {
+			h1 {
+				margin-left:20px;
+				width:300px;
+				margin-top:30px;
+			}
+			
 			#the_steps {
 				margin-top:225px;
 

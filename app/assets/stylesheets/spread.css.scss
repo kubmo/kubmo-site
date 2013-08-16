@@ -131,6 +131,7 @@ body { @include raleway(); min-width: 1050px; }
 			h1 {
 				width:300px;
 				margin-top:20px;
+				margin-left:20px;
 			}
 
 			#twitter {
@@ -138,11 +139,11 @@ body { @include raleway(); min-width: 1050px; }
 			}
 
 			#facebook {
-				margin-left:100px;
+				margin-left:130px;
 			}
 
 			#pinterest {
-				margin-left:200px;
+				margin-left:220px;
 			}
 		}
 	}
