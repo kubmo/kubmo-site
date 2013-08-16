@@ -251,3 +251,30 @@ body { @include raleway(); min-width: 1050px; }
 		}
 	}
 }
+
+@media screen and (max-width: 320px) {
+	.body {	
+		#top_nav {
+			width:100%;
+			font-size:14px;
+			height:235px;
+		}
+
+		.donate {
+			margin-top:14px;
+			margin-left:40px;
+		}
+
+		.main {
+			#navigation_links {
+				margin-top: 3px;
+				margin-left:-50px;
+			}
+		}
+
+		#nav_logo img {
+			margin-top:35px;
+			margin-left: 15px;
+		}
+	}
+}

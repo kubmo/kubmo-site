@@ -430,5 +430,15 @@ body { @include raleway(); min-width: 1050px; }
 	.body	{
 		width:100%;
 		height:4290px;
+
+		#the_entrepreneurs {
+			h1 {
+				margin-left:20px;
+			}
+			
+			#the_entrepreneur_pics {
+				margin-left:0;
+			}
+		}
 	}
 }

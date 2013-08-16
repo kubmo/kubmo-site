@@ -439,3 +439,55 @@ body { @include raleway(); min-width: 1050px; }
 		}
 	}
 }
+
+@media screen and (max-width:320px) {
+	.body	{
+
+		#get_involved {
+
+			a {
+				font-size:14px;
+				padding:16px;
+				padding-left:3px;
+				padding-right:3px;
+			}
+
+			#mentor_button {
+				a {
+					margin-left:20px;
+				}
+
+				img {
+					margin-left:25px;
+				}
+			}
+
+			#spread_button {
+				display:none;
+			}
+
+			#women_button {
+				img {
+					margin-left:200px;
+				}
+
+				a {
+					margin-left:170px;
+				}
+			}
+		}
+
+		#hero {
+			background:transparent url('hero_mobile.png');
+			background-position: 0 69px;
+
+			h1 {
+				margin-left:20px;
+			}
+
+			a {
+				margin-left:50px;
+			}
+		}
+	}
+}

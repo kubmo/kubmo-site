@@ -31,21 +31,21 @@
   </div>
   <div id="how_it_works">
     <h1>How the Kubmo Program Works</h1>
-    <%= image_tag 'Pattern.png',:title => 'pattern'  %>
+    <div id="pattern"><%= image_tag 'Pattern.png',:title => 'pattern'  %></div>
     <a id="play" href="#"><p>play</p></a>
     <div id="the_steps">
-      <div>
-        <p id="workshop">phone icon</p>
+      <div id="workshop">
+        <%= image_tag 'phone_small_icon.png',:title => 'icon'  %>
         <h2><%= link_to 'The BizTech Workshop', how_path %></h2>
         <h3>Training in Nairobi, Kenya from mentors on entrepreneurism. Each participant recieves a phone package. August 27-30.</h3>
       </div>
-      <div>
-        <p id="year_icon">year-long icon</p>
+      <div id="year_long">
+        <%= image_tag 'year_long_icon.png',:title => 'icon'  %>
         <h2><%= link_to 'Year-long support', how_path %></h2>
         <h3>Follow up of mentorship, awareness via the website, and a phone package.</h3>
       </div>
-      <div>
-        <p id="marketplace">marketplace icon</p>
+      <div id="marketplace">
+        <%= image_tag 'marketplace_icon.png',:title => 'icon'  %>
         <h2><%= link_to 'Global marketplace', how_path %></h2>
         <h3>Once products are ready to be sold, they will be promoted via online marketplaces.</h3>
       </div>

@@ -360,3 +360,20 @@ body { @include raleway(); min-width: 1050px; }
 		height:4290px;
 	}
 }
+
+@media screen and (max-width: 320px) {
+	.body	{
+		width:100%;
+		height:4290px;
+
+		#kubmo_team {
+			h1 {
+				margin-left:20px;
+			}
+			
+			#the_team_pics {
+				margin-left:0;
+			}
+		}
+	}
+}

@@ -40,7 +40,7 @@ body { @include raleway(); min-width: 1050px; }
 			margin-top:50px;
 		}
 
-		img {
+		#pattern img {
 			width:40%;
 			margin-top:45px;
 			margin-left:55px;
@@ -61,7 +61,6 @@ body { @include raleway(); min-width: 1050px; }
 				margin-top:-200px;
 				margin-left:760px;
 				margin-bottom:230px;
-			}
 
 				h2 a {
 					margin-left:100px;
@@ -82,30 +81,34 @@ body { @include raleway(); min-width: 1050px; }
 					color:$light_grey;
 					line-height:1.5;
 				}
-		}
+			}
 
-		#workshop {
-			text-indent:-9999px;
-			background:transparent url('phone_small_icon.png');
-			width:30px;
-			height:50px;
-			position:absolute;
-		}
+			#workshop {
+				img {
+					width:33px;
+					height:51px;
+					position:absolute;
+					margin-left:10px;
+				}
+			}
 
-		#year_icon {
-			text-indent:-9999px;
-			background:transparent url('year_long_icon.png');
-			width:50px;
-			height:48px;
-			position:absolute;
-		}
+			#year_long {
+				img {
+					width:51px;
+					height:49px;
+					position:absolute;
+					margin-left:5px;
+				}
+			}
 
-		#marketplace {
-			text-indent:-9999px;
-			background:transparent url('marketplace_icon.png');
-			width:65px;
-			height:48px;
-			position:absolute;
+			#marketplace {
+				img {
+					width:67px;
+					height:49px;
+					position:absolute;
+					margin-left:0px;
+				}
+			}
 		}
 	}
 }
@@ -145,9 +148,10 @@ body { @include raleway(); min-width: 1050px; }
 			width:100%;
 
 			#the_steps {
+
 				div {
-					margin-left:630px;
-					width:390px;
+					margin-left:500px;
+					width:800px;
 				}
 			}
 		}
@@ -161,22 +165,13 @@ body { @include raleway(); min-width: 1050px; }
 
 		#how_it_works {
 			#the_steps {
+				margin-top:-140px;
+				position:absolute;
+
 				div {
 					margin-left:530px;
 					width:300px;
 					font-size:14px;
-				}
-
-				h2 {
-					margin-left:80px;
-				}
-
-				h3 {
-					margin-left:80px;
-				}
-
-				h2 a {
-					margin-left:0px;
 				}
 			}
 		}
@@ -189,7 +184,7 @@ body { @include raleway(); min-width: 1050px; }
 		height:4290px;
 
 		#how_it_works {
-			img {
+			#pattern img {
 				display:none;
 			}
 
@@ -199,18 +194,6 @@ body { @include raleway(); min-width: 1050px; }
 				div {
 					margin-left:60px;
 					width:400px;
-				}
-
-				h2 {
-					margin-left:100px;
-				}
-
-				h3 {
-					margin-left:100px;
-				}
-
-				h2 a {
-					margin-left:0px;
 				}
 			}
 		}
@@ -233,6 +216,36 @@ body { @include raleway(); min-width: 1050px; }
 					h2 a {
 						margin-left:0px;
 					}
+				}
+
+				img {
+					margin-top:50px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.body	{
+		width:100%;
+		height:4290px;
+
+		#how_it_works {
+			#the_steps {
+				margin-top:225px;
+
+				div {
+					margin-left:20px;
+					width:315px;
+
+					h2 a {
+						margin-left:0px;
+					}
+				}
+
+				img {
+					margin-top:50px;
 				}
 			}
 		}
