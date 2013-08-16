@@ -26,8 +26,8 @@ ActiveRecord::Schema.define(version: 20130728203407) do
     t.datetime "failed_at"
     t.string   "locked_by"
     t.string   "queue"
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "delayed_jobs", ["priority", "run_at"], name: "delayed_jobs_priority", using: :btree
@@ -57,8 +57,8 @@ ActiveRecord::Schema.define(version: 20130728203407) do
     t.text     "sustainable"
     t.text     "why"
     t.text     "impact"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "mentors", force: true do |t|
@@ -68,8 +68,8 @@ ActiveRecord::Schema.define(version: 20130728203407) do
     t.string   "twitter"
     t.string   "linkedin"
     t.string   "why"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
