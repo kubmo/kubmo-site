@@ -207,6 +207,7 @@ body { @include raleway(); min-width: 1050px; }
 		.donate {
 			margin-top:55px;
 			margin-left:-150px;
+			list-style-type:none;
 		}
 
 		.main {
@@ -229,6 +230,7 @@ body { @include raleway(); min-width: 1050px; }
 		.donate {
 			margin-top:14px;
 			margin-left:65px;
+			list-style-type:none;
 		}
 
 		.main {
@@ -263,6 +265,7 @@ body { @include raleway(); min-width: 1050px; }
 		.donate {
 			margin-top:14px;
 			margin-left:30px;
+			list-style-type:none;
 		}
 
 		.main {
@@ -274,7 +277,7 @@ body { @include raleway(); min-width: 1050px; }
 
 		#nav_logo img {
 			margin-top:35px;
-			margin-left:0;
+			margin-left:-40px;
 		}
 	}
 }

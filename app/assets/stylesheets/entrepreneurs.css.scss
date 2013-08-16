@@ -437,7 +437,12 @@ body { @include raleway(); min-width: 1050px; }
 			}
 
 			#the_entrepreneur_pics {
-				margin-left:-10px;
+				margin-left:-30px;
+
+				img {
+					width:250px;
+					height:250px;
+				}
 			}
 		}
 	}

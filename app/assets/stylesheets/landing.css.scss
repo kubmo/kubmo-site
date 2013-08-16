@@ -481,6 +481,7 @@ body { @include raleway(); min-width: 1050px; }
 			h1 {
 				margin-left:20px;
 				width:300px;
+				@include raleway();
 			}
 
 			a {

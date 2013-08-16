@@ -373,6 +373,11 @@ body { @include raleway(); min-width: 1050px; }
 			
 			#the_team_pics {
 				margin-left:-10px;
+
+				img {
+					width:250px;
+					height:250px;
+				}
 			}
 		}
 	}
