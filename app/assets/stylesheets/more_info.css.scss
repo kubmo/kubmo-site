@@ -37,6 +37,12 @@ body { @include raleway(); min-width: 1050px; }
       @include ralewayLight();
     }
 
+    h2 {
+      @include raleway();
+      color:$teal;
+      font-size:18px;
+    }
+
     #button_more_info {
       text-transform:uppercase;
       background-color:$pink;
