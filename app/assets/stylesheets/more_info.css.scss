@@ -70,8 +70,7 @@ body { @include raleway(); min-width: 1050px; }
       }
 
     #scale_outline {
-      display:none;
-      width:400px;
+      width:250px;
       height:30px;
       border:solid $light_grey 1px;
       -webkit-border-radius:8px;
@@ -84,8 +83,7 @@ body { @include raleway(); min-width: 1050px; }
     }
 
     #scale_measurement {
-      display:none;
-      width:200px;
+      width:160px;
       height:28px;
       background-color:$teal;
       -webkit-border-radius:8px;
@@ -98,7 +96,6 @@ body { @include raleway(); min-width: 1050px; }
     }
 
     #base_number {
-      display:none;
       @include ralewayLight();
       color:$teal;
       position:absolute;
@@ -106,12 +103,11 @@ body { @include raleway(); min-width: 1050px; }
     }
 
     #full_amount {
-      display:none;
       @include ralewayLight();
       color:$teal;
       position:absolute;
       margin-top:60px;
-      margin-left:350px;
+      margin-left:195px;
     }
 
     #info_paragraph {
@@ -124,6 +120,18 @@ body { @include raleway(); min-width: 1050px; }
 
     #donate_paragraph {
       width: 80%;
+    }
+
+    #progress_bar {
+      margin-top:30px;
+    }
+
+    h4 {
+      @include ralewayLight ();
+      color:$light_grey;
+      font-size:90%;
+      margin-top:20px;
+      margin-bottom:50px;
     }
   }
 }
@@ -162,6 +170,10 @@ body { @include raleway(); min-width: 1050px; }
       #donate_paragraph {
         width: 50%;
       }
+
+      #info_paragraph {
+        margin-top:0px;
+      }
     }
 }
 }
@@ -172,9 +184,17 @@ body { @include raleway(); min-width: 1050px; }
     height:4290px;
 
     .more_info {
+      h1 {
+        margin-top:180px;
+      }
+
       #donate_paragraph {
         width: 30%;
-        margin-top:80px;
+        margin-top:20px;
+      }
+
+      #info_paragraph {
+        margin-top:20px;
       }
     }
   }
