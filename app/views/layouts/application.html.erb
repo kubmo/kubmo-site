@@ -5,10 +5,8 @@
     <title>Kubmo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= stylesheet_link_tag :application, :media => 'all' %>
-    <%= javascript_include_tag "https://js.stripe.com/v1/" %>
+    <%= javascript_include_tag  %>
     <%= csrf_meta_tags %>
-    <%= tag :meta, :name => "stripe-key",:content => STRIPE_PUBLIC_KEY %>
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
   </head>
   <body class="body">
@@ -18,15 +16,15 @@
         <ul>
           <li><a id="nav_logo" href="/"><%= image_tag 'kubmo_logo.png',:title => 'logo'  %></a></li>
           <div id="navigation_links">
-            <li><%= active_if_current_link('how_it_works', 'how it works', data: { scroll: true }) %></li>
+            <li><%= link_to('How it works', "#{root_path}#how_it_works", data: { scroll: true }) %></li>
             <li class="line">|</li>
-            <li><%= active_if_current_link('entrepreneurs', 'entrepreneurs', data: { scroll: true }) %></li>
+            <li><%= link_to('Entrepreneurs', "#{root_path}#entrepreneurs", data: { scroll: true }) %></li>
             <li class="line">|</li>
-            <li><%= active_if_current_link('kubmo_team', 'about us', data: { scroll: true }) %></li>
+            <li><%= link_to('Kubmo team', "#{root_path}#kubmo_team", data: { scroll: true }) %></li>
             <li class="line">|</li>
-            <li><%= link_to 'apply', new_entrepreneur_applications_path %></li>
+            <li><%= link_to 'Apply', new_entrepreneur_applications_path %></li>
             <li class="line">|</li>
-            <li><%= active_if_current_link('spread_the_word', 'media', data: { scroll: true }) %></li>
+            <li><%= link_to('Spread the word', "#{root_path}#spread_the_word", data: { scroll: true }) %></li>
           </div>
         </ul>
         </li>
@@ -40,18 +38,6 @@
         </li>
       </ul>
     </div>
-  <script>
-    $(document).ready(function() {
-      $("#top_nav a[data-scroll=true]").bind("click",function(event){
-        event.preventDefault();
-        var target = $(this).attr("href");
-        $("html, body").stop().animate({
-          scrollBottom: $(target).offset().bottom,
-          scrollTop: $(target).offset().top
-        }, 800);
-      });
-    });
-  </script>
   <div id="footer">
     <ul id="contact_footer">
       <li><h1>contact</h1><li>
