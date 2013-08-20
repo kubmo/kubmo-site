@@ -15,7 +15,7 @@ KubmoSite::Application.routes.draw do
   get '/melab', to: 'pages#melab', as: 'melab'
   get '/jullie', to: 'pages#jullie', as: 'jullie'
   get '/judith', to: 'pages#judith', as: 'judith'
-  get '/lorraine', to: 'pages#lorraine', as: 'lorraine'
+  get '/lorraine_1', to: 'pages#lorraine_1', as: 'lorraine_1'
   get '/janet', to: 'pages#janet', as: 'janet'
 
   get '/emma', to: 'pages#emma', as: 'emma'
