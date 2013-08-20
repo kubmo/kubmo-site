@@ -5,8 +5,8 @@
   <title>kubmo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <%= stylesheet_link_tag :application, :media => 'all' %>
+  <%= javascript_include_tag %>
   <%= csrf_meta_tags %>
-  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
 </head>
 <body class="body">
@@ -21,11 +21,11 @@
       <%= image_tag 'mentors_icon.png',:title => 'mentor icon'  %>
     </div>
     <div id="spread_button">
-      <%= active_if_current_link('spread_the_word', 'Spread the Word', data: { scroll: true }) %>
+      <%= link_to('Spread the word', "#{root_path}#spread_the_word", data: { scroll: true }) %>
       <%= image_tag 'spread_icon.png',:title => 'spread icon'  %>
     </div>
     <div id="women_button">
-      <%= active_if_current_link('entrepreneurs', 'Meet the women', data: { scroll: true }) %>
+      <%= link_to('Meet the women', "#{root_path}#entrepreneurs", data: { scroll: true }) %>
       <%= image_tag 'phones_icon.png',:title => 'phones icon'  %>
     </div>
   </div>
