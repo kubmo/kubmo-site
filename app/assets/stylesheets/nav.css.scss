@@ -122,6 +122,25 @@ body { @include raleway(); min-width: 1050px; }
 	}
 }
 
+@media screen and (max-width: 1400px) {
+	.body {	
+		#top_nav {
+			width:92%;
+			font-size:14px;
+		}
+
+		.donate {
+			margin-left:25px;
+		}
+
+		.main {
+			#navigation_links {
+				margin-left:235px;
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 1300px) {
 	.body {	
 		#top_nav {
@@ -130,12 +149,12 @@ body { @include raleway(); min-width: 1050px; }
 		}
 
 		.donate {
-			margin-left:20px;
+			margin-left:6px;
 		}
 
 		.main {
 			#navigation_links {
-				margin-left:240px;
+				margin-left:195px;
 			}
 		}
 	}
@@ -164,15 +183,20 @@ body { @include raleway(); min-width: 1050px; }
 }
 
 @media screen and (max-width: 1100px) {
-	.body {
+	.body {	
+		#top_nav {
+			height:180px;
+		}
 
 		.donate {
-			margin-left:1px;
+			margin-top:110px;
+			margin-left:52px;
 		}
 
 		.main {
 			#navigation_links {
-				margin-left:200px;
+				margin-left:-40px;
+				margin-top:-50px;
 			}
 		}
 	}
