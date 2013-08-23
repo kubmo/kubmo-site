@@ -2,7 +2,7 @@
 
   <div class="kubmo_form">
     <h1>Be a Mentor</h1>
-    <h2>Each of the young women will be paired up with a mentor for both the workshop, and the following year. We are looking for successful, inspiring women to be mentors. If you want to learn more about each of our entrepreneurs, you can see their profiles <a id="link_to_here" href="#">here</a>.</h2>
+    <h2>Each of the young women will be paired up with a mentor for both the workshop, and the following year. We are looking for successful, inspiring women to be mentors. If you want to learn more about each of our entrepreneurs, you can see their profiles <div id="link_to_here"><%= link_to('here.',"#{root_path}#entrepreneurs") %></div></h2>
 
     <h2 class="label"><%= form.label :name %></h2>
     <div class="text_field"><%= form.text_field :name %></div>
