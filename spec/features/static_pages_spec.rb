@@ -1,17 +1,16 @@
 require 'spec_helper'
 
 describe 'Static pages' do
-
   describe 'Navigation Bar' do
     it 'links to the available pages' do
       visit root_path
 
       within('ul#top_nav') do
-        find_link('how it works').visible?
-        find_link('entrepreneurs').visible?
-        find_link('about').visible?
-        find_link('apply').visible?
-        find_link('media').visible?
+        find_link('How it works').visible?
+        find_link('Entrepreneurs').visible?
+        find_link('Kubmo team').visible?
+        find_link('Apply').visible?
+        find_link('Spread the word').visible?
         find_link('donate').visible?
       end
     end
@@ -34,7 +33,7 @@ describe 'Static pages' do
 
         find_link('The BizTech Workshop').visible?
         find_link('Year-long support').visible?
-        find_link('Global marketplace').visible?
+        find_link('Global network').visible?
       end
     end
 
@@ -50,7 +49,7 @@ describe 'Static pages' do
         find_link('Melab').visible?
         find_link('Jullie').visible?
         find_link('Judith').visible?
-        find_link('Lorraine').visible?
+        find_link('Laureen').visible?
         find_link('Janet').visible?
       end
     end
