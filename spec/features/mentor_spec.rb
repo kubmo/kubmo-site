@@ -26,7 +26,9 @@ describe 'Mentor application process' do
     fill_in 'Linkedin', with: mentor.linkedin
     fill_in 'Why', with: mentor.why
 
-    click_on 'Apply'
+    within('div.kubmo_form') do
+      click_on 'Apply'
+    end
 
     expect(page).to have_content('thank you for applying!')
   end

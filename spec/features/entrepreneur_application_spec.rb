@@ -42,7 +42,9 @@ describe 'Entrepreneur application process' do
     fill_in 'Why', with: entrepreneur.why
     fill_in 'Impact', with: entrepreneur.impact
 
-    click_on 'Apply'
+    within('div.kubmo_form') do
+      click_on 'Apply'
+    end
 
     expect(page).to have_content('thank you for applying to the BizTech workshop!')
   end
