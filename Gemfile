@@ -2,7 +2,9 @@ source 'http://rubygems.org'
 
 ruby '2.0.0'
 
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '~> 3.0.3.0'
+gem 'sass-rails', '>= 3.2'
+
 gem 'high_voltage'
 gem 'jquery-rails'
 gem 'pg'
@@ -14,7 +16,6 @@ gem 'unicorn'
 gem 'rails_12factor'
 
 gem 'coffee-rails'
-gem 'sass-rails'
 gem 'uglifier'
 
 group :development do

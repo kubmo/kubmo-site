@@ -22,8 +22,13 @@ $pink: #C63D96;
 $light_ivory: #FFFDF7;
 $lightest_grey: #dddddd;
 
+$btn-default-color: white;
+$btn-default-bg: $pink;
+$navbar-height: 100px;
+$navbar-default-bg: white;
+
 @import "bootstrap";
-@import "bootstrap/theme";
+@import "components";
 
 
 
