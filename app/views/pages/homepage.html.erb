@@ -1,71 +1,108 @@
- <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8" />
-  <title>kubmo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <%= stylesheet_link_tag :application, :media => 'all' %>
-  <%= javascript_include_tag %>
-  <%= csrf_meta_tags %>
-  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
-</head>
-<body class="body">
-  <div id="hero">
-    <h1>A phone package and workshop can change her life forever.</h1>
-    <%= link_to 'Sponsor the Change', new_donation_path %>
-    <%= image_tag 'hero.png',:title => 'girl in kenya'  %>
-  </div>
-  <div id="get_involved">
-    <div id="mentor_button">
-      <%= link_to 'Be a Mentor', new_mentor_path %>
-      <%= image_tag 'mentors_icon.png',:title => 'mentor icon'  %>
+<div class="row">
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-5">
+                    <h2>A phone package and workshop can change her life forever.</h2>
+                    <%= link_to 'Sponsor the Change', new_donation_path, :class => "btn btn-default btn-lg" %>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="spread_button">
-      <%= link_to('Spread the word', "#{root_path}#spread_the_word", data: { scroll: true }) %>
-      <%= image_tag 'spread_icon.png',:title => 'spread icon'  %>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail">
+              <%= image_tag 'mentors_icon.png', :title => 'mentor icon', :style => "width: 150px; height: 100px;" %>
+              <p> <%= link_to 'Be a Mentor', new_mentor_path, :class => "btn btn-block btn-default"  %> </p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+              <%= image_tag 'spread_icon.png', :title => 'spread icon', :style => "width: 150px; height: 100px;"   %>
+              <p> <%= link_to 'Be a Mentor', new_mentor_path, :class => "btn btn-block btn-default"  %> </p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail">
+              <%= image_tag 'phones_icon.png', :title => 'phones icon', :style => "width: 150px; height: 100px;"   %>
+              <p> <%= link_to 'Be a Mentor', new_mentor_path, :class => "btn btn-block btn-default"  %> </p>
+          </div>
+        </div>
     </div>
-    <div id="women_button">
-      <%= link_to('Meet the women', "#{root_path}#entrepreneurs", data: { scroll: true }) %>
-      <%= image_tag 'phones_icon.png',:title => 'phones icon'  %>
+    <hr>
+    <div class="row">
+        <div class="col-md-7">
+            <h2>How the Kubmo Program Works</h2>
+            <%= image_tag 'biztech.jpg',:title => 'Biztech workshop', :style => "width: 100%;"  %>
+        </div>
+        <div class="col-md-5">
+          <div class="row">
+              <div class="col-xs-2">
+                <%= image_tag 'phone_small_icon.png', :title => 'icon', :class => "step"  %>
+              </div>
+              <div class="col-xs-10">
+                <h2><%= link_to 'The BizTech Workshop', how_path %></h2>
+                <p>Training in Nairobi, Kenya from mentors on entrepreneurism. Each participant recieves a phone package.</p>
+              </div>
+          </div>
+          <div id="row">
+              <div class="col-xs-2">
+                <%= image_tag 'year_long_icon.png', :title => 'icon', :class => "step" %>
+              </div>
+              <div class="col-xs-10">
+                <h2><%= link_to 'Year-long support', how_path %></h2>
+                <h3>Mentorship from other entrepreneurs, a phone package and marketing through Kubmo</h3>
+              </div>
+          </div>
+          <div id="row">
+              <div class="col-xs-2">
+                <%= image_tag 'marketplace_icon.png',:title => 'icon', :class => "step"  %>
+              </div>
+              <div class="col-xs-10">
+                <h2><%= link_to 'Global network', how_path %></h2>
+                <h3>Kubmo connects women around the world to create sustainable relationships around social entrepreneurism. </h3>
+              </div>
+          </div>
+        </div>
     </div>
-  </div>
-  <div id="how_it_works">
-    <h1>How the Kubmo Program Works</h1>
-    <div id="pattern"><%= image_tag 'biztech.jpg',:title => 'Biztech workshop'  %></div>
-    <a id="play" href="#"><p>play</p></a>
-    <div id="the_steps">
-      <div id="workshop">
-        <%= image_tag 'phone_small_icon.png',:title => 'icon'  %>
-        <h2><%= link_to 'The BizTech Workshop', how_path %></h2>
-        <h3>Training in Nairobi, Kenya from mentors on entrepreneurism. Each participant recieves a phone package.</h3>
-      </div>
-      <div id="year_long">
-        <%= image_tag 'year_long_icon.png',:title => 'icon'  %>
-        <h2><%= link_to 'Year-long support', how_path %></h2>
-        <h3>Mentorship from other entrepreneurs, a phone package and marketing through Kubmo</h3>
-      </div>
-      <div id="marketplace">
-        <%= image_tag 'marketplace_icon.png',:title => 'icon'  %>
-        <h2><%= link_to 'Global network', how_path %></h2>
-        <h3>Kubmo connects women around the world to create sustainable relationships around social entrepreneurism. </h3>
-      </div>
+    <hr>
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>Meet the Entrepreneurs</h2>
+        </div>
     </div>
-  </div>
+
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <%= link_to diana_path do %>
+              <%= image_tag 'diana_tiles.png', :title => 'Diana', :class => "profile"  %>
+             <% end %>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <%= link_to noella_path do %>
+              <%= image_tag 'noella_tile.png',:title => 'Noella', :class => "profile"  %>
+             <% end %>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <%= link_to joy_path do %>
+              <%= image_tag 'joy_tile.png',:title => 'Joy', :class => "profile"  %>
+            <% end %>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <%= link_to joan_path do %>
+              <%= image_tag 'jacinta_joan_tile.png',:title => 'Jecinta and Joan', :class => "profile"  %>
+            <% end %>
+        </div>
+    </div>
+</div>
   <div id="entrepreneurs" href="entrepreneurs">
     <h1>Meet the Entrepreneurs</h1>
     <div id="the_entrepreneur_pics">
-        <div id="girl_1">
-          <div class="tile_hover"><%= link_to 'Diana', diana_path %></div>
-          <%= image_tag 'diana_tiles.png',:title => 'Diana'  %>
-        </div>
-        <div id="girl_2">
-          <div class="tile_hover"><%= link_to 'Noella', noella_path %></div>
-          <%= image_tag 'noella_tile.png',:title => 'Noella'  %>
-        </div>
-        <div id="girl_3">
-          <div class="tile_hover"><%= link_to 'Joy', joy_path %></div>
-          <%= image_tag 'joy_tile.png',:title => 'Joy'  %>
-        </div>
         <div id="girl_4">
           <div class="tile_hover"><%= link_to 'Joan & Jacinta', joan_path %></div>
           <%= image_tag 'jacinta_joan_tile.png',:title => 'Jecinta and Joan'  %>
@@ -147,5 +184,3 @@
       <p>Thanks for your support!"</p>
     </div>
   </div>
-</body>
-</html>

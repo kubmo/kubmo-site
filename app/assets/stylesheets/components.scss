@@ -2,4 +2,31 @@
   img {
     margin-top: 10px;
   }
+
+  margin-bottom: 0;
+}
+
+.jumbotron {
+  height: 350px;
+  background: asset-url("hero.png") no-repeat center center;
+
+  h2 {
+    margin-bottom: 30px;
+  }
+}
+
+.thumbnail {
+  border: none;
+
+  img {
+    margin-bottom: 20px;
+  }
+}
+
+.step {
+  margin-top: 20px;
+}
+
+img.profile {
+  padding: 10px;
 }
