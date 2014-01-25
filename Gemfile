@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 ruby '2.0.0'
 
-gem 'bourbon'
+gem 'bootstrap-sass'
 gem 'high_voltage'
 gem 'jquery-rails'
 gem 'pg'
