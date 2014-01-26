@@ -24,3 +24,4 @@ rerun.txt
 tags
 vendor/bundler_gems
 public/assets
+.sass-cache
