@@ -15,14 +15,14 @@
 //= require_tree .
 
 $(document).ready(function() {
-  $("#top_nav a[data-scroll=true]").bind("click",function(event){
+  $("nav a[data-scroll=true]").bind("click",function(event){
     if(window.location.pathname !== "/") return;
     event.preventDefault();
     var url = $(this).attr("href");
     var target = url.substring(url.indexOf('#'));
     $("html, body").stop().animate({
       scrollBottom: $(target).offset().bottom,
-      scrollTop: $(target).offset().top - 100
-    }, 800);
+      scrollTop: $(target).offset().top
+    }, 600);
   });
 });
