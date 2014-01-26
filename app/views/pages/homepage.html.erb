@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="jumbotron">
-            <div class="container">
+            <div class="container hidden-xs">
                 <div class="row">
                     <div class="col-xs-5">
                         <h2>A phone package and workshop can change her life forever.</h2>
@@ -11,6 +11,15 @@
             </div>
         </div>
     </div>
+
+    <div class="row visible-xs">
+       <div class="col-xs-12">
+           <%= link_to 'Sponsor the Change', new_donation_path, :class => "btn btn-default btn-block" %>
+       </div>
+    </div>
+
+    <hr>
+
     <div id="how_it_works" class="row">
         <div class="col-md-7">
             <h2>How the Kubmo Program Works</h2>
