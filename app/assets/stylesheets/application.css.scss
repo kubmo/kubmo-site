@@ -24,6 +24,7 @@ $navbar-default-bg: white;
 
 body {
   @include raleway();
+  background-color: #F7F5ED;
 }
 
 h1, h2, h3, h4, h5, h6 {
