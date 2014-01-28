@@ -8,8 +8,9 @@
   margin-bottom: 0;
 }
 
-.container {
+#main {
   background-color: white;
+  box-shadow: 0 2px 0px 0px white, 0 -2px 0px 0px white, 3px 0 5px -2px rgba(31, 73, 125, 0.8), -3px 0 5px -2px rgba(31, 73, 125, 0.8);
 }
 
 .container .jumbotron {
