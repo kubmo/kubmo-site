@@ -13,6 +13,7 @@
  */
 
 @import "colors";
+@import "fonts";
 
 $btn-default-color: white;
 $btn-default-bg: $pink;
@@ -20,6 +21,15 @@ $navbar-height: 100px;
 $navbar-default-bg: white;
 
 @import "bootstrap";
+
+body {
+  @include raleway();
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @include ralewayExtraLight();
+}
+
 @import "components";
 
 
