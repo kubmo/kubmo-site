@@ -22,7 +22,7 @@ $(document).ready(function() {
     var target = url.substring(url.indexOf('#'));
     $("html, body").stop().animate({
       scrollBottom: $(target).offset().bottom,
-      scrollTop: $(target).offset().top
+      scrollTop: $(target).offset().top - 100
     }, 600);
   });
 });
