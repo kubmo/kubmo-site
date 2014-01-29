@@ -27,6 +27,7 @@ section {
   background: asset-url("hero.png") no-repeat center center;
 }
 
+
 .thumbnail {
   border: none;
 
@@ -36,6 +37,9 @@ section {
 }
 
 .step {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 20px;
 }
 
@@ -94,7 +98,6 @@ section {
 footer {
   padding: 10px;
   img {
-    margin-top: 20px;
     display: block;
     float: right;
   }
