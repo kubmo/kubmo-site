@@ -16,9 +16,9 @@ section {
 } 
 
 #main {
+  height: 100%;
   background-color: white;
   box-shadow: 0 2px 0px 0px white, 0 -2px 0px 0px white, 3px 0 5px -2px rgba(31, 73, 125, 0.8), -3px 0 5px -2px rgba(31, 73, 125, 0.8);
-
 }
 
 .container .jumbotron {
@@ -88,5 +88,14 @@ section {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+footer {
+  padding: 10px;
+  img {
+    margin-top: 20px;
+    display: block;
+    float: right;
   }
 }

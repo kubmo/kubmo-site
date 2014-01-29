@@ -1,216 +1,214 @@
-<div id="main" class="container">
-    <div class="row">
-        <div class="jumbotron">
-            <div class="col-xs-5 hidden-xs">
-                <h2>A phone package and workshop can change her life forever.</h2>
-                    <%= link_to 'Sponsor the Change', new_donation_path, :class => "btn btn-default btn-lg" %>
-            </div>
+<div class="row">
+    <div class="jumbotron">
+        <div class="col-xs-5 hidden-xs">
+            <h2>A phone package and workshop can change her life forever.</h2>
+                <%= link_to 'Sponsor the Change', new_donation_path, :class => "btn btn-default btn-lg" %>
         </div>
     </div>
-
-    <div class="row visible-xs">
-       <div class="col-xs-12">
-           <%= link_to 'Sponsor the Change', new_donation_path, :class => "btn btn-default btn-block" %>
-       </div>
-    </div>
-
-
-    <section id="how_it_works" class="row">
-        <div class="col-xs-12">
-            <h2>How the Kubmo Program Works</h2>
-            <hr>
-        </div>
-
-
-        <div class="col-md-7">
-            <%= image_tag 'biztech.jpg',:title => 'Biztech workshop', :style => "width: 100%;"  %>
-        </div>
-        <div class="col-md-5">
-            <div class="row">
-                <div class="col-xs-2">
-                    <%= image_tag 'phone_small_icon.png', :title => 'icon', :class => "step"  %>
-                </div>
-                <div class="col-xs-10">
-                    <h3>The BizTech Workshop</h3>
-                    <p>Training in Nairobi, Kenya from mentors on entrepreneurism. Each participant recieves a phone package.</p>
-                </div>
-            </div>
-            <div id="row">
-                <div class="col-xs-2">
-                    <%= image_tag 'year_long_icon.png', :title => 'icon', :class => "step" %>
-                </div>
-                <div class="col-xs-10">
-                    <h3>Year-long support</h3>
-                    <p>Mentorship from other entrepreneurs, a phone package and marketing through Kubmo</p>
-                </div>
-            </div>
-            <div id="row">
-                <div class="col-xs-2">
-                    <%= image_tag 'marketplace_icon.png',:title => 'icon', :class => "step"  %>
-                </div>
-                <div class="col-xs-10">
-                    <h3>Global network</h3>
-                    <p>Kubmo connects women around the world to create sustainable relationships around social entrepreneurism. </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="meet_the_entrepreneurs">
-        <div class="row">
-            <div class="col-xs-12">
-                <h2>Meet the Entrepreneurs</h2>
-                <hr>
-            </div>
-        </div>
-
-        <div class="row">
-        <div class="profile col-md-4 col-sm-6">
-            <%= link_to diana_path do %>
-               <span>Diana</span>
-            <% end %>
-            <%= image_tag 'diana_tiles.png', :title => 'Diana', :class => "img-responsive" %>
-        </div>
-
-        <div class="profile col-md-4 col-sm-6">
-            <%= link_to noella_path do %>
-               <span>Noella</span>
-            <% end %>
-
-            <%= image_tag 'noella_tile.png',:title => 'Noella', :class => "img-responsive"  %>
-        </div>
-
-        <div class="profile col-md-4 col-sm-6">
-            <%= link_to joy_path do %>
-               <span>Joy</span>
-            <% end %>
-            <%= image_tag 'joy_tile.png',:title => 'Joy', :class => "img-responsive"  %>
-        </div>
-
-        <div class="profile col-md-4 col-sm-6">
-            <%= link_to joan_path do %>
-                <span>Joan</span>
-            <% end %>
-            <%= image_tag 'jacinta_joan_tile.png', :title => 'Jecinta and Joan', :class => "img-responsive"  %>
-        </div>
-
-        <div class="profile col-md-4 col-sm-6">
-            <%= link_to melab_path do %>
-               <span>Melab</span>
-            <% end %>
-            <%= image_tag 'melab_tile.png', :title => 'Melab', :class => "img-responsive"  %>
-        </div>
-
-        <div class="profile col-md-4 col-sm-6">
-            <%= link_to jullie_path do %>
-               <span>Julia</span>
-            <% end %>
-            <%= image_tag 'julia_tile.png', :title => 'Julie', :class => "img-responsive"   %>
-        </div>
-
-        <div class="profile col-md-4 col-sm-6">
-            <%= link_to judith_path do %>
-                <span>Judith</span>
-            <% end %>
-            <%= image_tag 'judith_tile.png',:title => 'Judith', :class => "img-responsive"  %>
-        </div>
-
-        <div class="profile col-md-4 col-sm-6">
-            <%= link_to lorraine_1_path do %>
-               <span>Laureen</span>
-            <% end %>
-            <%= image_tag 'laureen_tile.jpg',:title => 'Laureen', :class => "img-responsive"  %>
-        </div>
-
-        <div class="profile col-md-4 col-sm-6">
-            <%= link_to janet_path do %>
-              <span>Janet</span>
-            <% end %>
-            <%= image_tag 'janet_tile.png',:title => 'Jahnet', :class => "img-responsive"  %>
-        </div>
-    </section>
-
-    <section id="meet_the_team">
-        <div class="row">
-            <div class="col-xs-12">
-                <h2>Meet the Team</h2>
-                <hr>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="profile col-md-4 col-sm-6">
-                <%= link_to emma_path do %>
-                   <span>Emma</span>
-                <% end %>
-                <%= image_tag 'emma_tile.png', :title => 'Emma', :class => "img-responsive"  %>
-            </div>
-
-            <div class="profile col-md-4 col-sm-6">
-                <%= link_to kinsey_path do %>
-                   <span>Kinsey</span>
-                <% end %>
-                <%= image_tag 'kinsey_tile.png',:title => 'Kinsey', :class => "img-responsive"  %>
-            </div>
-
-            <div class="profile col-md-4 col-sm-6">
-                <%= link_to brooke_path do %>
-                   <span>Brooke</span>
-                <% end %>
-                <%= image_tag 'brooke_team.png',:title => 'Brooke', :class => "img-responsive"  %>
-            </div>
-
-            <div class="profile col-md-4 col-sm-6">
-                <%= link_to john_path do %>
-                   <span>John</span>
-                <% end %>
-                <%= image_tag 'weiss_tile.png',:title => 'John', :class => "img-responsive"  %>
-            </div>
-
-            <div class="profile col-md-4 col-sm-6">
-                <%= link_to claudia_path do %>
-                   <span>Claudia</span>
-                <% end %>
-                <%= image_tag 'claudia_tile.png',:title => 'Claudia', :class => "img-responsive"  %>
-            </div>
-
-            <div class="profile col-md-4 col-sm-6">
-                <%= link_to emily_path do %>
-                   <span>Emily</span>
-                <% end %>
-                <%= image_tag 'emily_tile.png',:title => 'Emily', :class => "img-responsive"  %>
-            </div>
-
-            <div class="profile col-md-4 col-sm-6">
-                <%= link_to winnie_path do %>
-                   <span>Winnie</span>
-                <% end %>
-                <%= image_tag 'winnie_tile.png',:title => 'Winnie', :class => "img-responsive"  %>
-            </div>
-        </div>
-    </section>
-
-    <section id="spread_the_word" class="row">
-        <div class="col-xs-12">
-            <h2>Help Us Spread the Word</h2>
-            <hr>
-        </div>
-        <div class="col-xs-offset-3 col-xs-2">
-            <a id="twitter" href="https://twitter.com/Kubmo" target="_blank">
-                <%= image_tag 'twitter.png',:title => 'Twitter'  %>
-            </a>
-        </div>
-        <div class="col-xs-2">
-            <a id="facebook" href="https://www.facebook.com/pages/Kubmo/502648673114461" target= "_blank">
-                <%= image_tag 'facebook.png',:title => 'Facebook' %>
-            </a>
-        </div>
-        <div class="col-xs-2">
-            <a id="pinterest" href="https://pinterest.com/kubmo/" target="_blank">
-
-                <%= image_tag 'pinterest.png',:title => 'Facebook' %>
-            </a>
-        </div>
-
-    </section>
 </div>
+
+<div class="row visible-xs">
+   <div class="col-xs-12">
+       <%= link_to 'Sponsor the Change', new_donation_path, :class => "btn btn-default btn-block" %>
+   </div>
+</div>
+
+
+<section id="how_it_works" class="row">
+    <div class="col-xs-12">
+        <h2>How the Kubmo Program Works</h2>
+        <hr>
+    </div>
+
+
+    <div class="col-md-7">
+        <%= image_tag 'biztech.jpg',:title => 'Biztech workshop', :style => "width: 100%;"  %>
+    </div>
+    <div class="col-md-5">
+        <div class="row">
+            <div class="col-xs-2">
+                <%= image_tag 'phone_small_icon.png', :title => 'icon', :class => "step"  %>
+            </div>
+            <div class="col-xs-10">
+                <h3>The BizTech Workshop</h3>
+                <p>Training in Nairobi, Kenya from mentors on entrepreneurism. Each participant recieves a phone package.</p>
+            </div>
+        </div>
+        <div id="row">
+            <div class="col-xs-2">
+                <%= image_tag 'year_long_icon.png', :title => 'icon', :class => "step" %>
+            </div>
+            <div class="col-xs-10">
+                <h3>Year-long support</h3>
+                <p>Mentorship from other entrepreneurs, a phone package and marketing through Kubmo</p>
+            </div>
+        </div>
+        <div id="row">
+            <div class="col-xs-2">
+                <%= image_tag 'marketplace_icon.png',:title => 'icon', :class => "step"  %>
+            </div>
+            <div class="col-xs-10">
+                <h3>Global network</h3>
+                <p>Kubmo connects women around the world to create sustainable relationships around social entrepreneurism. </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="meet_the_entrepreneurs">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>Meet the Entrepreneurs</h2>
+            <hr>
+        </div>
+    </div>
+
+    <div class="row">
+    <div class="profile col-md-4 col-sm-6">
+        <%= link_to diana_path do %>
+           <span>Diana</span>
+        <% end %>
+        <%= image_tag 'diana_tiles.png', :title => 'Diana', :class => "img-responsive" %>
+    </div>
+
+    <div class="profile col-md-4 col-sm-6">
+        <%= link_to noella_path do %>
+           <span>Noella</span>
+        <% end %>
+
+        <%= image_tag 'noella_tile.png',:title => 'Noella', :class => "img-responsive"  %>
+    </div>
+
+    <div class="profile col-md-4 col-sm-6">
+        <%= link_to joy_path do %>
+           <span>Joy</span>
+        <% end %>
+        <%= image_tag 'joy_tile.png',:title => 'Joy', :class => "img-responsive"  %>
+    </div>
+
+    <div class="profile col-md-4 col-sm-6">
+        <%= link_to joan_path do %>
+            <span>Joan</span>
+        <% end %>
+        <%= image_tag 'jacinta_joan_tile.png', :title => 'Jecinta and Joan', :class => "img-responsive"  %>
+    </div>
+
+    <div class="profile col-md-4 col-sm-6">
+        <%= link_to melab_path do %>
+           <span>Melab</span>
+        <% end %>
+        <%= image_tag 'melab_tile.png', :title => 'Melab', :class => "img-responsive"  %>
+    </div>
+
+    <div class="profile col-md-4 col-sm-6">
+        <%= link_to jullie_path do %>
+           <span>Julia</span>
+        <% end %>
+        <%= image_tag 'julia_tile.png', :title => 'Julie', :class => "img-responsive"   %>
+    </div>
+
+    <div class="profile col-md-4 col-sm-6">
+        <%= link_to judith_path do %>
+            <span>Judith</span>
+        <% end %>
+        <%= image_tag 'judith_tile.png',:title => 'Judith', :class => "img-responsive"  %>
+    </div>
+
+    <div class="profile col-md-4 col-sm-6">
+        <%= link_to lorraine_1_path do %>
+           <span>Laureen</span>
+        <% end %>
+        <%= image_tag 'laureen_tile.jpg',:title => 'Laureen', :class => "img-responsive"  %>
+    </div>
+
+    <div class="profile col-md-4 col-sm-6">
+        <%= link_to janet_path do %>
+          <span>Janet</span>
+        <% end %>
+        <%= image_tag 'janet_tile.png',:title => 'Jahnet', :class => "img-responsive"  %>
+    </div>
+</section>
+
+<section id="meet_the_team">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>Meet the Team</h2>
+            <hr>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="profile col-md-4 col-sm-6">
+            <%= link_to emma_path do %>
+               <span>Emma</span>
+            <% end %>
+            <%= image_tag 'emma_tile.png', :title => 'Emma', :class => "img-responsive"  %>
+        </div>
+
+        <div class="profile col-md-4 col-sm-6">
+            <%= link_to kinsey_path do %>
+               <span>Kinsey</span>
+            <% end %>
+            <%= image_tag 'kinsey_tile.png',:title => 'Kinsey', :class => "img-responsive"  %>
+        </div>
+
+        <div class="profile col-md-4 col-sm-6">
+            <%= link_to brooke_path do %>
+               <span>Brooke</span>
+            <% end %>
+            <%= image_tag 'brooke_team.png',:title => 'Brooke', :class => "img-responsive"  %>
+        </div>
+
+        <div class="profile col-md-4 col-sm-6">
+            <%= link_to john_path do %>
+               <span>John</span>
+            <% end %>
+            <%= image_tag 'weiss_tile.png',:title => 'John', :class => "img-responsive"  %>
+        </div>
+
+        <div class="profile col-md-4 col-sm-6">
+            <%= link_to claudia_path do %>
+               <span>Claudia</span>
+            <% end %>
+            <%= image_tag 'claudia_tile.png',:title => 'Claudia', :class => "img-responsive"  %>
+        </div>
+
+        <div class="profile col-md-4 col-sm-6">
+            <%= link_to emily_path do %>
+               <span>Emily</span>
+            <% end %>
+            <%= image_tag 'emily_tile.png',:title => 'Emily', :class => "img-responsive"  %>
+        </div>
+
+        <div class="profile col-md-4 col-sm-6">
+            <%= link_to winnie_path do %>
+               <span>Winnie</span>
+            <% end %>
+            <%= image_tag 'winnie_tile.png',:title => 'Winnie', :class => "img-responsive"  %>
+        </div>
+    </div>
+</section>
+
+<section id="spread_the_word" class="row">
+    <div class="col-xs-12">
+        <h2>Help Us Spread the Word</h2>
+        <hr>
+    </div>
+    <div class="col-xs-offset-3 col-xs-2">
+        <a id="twitter" href="https://twitter.com/Kubmo" target="_blank">
+            <%= image_tag 'twitter.png',:title => 'Twitter'  %>
+        </a>
+    </div>
+    <div class="col-xs-2">
+        <a id="facebook" href="https://www.facebook.com/pages/Kubmo/502648673114461" target= "_blank">
+            <%= image_tag 'facebook.png',:title => 'Facebook' %>
+        </a>
+    </div>
+    <div class="col-xs-2">
+        <a id="pinterest" href="https://pinterest.com/kubmo/" target="_blank">
+
+            <%= image_tag 'pinterest.png',:title => 'Facebook' %>
+        </a>
+    </div>
+
+</section>
