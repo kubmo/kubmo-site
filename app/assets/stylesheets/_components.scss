@@ -59,36 +59,46 @@ section {
 }
 .profile {
   padding: 0;
-  a {
-    @include ralewayExtraLight();
-    position: absolute;
-    
-    height: 360px;
-    width: 100%;
-    z-index: 10;
-    
-    background-color: $grey;
-    opacity: 0;
-
-    text-decoration: none;
-    color: white;
-    font-size: 30px;
-
-    text-align: center;
-    line-height: 360px;
-  }
-
-  a:hover {
-    opacity: .6;
-  }
 
   img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 360px;
+    height: 380px;
+
+    @media only screen and (max-width: 1200px) and (min-width: 980px) {
+      width: 320px;
+      height: 340px;
+    }
+    padding: 10px 10px 0 10px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }  
+
+  h2 {
+    @include ralewayExtraLight();
+
+    display: block;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-decoration: none;
+    color: white;
+
+    padding: 0;
+    text-align: center;
+    background-color: $grey;
     width: 340px;
-    height: 360px;
-    padding: 10px;
+
+    @media only screen and (max-width: 1200px) and (min-width: 980px) {
+      width: 300px;
+    }
+
+    opacity: .8;
   }
 }
 
@@ -99,10 +109,6 @@ section {
     margin-left: auto;
     margin-right: auto;
   }
-}
-
-.col-md-6 img {
-  margin-bottom:20px;
 }
 
 footer {
