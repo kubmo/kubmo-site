@@ -23,8 +23,12 @@ section {
 
 .container .jumbotron {
   border-radius: 0;
-  height: 350px;
+  height: 450px;
   background: asset-url("hero.png") no-repeat center center;
+
+  h2 {
+    margin-top:100px;
+  }
 }
 
 
