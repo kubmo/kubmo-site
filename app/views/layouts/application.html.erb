@@ -19,13 +19,18 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <%= image_tag "kubmo_logo.png" %>
+                <%= link_to root_path do %>
+                    <%= image_tag "kubmo_logo.png" %>
+                <% end %>
             </div>
             <nav class="collapse navbar-collapse" role="navigation">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="/#how_it_works" data-scroll=true>How It Works</a></li>
+                    <li class="divider-vertical hidden-xs"></li>
                     <li><a href="/#meet_the_entrepreneurs" data-scroll=true>Entrepreneurs</a></li>
+                    <li class="divider-vertical hidden-xs"></li>
                     <li><a href="/#meet_the_team" data-scroll=true>Kubmo Team</a></li>
+                    <li class="divider-vertical hidden-xs"></li>
                     <li><a href="/#spread_the_word" data-scroll=true>Spread The Word</a></li>
                 </ul>
             </nav>
