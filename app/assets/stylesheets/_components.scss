@@ -64,12 +64,9 @@ section {
     position: absolute;
     
     height: 360px;
-    width: 341px;
+    width: 100%;
     z-index: 10;
     
-    margin-left:24px;
-    margin-top:10px;
-
     background-color: $grey;
     opacity: 0;
 
@@ -78,7 +75,7 @@ section {
     font-size: 30px;
 
     text-align: center;
-    line-height: 380px;
+    line-height: 360px;
   }
 
   a:hover {
@@ -89,9 +86,8 @@ section {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom:20px;
-    width: 360px;
-    height: 380px;
+    width: 340px;
+    height: 360px;
     padding: 10px;
   }
 }
