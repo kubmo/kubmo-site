@@ -5,28 +5,27 @@
         </div>
     </div>
 </div>
-<section class="row">
+<section id="mentor_videos" class="row">
     <div class="col-xs-12">
         <h2>Mentor advice videos</h2>
         <hr>
     </div>
     <div class="profile col-lg-4 col-md-6">
-      <%= video_tag 'www.youtube.com/embed/99TdS8qXnrg' %>
-      <h2>Kerry Leary: Social Media</h2>
+      <%= image_tag 'kerry_video.png', :title => 'Kerry' %>
+      <%= image_tag 'play-button.png',:title => 'icon', :id => 'arrow' %>
+      <h2 id="video">Kerry Leary: Social Media</h2>
     </div>
 
     <div class="profile col-lg-4 col-md-6">
-        <%= link_to kinsey_path do %>
-           <%= image_tag 'kinsey_tile.png',:title => 'Kinsey' %>
-           <h2>Kinsey</h2>
-        <% end %>
+      <%= image_tag 'kerry_video.png', :title => 'Cammy' %>
+      <%= image_tag 'play-button.png',:title => 'icon', :id => 'arrow' %>
+      <h2 id="video">Cammy Houser: Product Design</h2>
     </div>
 
     <div class="profile col-lg-4 col-md-6">
-        <%= link_to brooke_path do %>
-           <%= image_tag 'brooke_team.png',:title => 'Brooke' %>
-           <h2>Brooke</h2>
-        <% end %>
+      <%= image_tag 'kerry_video.png',:title => 'Charrise' %>
+      <%= image_tag 'play-button.png',:title => 'icon', :id => 'arrow' %>
+      <h2 id="video">Charrise McCrorey: Women's Leadership</h2>
     </div>
 </section>
 
