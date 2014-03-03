@@ -14,9 +14,9 @@
 //= require bootstrap
 //= require_tree .
 
-$(document).ready(function() {
-  $("nav a[data-scroll=true]").bind("click",function(event){
-    if(window.location.pathname !== "/") return;
+$(document).ready(function () {
+  $("nav a[data-scroll=true]").bind("click", function (event) {
+    if (window.location.pathname !== "/") return;
     event.preventDefault();
     var url = $(this).attr("href");
     var target = url.substring(url.indexOf('#'));
@@ -25,4 +25,13 @@ $(document).ready(function() {
       scrollTop: $(target).offset().top - 100
     }, 600);
   });
-});
+  $('#link').click(function () {
+    var src = 'http://www.youtube.com/v/FSi2fJALDyQ&amp;autoplay=1';
+    $('#myModal').modal('show');
+    $('#myModal iframe').attr('src', src);
+  });
+
+  $('#myModal button').click(function () {
+    $('#myModal iframe').removeAttr('src');
+  });
+})
