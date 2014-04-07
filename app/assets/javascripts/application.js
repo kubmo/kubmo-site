@@ -25,8 +25,20 @@ $(document).ready(function () {
       scrollTop: $(target).offset().top - 100
     }, 600);
   });
-  $('.arrow').click(function () {
-    var src = 'http://www.youtube.com/v/FSi2fJALDyQ&amp;autoplay=1';
+  $('#arrow_1').click(function () {
+    var src = '//www.youtube.com/embed/99TdS8qXnrg';
+    $('#myModal').modal('show');
+    $('#myModal iframe').attr('src', src);
+  });
+
+  $('#arrow_2').click(function () {
+    var src = '//www.youtube.com/embed/RQ1aWW-NNtw';
+    $('#myModal').modal('show');
+    $('#myModal iframe').attr('src', src);
+  });
+
+  $('#arrow_3').click(function () {
+    var src = '//www.youtube.com/embed/UO4M-yLN_r0';
     $('#myModal').modal('show');
     $('#myModal iframe').attr('src', src);
   });
