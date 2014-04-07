@@ -32,7 +32,7 @@ $(document).ready(function () {
   });
 
   $('#arrow_2').click(function () {
-    var src = '//www.youtube.com/embed/RQ1aWW-NNtw';
+    var src = '//www.youtube.com/embed/vFT2HGWDYiM';
     $('#myModal').modal('show');
     $('#myModal iframe').attr('src', src);
   });
