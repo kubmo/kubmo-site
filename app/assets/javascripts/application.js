@@ -43,6 +43,12 @@ $(document).ready(function () {
     $('#myModal iframe').attr('src', src);
   });
 
+  $('#arrow_4').click(function () {
+    var src = '//www.youtube.com/embed/Sdu-9hKy9Gw';
+    $('#myModal').modal('show');
+    $('#myModal iframe').attr('src', src);
+  });
+
   $('#myModal button').click(function () {
     $('#myModal iframe').removeAttr('src');
   });
