@@ -213,7 +213,7 @@ DEPENDENCIES
   rails (>= 4.0.0)
   rails_12factor
   rspec-rails
-  sass-rails (>= 3.2)
+  sass-rails (~> 4.0.0)
   sham_rack
   shoulda-matchers
   simple_form

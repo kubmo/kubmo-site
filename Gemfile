@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 
 
 gem 'bootstrap-sass', '~> 3.0.3.0'
-gem 'sass-rails', '>= 3.2'
+gem 'sass-rails', '~> 4.0.0'
 
 gem 'high_voltage'
 gem 'jquery-rails'
