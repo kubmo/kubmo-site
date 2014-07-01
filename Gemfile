@@ -3,13 +3,13 @@ source 'http://rubygems.org'
 
 
 gem 'bootstrap-sass', '~> 3.0.3.0'
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails'
 
 gem 'high_voltage'
 gem 'jquery-rails'
 gem 'pg'
 gem 'protected_attributes'
-gem 'rails', '>= 4.0.0'
+gem 'rails'
 gem 'simple_form'
 gem 'stripe'
 gem 'unicorn'
@@ -17,10 +17,6 @@ gem 'rails_12factor'
 
 gem 'coffee-rails'
 gem 'uglifier'
-
-group :production do
-  gem 'rails_12factor'
-end
 
 group :development do
   gem 'foreman'

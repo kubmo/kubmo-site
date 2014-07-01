@@ -210,10 +210,10 @@ DEPENDENCIES
   pg
   poltergeist
   protected_attributes
-  rails (>= 4.0.0)
+  rails
   rails_12factor
   rspec-rails
-  sass-rails (~> 4.0.0)
+  sass-rails
   sham_rack
   shoulda-matchers
   simple_form
