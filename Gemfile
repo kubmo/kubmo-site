@@ -18,6 +18,10 @@ gem 'rails_12factor'
 gem 'coffee-rails'
 gem 'uglifier'
 
+group :production do
+  gem 'rails_12factor'
+end
+
 group :development do
   gem 'foreman'
   gem 'better_errors'
