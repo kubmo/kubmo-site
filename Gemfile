@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-ruby '2.1.2'
+
 
 gem 'bootstrap-sass', '~> 3.0.3.0'
 gem 'sass-rails', '>= 3.2'
