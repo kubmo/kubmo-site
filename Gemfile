@@ -3,13 +3,13 @@ source 'http://rubygems.org'
 
 
 gem 'bootstrap-sass', '~> 3.0.3.0'
-gem 'sass-rails'
+gem 'sass-rails', "~> 4.0.3"
 
 gem 'high_voltage'
 gem 'jquery-rails'
 gem 'pg'
 gem 'protected_attributes'
-gem 'rails'
+gem 'rails', "4.1.1"
 gem 'simple_form'
 gem 'stripe'
 gem 'unicorn'
