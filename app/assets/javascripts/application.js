@@ -11,17 +11,45 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require bootstrap
 //= require_tree .
 
-$(document).ready(function() {
-  $("#top_nav a[data-scroll=true]").bind("click",function(event){
-    if(window.location.pathname !== "/") return;
+$(document).ready(function () {
+  $("nav a[data-scroll=true]").bind("click", function (event) {
+    if (window.location.pathname !== "/") return;
     event.preventDefault();
     var url = $(this).attr("href");
     var target = url.substring(url.indexOf('#'));
     $("html, body").stop().animate({
       scrollBottom: $(target).offset().bottom,
       scrollTop: $(target).offset().top - 100
-    }, 800);
+    }, 600);
   });
-});
+  $('#arrow_1').click(function () {
+    var src = '//www.youtube.com/embed/99TdS8qXnrg';
+    $('#myModal').modal('show');
+    $('#myModal iframe').attr('src', src);
+  });
+
+  $('#arrow_2').click(function () {
+    var src = '//www.youtube.com/embed/tyNQ5Qrqmv0';
+    $('#myModal').modal('show');
+    $('#myModal iframe').attr('src', src);
+  });
+
+  $('#arrow_3').click(function () {
+    var src = '//www.youtube.com/embed/UO4M-yLN_r0';
+    $('#myModal').modal('show');
+    $('#myModal iframe').attr('src', src);
+  });
+
+  $('#arrow_4').click(function () {
+    var src = '//www.youtube.com/embed/Sdu-9hKy9Gw';
+    $('#myModal').modal('show');
+    $('#myModal iframe').attr('src', src);
+  });
+
+  $('#myModal button').click(function () {
+    $('#myModal iframe').removeAttr('src');
+  });
+})

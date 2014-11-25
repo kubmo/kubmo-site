@@ -1,151 +1,238 @@
- <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8" />
-  <title>kubmo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <%= stylesheet_link_tag :application, :media => 'all' %>
-  <%= javascript_include_tag %>
-  <%= csrf_meta_tags %>
-  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
-</head>
-<body class="body">
-  <div id="hero">
-    <h1>A phone package and workshop can change her life forever.</h1>
-    <%= link_to 'Sponsor the Change', new_donation_path %>
-    <%= image_tag 'hero.png',:title => 'girl in kenya'  %>
-  </div>
-  <div id="get_involved">
-    <div id="mentor_button">
-      <%= link_to 'Be a Mentor', new_mentor_path %>
-      <%= image_tag 'mentors_icon.png',:title => 'mentor icon'  %>
-    </div>
-    <div id="spread_button">
-      <%= link_to('Spread the word', "#{root_path}#spread_the_word", data: { scroll: true }) %>
-      <%= image_tag 'spread_icon.png',:title => 'spread icon'  %>
-    </div>
-    <div id="women_button">
-      <%= link_to('Meet the women', "#{root_path}#entrepreneurs", data: { scroll: true }) %>
-      <%= image_tag 'phones_icon.png',:title => 'phones icon'  %>
+<div class="row">
+  <div class="jumbotron">
+    <div class="col-xs-5 hidden-xs">
+      <h2>A support network for entrepreneurial women around the world.</h2>
     </div>
   </div>
-  <div id="how_it_works">
-    <h1>How the Kubmo Program Works</h1>
-    <div id="pattern"><%= image_tag 'Pattern.png',:title => 'pattern'  %></div>
-    <a id="play" href="#"><p>play</p></a>
-    <div id="the_steps">
-      <div id="workshop">
-        <%= image_tag 'phone_small_icon.png',:title => 'icon'  %>
-        <h2><%= link_to 'The BizTech Workshop', how_path %></h2>
-        <h3>Training in Nairobi, Kenya from mentors on entrepreneurism. Each participant recieves a phone package. August 27-30.</h3>
-      </div>
-      <div id="year_long">
-        <%= image_tag 'year_long_icon.png',:title => 'icon'  %>
-        <h2><%= link_to 'Year-long support', how_path %></h2>
-        <h3>Follow up of mentorship, awareness via the website, and a phone package.</h3>
-      </div>
-      <div id="marketplace">
-        <%= image_tag 'marketplace_icon.png',:title => 'icon'  %>
-        <h2><%= link_to 'Global marketplace', how_path %></h2>
-        <h3>Once products are ready to be sold, they will be promoted via online marketplaces.</h3>
+</div>
+<section id="mentor_videos" class="row">
+  <div class="col-xs-12">
+    <h2>Mentor Videos</h2>
+    <hr>
+  </div>
+
+
+  <div class="profile col-lg-4 col-md-6">
+    <%= image_tag 'kerry_video.png', :title => 'Kerry' %>
+    <%= image_tag 'play-button.png', :title => 'icon',:id => 'arrow_1', :class => 'arrow' %>
+    <h2 id="video">Kerry Leary: Social Media</h2>
+  </div>
+
+  <div class="profile col-lg-4 col-md-6">
+    <%= image_tag 'cammy.jpg', :title => 'Cammy' %>
+    <%= image_tag 'play-button.png', :title => 'icon',:id => 'arrow_2', :class => 'arrow' %>
+    <h2 id="video">Cammy Houser: Product Design</h2>
+  </div>
+
+  <div class="profile col-lg-4 col-md-6">
+    <%= image_tag 'charrise.jpg', :title => 'Charrise' %>
+    <%= image_tag 'play-button.png', :title => 'icon', :id => 'arrow_3', :class => 'arrow' %>
+    <h2 id="video">Charrise McCrorey: Women's Leadership</h2>
+  </div>
+</section>
+
+<section id="how_it_works" class="row">
+  <div class="col-xs-12">
+    <h2>The Workshop</h2>
+    <hr>
+  </div>
+
+
+  <div class="col-md-7">
+    <%= image_tag 'biztech.jpg', :title => 'Biztech workshop', :style => "width: 100%;" %>
+    <%= image_tag 'play-button.png', :title => 'icon', :id => 'arrow_4', :class => 'arrow' %>
+  </div>
+  <div class="col-md-5">
+    <div class="col-xs-2">
+      <%= image_tag 'phone_small_icon.png', :title => 'icon', :class => "img-responsive step" %>
+    </div>
+    <div class="col-xs-10">
+      <h3>The BizTech Workshop</h3>
+      <p>Training in Nairobi, Kenya from mentors on entrepreneurship. Each participant receives a phone package.</p>
+    </div>
+    <div class="col-xs-2">
+      <%= image_tag 'year_long_icon.png', :title => 'icon', :class => "img-responsive step" %>
+    </div>
+    <div class="col-xs-10">
+      <h3>Year-long support</h3>
+      <p>Mentorship from other entrepreneurs, a phone package and marketing through Kubmo</p>
+    </div>
+    <div class="col-xs-2">
+      <%= image_tag 'marketplace_icon.png', :title => 'icon', :class => "img-responsive step" %>
+    </div>
+    <div class="col-xs-10">
+      <h3>Global network</h3>
+      <p>Kubmo connects socially-minded entrepreneurial women from around the world. Please contact us to get involved!</p>
+    </div>
+  </div>
+</section>
+
+<section id="meet_the_entrepreneurs">
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>Meet the Entrepreneurs</h2>
+      <hr>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="profile col-md-4 col-sm-6">
+      <%= link_to diana_path do %>
+        <%= image_tag 'diana_tiles.png', :title => 'Diana' %>
+        <h2>Diana</h2>
+      <% end %>
+    </div>
+
+    <div class="profile col-md-4 col-sm-6">
+      <%= link_to noella_path do %>
+        <%= image_tag 'noella_tile.png', :title => 'Noella' %>
+        <h2>Noella</h2>
+      <% end %>
+    </div>
+
+    <div class="profile col-md-4 col-sm-6">
+      <%= link_to joy_path do %>
+        <%= image_tag 'joy_tile.png', :title => 'Joy' %>
+        <h2>Joy</h2>
+      <% end %>
+    </div>
+
+    <div class="profile col-md-4 col-sm-6">
+      <%= link_to joan_path do %>
+        <%= image_tag 'jacinta_joan_tile.png', :title => 'Jecinta and Joan' %>
+        <h2>Jecinta and Joan</h2>
+      <% end %>
+    </div>
+
+    <div class="profile col-md-4 col-sm-6">
+      <%= link_to melab_path do %>
+        <%= image_tag 'melab_tile.png', :title => 'Melab' %>
+        <h2>Melab</h2>
+      <% end %>
+    </div>
+
+    <div class="profile col-md-4 col-sm-6">
+      <%= link_to jullie_path do %>
+        <%= image_tag 'julia_tile.png', :title => 'Julie' %>
+        <h2>Julia</h2>
+      <% end %>
+    </div>
+
+    <div class="profile col-md-4 col-sm-6">
+      <%= link_to judith_path do %>
+        <%= image_tag 'judith_tile.png', :title => 'Judith' %>
+        <h2>Judith</h2>
+      <% end %>
+    </div>
+
+    <div class="profile col-md-4 col-sm-6">
+      <%= link_to lorraine_1_path do %>
+        <%= image_tag 'laureen_tile.jpg', :title => 'Laureen' %>
+        <h2>Laureen</h2>
+      <% end %>
+    </div>
+
+    <div class="profile col-md-4 col-sm-6">
+      <%= link_to janet_path do %>
+        <%= image_tag 'janet_tile.png', :title => 'Jahnet' %>
+        <h2>Janet</h2>
+      <% end %>
+    </div>
+</section>
+
+<section id="meet_the_team">
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>Meet the Team</h2>
+      <hr>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="profile col-lg-4 col-md-6">
+      <%= link_to emma_path do %>
+        <%= image_tag 'emma_tile.png', :title => 'Emma' %>
+        <h2>Emma</h2>
+      <% end %>
+    </div>
+
+    <div class="profile col-lg-4 col-md-6">
+      <%= link_to kinsey_path do %>
+        <%= image_tag 'kinsey_tile.png', :title => 'Kinsey' %>
+        <h2>Kinsey</h2>
+      <% end %>
+    </div>
+
+    <div class="profile col-lg-4 col-md-6">
+      <%= link_to brooke_path do %>
+        <%= image_tag 'brooke_team.png', :title => 'Brooke' %>
+        <h2>Brooke</h2>
+      <% end %>
+    </div>
+
+    <div class="profile col-lg-4 col-md-6">
+      <%= link_to john_path do %>
+        <%= image_tag 'weiss_tile.png', :title => 'John' %>
+        <h2>John</h2>
+      <% end %>
+    </div>
+
+    <div class="profile col-md-4 col-sm-6">
+      <%= link_to claudia_path do %>
+        <%= image_tag 'claudia_tile.png', :title => 'Claudia' %>
+        <h2>Claudia</h2>
+      <% end %>
+    </div>
+
+    <div class="profile col-md-4 col-sm-6">
+      <%= link_to emily_path do %>
+        <%= image_tag 'emily_tile.png', :title => 'Emily' %>
+        <h2>Emily</h2>
+      <% end %>
+    </div>
+
+    <div class="profile col-md-4 col-sm-6">
+      <%= link_to winnie_path do %>
+        <%= image_tag 'winnie_tile.png', :title => 'Winnie' %>
+        <h2>Winnie</h2>
+      <% end %>
+    </div>
+  </div>
+</section>
+
+<section id="spread_the_word" class="row">
+  <div class="col-xs-12">
+    <h2>Help Us Spread the Word</h2>
+    <hr>
+  </div>
+  <div class="col-xs-offset-3 col-xs-2">
+    <a id="twitter" href="https://twitter.com/Kubmo" target="_blank">
+      <%= image_tag 'twitter.png', :title => 'Twitter' %>
+    </a>
+  </div>
+  <div class="col-xs-2">
+    <a id="facebook" href="https://www.facebook.com/pages/Kubmo/502648673114461" target="_blank">
+      <%= image_tag 'facebook.png', :title => 'Facebook' %>
+    </a>
+  </div>
+  <div class="col-xs-2">
+    <a id="pinterest" href="https://pinterest.com/kubmo/" target="_blank">
+
+      <%= image_tag 'pinterest.png', :title => 'Facebook' %>
+    </a>
+  </div>
+
+</section>
+
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        </div>
+        <div class="modal-body">
+          <iframe width="400" height="300" frameborder="0" allowfullscreen=""></iframe>
+        </div>
       </div>
     </div>
   </div>
-  <div id="entrepreneurs" href="entrepreneurs">
-    <h1>Meet the Entrepreneurs</h1>
-    <div id="the_entrepreneur_pics">
-        <div id="girl_1">
-          <div class="tile_hover"><%= link_to 'Diana', diana_path %></div>
-          <%= image_tag 'diana_tiles.png',:title => 'Diana'  %>
-        </div>
-        <div id="girl_2">
-          <div class="tile_hover"><%= link_to 'Noella', noella_path %></div>
-          <%= image_tag 'noella_tile.png',:title => 'Noella'  %>
-        </div>
-        <div id="girl_3">
-          <div class="tile_hover"><%= link_to 'Joy', joy_path %></div>
-          <%= image_tag 'joy_tile.png',:title => 'Joy'  %>
-        </div>
-        <div id="girl_4">
-          <div class="tile_hover"><%= link_to 'Joan & Jacinta', joan_path %></div>
-          <%= image_tag 'jacinta_joan_tile.png',:title => 'Jacinta and Joan'  %>
-        </div>
-        <div id="girl_5">
-          <div class="tile_hover"><%= link_to 'Melab', melab_path %></div>
-          <%= image_tag 'kenya_girl_2.png',:title => 'Melab'  %>
-        </div>
-        <div id="girl_6">
-          <div class="tile_hover"><%= link_to 'Jullie', jullie_path %></div>
-          <%= image_tag 'julia_tile.png',:title => 'Julia'  %>
-        </div>
-        <div id="girl_7">
-          <div class="tile_hover"><%= link_to 'Judith', judith_path %></div>
-          <%= image_tag 'judith_tile.png',:title => 'Judith'  %>
-        </div>
-        <div id="girl_8">
-          <div class="tile_hover"><%= link_to 'Lorraine', lorraine_1_path %></div>
-          <%= image_tag 'lorrain_tiles.png',:title => 'Lorrain'  %>
-        </div>
-        <div id="girl_9">
-          <div class="tile_hover"><%= link_to 'Janet', janet_path %></div>
-          <%= image_tag 'janet_tile.png',:title => 'Janet'  %>
-        </div>
-    </div>
-  </div>
-  <div id="kubmo_team" href="kubmo_team">
-    <h1>Meet the Kubmo Team</h1>
-    <div id="the_team_pics">
-      <div id="team_1">
-        <%= link_to 'Emma', emma_path %>
-        <%= image_tag 'emma_tile.png',:title => 'Emma'  %>
-      </div>
-      <div id="team_2">
-        <%= link_to 'Kinsey', kinsey_path %>
-        <%= image_tag 'kinsey_tile.png',:title => 'Kinsey'  %>
-      </div>
-      <div id="team_3">
-        <%= link_to 'Brooke', brooke_path %>
-        <%= image_tag 'brooke_team.png',:title => 'Brooke'  %>
-      </div>
-      <div id="team_4">
-        <%= link_to 'John', john_path %>
-        <%= image_tag 'weiss_tile.png',:title => 'John'  %>
-      </div>
-      <div id="team_5">
-        <%= link_to 'Claudia', claudia_path %>
-        <%= image_tag 'claudia_tile.png',:title => 'Claudia'  %>
-      </div>
-      <div id="team_6">
-        <%= link_to 'Emily', emily_path %>
-        <%= image_tag 'emily_tile.png',:title => 'Emily'  %>
-      </div>
-      <div id="team_7">
-        <%= link_to 'Winnie', winnie_path %>
-        <%= image_tag 'winnie_tile.png',:title => 'Winnie'  %>
-      </div>
-    </div>
-  </div>
-  <div id="spread_the_word" href="spread_the_word">
-    <h1>Help Us Spread the Word</h1>
-    <a id="twitter" href="https://twitter.com/Kubmo" target="_blank"><%= image_tag 'twitter.png',:title => 'Twitter'  %></a>
-    <a id="facebook" href="https://www.facebook.com/pages/Kubmo/502648673114461" target= "_blank"><%= image_tag 'facebook.png',:title => 'Facebook'  %></a>
-    <a id="pinterest" href="https://pinterest.com/kubmo/" target="_blank"><%= image_tag 'pinterest.png',:title => 'Pinterest'  %></a>
-    <div id="spread_examples">
-      <h2>Send a tweet</h2>
-      <p>"Help 10 women in Kenya get their ventures off the ground through mentorship and technology! http://www.kubmo.org/ @kubmo"</p>
-      <h2>Post on Facebook</h2>
-      <p>"Kubmo is a company empowering young women in Kenya to become independent by getting their own company off the ground. Starting August 27th, they will be going through a three day workshop, followed by a year long program of mentorship and smart phone access. See the website for more details on how you can get involved! http://www.kubmo.org/"</p>
-      <h2>Send an email</h2>
-      <p>"Kubmo was a company started to help young women in Kenya become financially independent. The two co-founders found out that many women in Kenya have the will power and desire to start their own companies, but cannot do so without access to smartphones and advice from other women who have done the same. </p>
-      <p>So they created a program, along with a non-profit in Kenya, where 10 women in Nairobi will go through an intensive workshop, receive a smartphone with data, and have access to a network of mentors. The first workshop is happening on August 27th. You can see a profile for each young woman at Kubmo.org. </p>
-      <p>In order to make this happen, and allow these 10 young women to be successful, Kubmo needs to raise $2,500.  Here is a breakdown of what you could sponsor for one of the Kubmo entrepreneurs:</p>
-      <h3>Phone package: $114</h3>
-      <h3>Room and board for the workshop: $109</h3>
-      <h3>Workshop materials: $35</h3>
-      <h3>The entire experience for one young woman: $258</h3>
-      <p>Please help make this workshop a reality by sponsoring a part of the Kubmo experience for one of the entrepreneurs. You can make your donation at Kubmo.org, and change the lives of one of these ten Kenyan women. </p>
-      <p>Thanks for your support!"</p>
-    </div>
-  </div>
-</body>
-</html>
